@@ -3,7 +3,7 @@
 import Image from "next/image";
 import ResponsiveCarousal from "../components/carousal";
 import Link from 'next/link'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import close from "../../public/images/close.png";
 import BrandImage1 from "../../public/images/brandname.png";
 import BrandImage2 from "../../public/images/creative.png";
@@ -27,9 +27,16 @@ import search from "../../public/images/search.png";
 import user from "../../public/images/user.png";
 import menu from "../../public/images/menu.png";
 import upArrow from "../../public/images/up-arrow.png";
+import { initGA, logPageView } from '../../utils/analytics';
+
+
 
 export default function Home() {
   const [menuShowResponsive, setMenuShowResponsive] = useState(false)
+  useEffect(() => {
+    initGA(); // Initialize Google Analytics
+  logPageView(); // Log the initial pageview
+}, []);
   return (
     <main>
       {/* header section */}
@@ -1001,7 +1008,7 @@ export default function Home() {
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
                           Arlene McCoy
                         </h5>
-                        <p className="text-xs text-[#a9afa9] font-semibold leading-[16px] ">
+                        <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
                           Desgination
                         </p>
                       </div>
@@ -1052,7 +1059,7 @@ export default function Home() {
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
                           Arlene McCoy
                         </h5>
-                        <p className="text-xs text-[#a9afa9] font-semibold leading-[16px] ">
+                        <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
                           Desgination
                         </p>
                       </div>
@@ -1103,7 +1110,7 @@ export default function Home() {
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
                           Arlene McCoy
                         </h5>
-                        <p className="text-xs text-[#a9afa9] font-semibold leading-[16px] ">
+                        <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
                           Desgination
                         </p>
                       </div>

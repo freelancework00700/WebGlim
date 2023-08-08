@@ -1,0 +1,11 @@
+# Block all crawlers for /accounts
+User-agent: *
+Disallow: /secret
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+Host: http://webglim.com/
+
+Sitemap: http://localhost:3000/sitemap.xml

@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /secret
-
-User-agent: *
-Allow: /
-
-Host: http://webglim.com/
-
-Sitemap: http://webglim.com/sitemap.xml
