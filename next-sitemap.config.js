@@ -1,5 +1,12 @@
-const siteUrl = "http://localhost:3000";
+const siteUrl = "http://webglim.com/";
 
 module.exports = {
-    siteUrl
+    siteUrl,
+    robotTxtOptions: {
+        policies: [
+            { userAgent: "*", disallow: "/secret" },
+            { userAgent: "*", allow: "/" }
+        ]
+    },
+    exclude: ["/secret"]
 }

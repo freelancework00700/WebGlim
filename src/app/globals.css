@@ -20,7 +20,7 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: flex-start;
   }
   .trending-slider .slick-dots {
@@ -39,7 +39,7 @@
 .success-slider .slick-dots {
   position: absolute;
     top: -40px;
-    text-align: end;
+    text-align: right;
     bottom: unset !important;
 }
 .success-slider .slick-dots li.slick-active button:before {

@@ -46,22 +46,22 @@ export default function Home() {
                 <nav>
                   <ul className="flex items-center">
                     <li className="px-4">
-                      <Link href="#" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
+                      <Link href="/" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
                         Home
                       </Link>
                     </li>
                     <li className="px-4">
-                      <Link href="#" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
+                      <Link href="/about" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
                         About
                       </Link>
                     </li>
                     <li className="px-4">
-                      <Link href="#" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
+                      <Link href="/services" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
                         Services
                       </Link>
                     </li>
                     <li className="px-4">
-                      <Link href="#" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
+                      <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
                         Projects
                       </Link>
                     </li>
@@ -282,13 +282,13 @@ export default function Home() {
                   typesetting industry. Lorem Ipsum has been the industry&apos;s
                   standard dummy text ever since the 1500s.
                 </p>
-                <div className="flex gap-3">
+                {/* <div className="flex gap-3">
 
                   <Link href="#" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                     View More +
                   </Link>
 
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -486,7 +486,7 @@ export default function Home() {
                   IT Consulting
                 </div>
 
-                <Link href="#" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 w-fit">
+                <Link href="/services" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 w-fit">
                   More Service +
                 </Link>
 
@@ -619,7 +619,7 @@ export default function Home() {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry.
                 </p>
-                <Link href="#" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 max-[640px]:mt-4">
+                <Link href="/blogs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 max-[640px]:mt-4">
                   All Post +
                 </Link>
               </div>
@@ -1188,7 +1188,7 @@ export default function Home() {
                           dummy text of the printing and typesetting industry.
                         </p>
                         <div className="absolute bottom-[30px]">
-                          <Link href="#" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
+                          <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                             View Services
                             <Image
                               src={upArrow}

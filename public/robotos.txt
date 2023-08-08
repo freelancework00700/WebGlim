@@ -1,6 +1,9 @@
 User-agent: *
+Disallow: /secret
+
+User-agent: *
 Allow: /
 
-Host: http://localhost:3000
+Host: http://webglim.com/
 
-Sitemap: http://localhost:3000/api/my-sitemap
+Sitemap: http://webglim.com/sitemap.xml

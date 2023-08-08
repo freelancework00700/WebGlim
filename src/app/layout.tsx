@@ -1,6 +1,9 @@
+"use client"
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { useEffect } from 'react'
+import { initGA, logPageView } from '../../utils/analytics';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,9 +17,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  useEffect(() => {
+      initGA(); // Initialize Google Analytics
+    logPageView(); // Log the initial pageview
+  }, []);
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LPQ391VTF"></script>
     </html>
   )
 }
