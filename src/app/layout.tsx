@@ -18,7 +18,7 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} style={{position: 'relative'}}>{children}</body>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LPQ391VTF"></script>
     </html>
   )

@@ -12,9 +12,9 @@ const Header = () => {
     const [menuShowResponsive, setMenuShowResponsive] = useState(false)
     return (
         <>
-            <div className="bg-[#212025] hero-slider overflow-hidden relative">
+            <div className="bg-[#212025] hero-slider overflow-hidden ">
                 <div className="container mx-auto">
-                    <div className="flex items-center justify-between py-4 border-b-2 border-[#2c2c2c] relative">
+                    <div className="flex items-center justify-between py-4 border-b-2 border-[#2c2c2c]">
                         <div className="flex items-center">
                             <div className="main-logo me-[5rem]">
                                 <Link href="#" className="text-[#e7e7e8] text-3xl font-semibold cursor-pointer">
@@ -25,22 +25,22 @@ const Header = () => {
                                 <nav>
                                     <ul className="flex items-center">
                                         <li className="px-4">
-                                            <Link href="/" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
+                                            <Link href="/" className="text-sm font-medium leading-[16px] text-[#afaeb0] hover:text-[#10e981] cursor-pointer">
                                                 Home
                                             </Link>
                                         </li>
                                         <li className="px-4">
-                                            <Link href="/about" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
+                                            <Link href="/about" className="text-sm font-medium leading-[16px] text-[#afaeb0] hover:text-[#10e981] cursor-pointer">
                                                 About
                                             </Link>
                                         </li>
                                         <li className="px-4">
-                                            <Link href="/services" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
+                                            <Link href="/services" className="text-sm font-medium leading-[16px] text-[#afaeb0] hover:text-[#10e981] cursor-pointer">
                                                 Services
                                             </Link>
                                         </li>
                                         <li className="px-4">
-                                            <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#afaeb0] cursor-pointer hover:text-white">
+                                            <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#afaeb0] hover:text-[#10e981] cursor-pointer">
                                                 Projects
                                             </Link>
                                         </li>
@@ -85,35 +85,35 @@ const Header = () => {
                             </div>
                         </div>
                         {menuShowResponsive &&
-                            <div className="absolute w-full top-[70px] z-[99999999]">
+                            <div className="absolute w-full left-0 top-[70px] z-10">
                                 <div className="bg-[#fff] p-3 px-5">
                                     <nav>
                                         <ul className="flex items-center flex-col">
                                             <li className="py-2">
-                                                <Link href="#" className="text-sm font-medium leading-[16px] text-[#1d1c21] cursor-pointer hover:text-white">
+                                                <Link href="/" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Home
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="#" className="text-sm font-medium leading-[16px] text-[#1d1c21] cursor-pointer hover:text-white">
+                                                <Link href="/about" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     About
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="#" className="text-sm font-medium leading-[16px] text-[#1d1c21] cursor-pointer hover:text-white">
+                                                <Link href="/services" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Services
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="#" className="text-sm font-medium leading-[16px] text-[#1d1c21] cursor-pointer hover:text-white">
+                                                <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Projects
                                                 </Link>
                                             </li>
                                         </ul>
                                     </nav>
                                     <div className="text-center py-4">
-                                        <Link href="#" className="text-sm text-[#1d1c21] font-medium leading-[16px] cursor-pointer">
-                                            <span className="text-[#10e981]">Call Us:</span>{" "}
+                                        <Link href="tel:(+080)12345678900" className="text-sm text-[#1d1c21] font-medium leading-[16px] cursor-pointer">
+                                            <span className="text-[#10e981]">Call Us:</span>
                                             (+080)1234567890
                                         </Link>
                                     </div>

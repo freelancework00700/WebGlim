@@ -43,9 +43,6 @@ export default function About() {
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8 items-center max-lg:gap-4 max-lg:gap-3">
             <div className="col-span-6 relative max-md:col-span-12">
-              {/* <p className="uppercase text-base font-medium text-[#3d3c40] mb-3">
-                What we do
-              </p> */}
               <div className="relative">
                 <h3 className="text-[#1d1c20] text-[42px] font-bold capitalize leading-[60px] relative border-b-2 border-[#f9f9f9] max-xl:text-[30px] max-xl:leading-[42px]">
                   Our Mission
@@ -113,8 +110,9 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
-            <div className="col-span-6 mt-[80px] max-sm:mt-[40px] max-md:col-span-12">
+            </div>
+            <div className="grid grid-cols-12 gap-8 items-center max-lg:gap-4 max-lg:gap-3 max-md:flex max-md:flex-col-reverse max-sm:mt-4">
+            <div className="col-span-6 mt-[80px] max-sm:mt-[40px]">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-6">
                   <div>
@@ -152,10 +150,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="col-span-6 relative mt-[80px] max-sm:mt-[20px] max-lg:col-span-6 max-md:col-span-12">
-              {/* <p className="uppercase text-base font-medium text-[#3d3c40] mb-3">
-                What we do
-              </p> */}
+            <div className="col-span-6 relative mt-[80px] max-sm:mt-[20px] max-lg:col-span-6 ">
               <div className="relative">
                 <h3 className="text-[#1d1c20] text-[42px] font-bold capitalize leading-[60px] relative border-b-2 border-[#f9f9f9] max-xl:text-[30px] max-xl:leading-[42px]">
                   Our Vision

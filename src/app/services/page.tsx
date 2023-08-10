@@ -37,22 +37,22 @@ export default function Services() {
 
       <section className="py-[100px] relative max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
-          <div className="grid grid-cols-12 gap-6 items-center max-lg:gap-4 max-sm:gap-3">
-            <div className="col-span-5 max-lg:col-span-6 max-sm:col-span-12">
+          <div className="grid grid-cols-12 gap-6 items-center max-lg:gap-4 max-sm:gap-3 max-md:flex max-md:flex-col-reverse">
+            <div className="col-span-5 max-lg:col-span-6 max-sm:col-span-12 w-full">
               <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
-              <Image
-                        src={mobileApp}
-                        alt="mobileApp"
-                        width={300}
-                        height={100}
-                        className="cursor-pointer mx-auto"
-                      />
+                <Image
+                  src={mobileApp}
+                  alt="mobileApp"
+                  width={300}
+                  height={100}
+                  className="cursor-pointer mx-auto"
+                />
               </div>
             </div>
             <div className="col-span-7 max-lg:col-span-6 max-sm:col-span-12">
               <div className="p-6 max-sm:p-0">
                 <h4 className="text-[30px] font-bold text-[#222] leading-[34px] uppercase max-lg:text-[24px] max-lg:text-leading-[30px] max-sm:mt-[20px]">
-                Mobile App Development
+                  Mobile App Development 
                 </h4>
                 <p className="text-base text-[#666] leading-[22px] font-normal mt-[30px] max-lg:mt-[20px]">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -61,24 +61,25 @@ export default function Services() {
                   printing and typesetting industry Lorem Ipsum has been the
                   industry standard dummy
                 </p>
-                
+
                 <Link href="#" className="bg-[#10e981] uppercase text-sm flex items-center w-fit font-medium text-[#212527] py-2 px-4 mt-8">
-                      Read More
-                      <Image
-                        src={upArrow}
-                        alt="menu-icon"
-                        width={16}
-                        height={16}
-                        className="cursor-pointer rotate-45 ml-1"
-                      />
-                    </Link>
+                  Read More
+                  <Image
+                    src={upArrow}
+                    alt="menu-icon"
+                    width={16}
+                    height={16}
+                    className="cursor-pointer rotate-45 ml-1"
+                  />
+                </Link>
               </div>
             </div>
-
-            <div className="col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12">
+          </div>
+          <div className="grid grid-cols-12 gap-6 items-center max-lg:gap-4 max-sm:gap-3 ">
+            <div className="col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
               <div className="p-6 max-sm:py-2 max-sm:px-0">
                 <h4 className="text-[30px] font-bold text-[#222] leading-[34px] uppercase max-lg:text-[24px] max-lg:text-leading-[30px]">
-                    Business Analysis
+                  Business Analysis
                 </h4>
                 <p className="text-base text-[#666] leading-[22px] font-normal mt-[30px] max-lg:mt-[20px]">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -87,45 +88,47 @@ export default function Services() {
                   printing and typesetting industry Lorem Ipsum has been the
                   industry standard dummy
                 </p>
-                
+
                 <Link href="#" className="bg-[#10e981] uppercase text-sm flex items-center w-fit font-medium text-[#212527] py-2 px-4 mt-8">
-                      Read More
-                      <Image
-                        src={upArrow}
-                        alt="menu-icon"
-                        width={16}
-                        height={16}
-                        className="cursor-pointer rotate-45 ml-1"
-                      />
-                    </Link>
-              </div>
-            </div>    
-            <div className="col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12">
-              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
-              <Image
-                        src={mobileApp}
-                        alt="mobileApp"
-                        width={300}
-                        height={100}
-                        className="cursor-pointer mx-auto"
-                      />
+                  Read More
+                  <Image
+                    src={upArrow}
+                    alt="menu-icon"
+                    width={16}
+                    height={16}
+                    className="cursor-pointer rotate-45 ml-1"
+                  />
+                </Link>
               </div>
             </div>
-            <div className="col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12">
+            <div className=" col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
               <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
-              <Image
-                        src={mobileApp}
-                        alt="mobileApp"
-                        width={300}
-                        height={100}
-                        className="cursor-pointer mx-auto"
-                      />
+                <Image
+                  src={mobileApp}
+                  alt="mobileApp"
+                  width={300}
+                  height={100}
+                  className="cursor-pointer mx-auto"
+                />
               </div>
-            </div>    
-            <div className="col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12">
+            </div>
+          </div>
+          <div className="grid grid-cols-12 gap-6 items-center max-lg:gap-4 max-sm:gap-3 max-md:flex max-md:flex-col-reverse">
+            <div className=" col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12 w-full">
+              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
+                <Image
+                  src={mobileApp}
+                  alt="mobileApp"
+                  width={300}
+                  height={100}
+                  className="cursor-pointer mx-auto"
+                />
+              </div>
+            </div>
+            <div className=" col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12">
               <div className="p-6 max-sm:p-0">
                 <h4 className="text-[30px] font-bold text-[#222] leading-[34px] uppercase max-lg:text-[24px] max-lg:text-leading-[30px]">
-                    Design Consultancy
+                  Design Consultancy 
                 </h4>
                 <p className="text-base text-[#666] leading-[22px] font-normal mt-[30px] max-lg:mt-[20px] max-sm:mt-[20px]">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -134,25 +137,25 @@ export default function Services() {
                   printing and typesetting industry Lorem Ipsum has been the
                   industry standard dummy
                 </p>
-                
+
                 <Link href="#" className="bg-[#10e981] uppercase text-sm flex items-center w-fit font-medium text-[#212527] py-2 px-4 mt-8">
-                      Read More
-                      <Image
-                        src={upArrow}
-                        alt="menu-icon"
-                        width={16}
-                        height={16}
-                        className="cursor-pointer rotate-45 ml-1"
-                      />
-                    </Link>
+                  Read More
+                  <Image
+                    src={upArrow}
+                    alt="menu-icon"
+                    width={16}
+                    height={16}
+                    className="cursor-pointer rotate-45 ml-1"
+                  />
+                </Link>
               </div>
             </div>
-
-
-            <div className="col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12">
+          </div>
+          <div className="grid grid-cols-12 gap-6 items-center max-lg:gap-4 max-sm:gap-3">
+            <div className="col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
               <div className="p-6 max-sm:p-0">
                 <h4 className="text-[30px] font-bold text-[#222] leading-[34px] uppercase max-lg:text-[24px] max-lg:text-leading-[30px]">
-                    wordpress development
+                  wordpress development 
                 </h4>
                 <p className="text-base text-[#666] leading-[22px] font-normal mt-[30px] max-lg:mt-[20px] max-sm:mt-[20px]">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -161,35 +164,33 @@ export default function Services() {
                   printing and typesetting industry Lorem Ipsum has been the
                   industry standard dummy
                 </p>
-                
+
                 <Link href="#" className="bg-[#10e981] uppercase text-sm flex items-center w-fit font-medium text-[#212527] py-2 px-4 mt-8">
-                      Read More
-                      <Image
-                        src={upArrow}
-                        alt="menu-icon"
-                        width={16}
-                        height={16}
-                        className="cursor-pointer rotate-45 ml-1"
-                      />
-                    </Link>
+                  Read More
+                  <Image
+                    src={upArrow}
+                    alt="menu-icon"
+                    width={16}
+                    height={16}
+                    className="cursor-pointer rotate-45 ml-1"
+                  />
+                </Link>
               </div>
             </div>
-            <div className="col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12">
+            <div className="col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
               <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
-              <Image
-                        src={mobileApp}
-                        alt="mobileApp"
-                        width={300}
-                        height={100}
-                        className="cursor-pointer mx-auto"
-                      />
+                <Image
+                  src={mobileApp}
+                  alt="mobileApp"
+                  width={300}
+                  height={100}
+                  className="cursor-pointer mx-auto"
+                />
               </div>
-            </div> 
-            
+            </div>
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
