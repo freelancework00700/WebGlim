@@ -81,7 +81,7 @@
 
 .project-bg {
   background-image: url(../../public/images/innerBG.png);
-  height: 350px;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,7 +107,7 @@
 }
 
 .service-slider {
-  box-shadow: rgba(0, 0, 0, .80) 0px -170px 40px -40px inset;
+  box-shadow: rgba(0, 0, 0, .85) 0px -170px 40px -40px inset;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -239,6 +239,12 @@
   .trending-slider .slick-dots {
     bottom: 0px;
     right: 0;
+  }
+  .testimonial-slider .slick-prev {
+    top: 50%;
+  }
+  .testimonial-slider .slick-next {
+    top: 50%;
   }
 }
 

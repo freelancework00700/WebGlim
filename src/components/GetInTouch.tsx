@@ -23,10 +23,10 @@ const GetInTouch = () => {
             <DialogContent>
                 <DialogDescription>
                     <div className='grid grid-cols-12 border-t border-t-4 border-[#10e981]'>
-                        <div className='col-span-6'>
+                        <div className='col-span-6 max-md:hidden'>
                             <Image src={getInTouch} alt="getInTouch" className='h-full w-full object-cover object-center'></Image>
                         </div>
-                        <div className='col-span-6'>
+                        <div className='col-span-6 max-md:col-span-12'>
                             <div className='p-6 py-10 text-center'>
                                 <DialogTitle className='text-3xl text-[#102d5e] mb-4'>Get A Quote</DialogTitle>
                                 <DialogDescription className='text-[18px] mb-7 leading-6'>
