@@ -2,6 +2,7 @@
 const nextConfig = {
     output: "export",
     distDir: "build",
+    trailingSlash:true,
     images: {
         unoptimized: true,
         // domains: "http://103.232.124.169:20019",

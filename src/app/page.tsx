@@ -28,8 +28,7 @@ import user from "../../public/images/user.png";
 import menu from "../../public/images/menu.png";
 import upArrow from "../../public/images/up-arrow.png";
 import { initGA, logPageView } from '../../utils/analytics';
-
-
+import GetInTouch from "@/components/GetInTouch";
 
 export default function Home() {
   const [menuShowResponsive, setMenuShowResponsive] = useState(false)
@@ -148,10 +147,9 @@ export default function Home() {
                 </div>
               </div>
             }
-
           </div>
           <div className="grid grid-cols-12 gap-4 pt-[50px] pb-[100px] max-lg:pb-[70px]">
-            <div className="col-span-8 max-xl:col-span-7 max-lg:col-span-12">
+            <div className="col-span-6 max-xl:col-span-6 max-lg:col-span-12">
               <div className="relative">
                 <p className="text-[#858886] text-lg font-normal uppercase mt-4">
                   we are creative
@@ -159,7 +157,7 @@ export default function Home() {
                 <h1 className="text-[#fdfdfd] text-[48px] font-bold max-xl:text-[36px] max-[640px]:text-[32px]">
                   IT Solution Company
                 </h1>
-                <div className="absolute right-[20%] top-[100px]">
+                <div className="absolute right-[10%] top-[100px]">
                   <Image
                     src={highlight}
                     alt="menu-icon"
@@ -175,37 +173,33 @@ export default function Home() {
                   typesetting industry. Lorem Ipsum has been the industry&apos;s
                   standard dummy text ever since the 1500s.
                 </p>
-                <div className="flex gap-3">
-                  <Link href="#">
-                    <button className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
-                      Get Started
-                      <Image
-                        src={upArrow}
-                        alt="menu-icon"
-                        width={16}
-                        height={16}
-                        className="cursor-pointer rotate-45 ml-1"
-                      />
-                    </button>
+                <div className="flex gap-3">                  
+                  <Link href="#" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
+                    Get Started
+                    <Image
+                      src={upArrow}
+                      alt="menu-icon"
+                      width={16}
+                      height={16}
+                      className="cursor-pointer rotate-45 ml-1"
+                    />
                   </Link>
-
                   <Link href="#" className=" rounded-full uppercase text-sm font-medium text-[#a1a5a1] py-2 px-4 border-[#a1a5a1] border">
                     More Details +
                   </Link>
-
                 </div>
               </div>
               <div className="mt-[7rem] grid grid-cols-12 gap-3 max-lg:mt-[4rem]">
-                <div className="border border-[#464646] rounded-xl p-3 col-span-2 max-xl:col-span-4 max-[640px]:col-span-12 md:text-start text-center">
-                  <h5 className="text-[22px] text-[#fbfbfb] font-semibold leading-[24px] mb-3">
+                <div className="border border-[#464646] rounded-xl p-3 col-span-4 max-xl:col-span-4 max-[640px]:col-span-4">
+                  <h5 className="text-[22px] text-[#fbfbfb] font-semibold leading-[24px] mb-3 max-[640px]:mb-2">
                     +129K
                   </h5>
-                  <p className="text-sm capitalize font-medium text-[#767877] leading-[14px]">
+                  <p className="text-sm capitalize font-medium text-[#767877] leading-[14px] max-[640px]:leading-4">
                     Successful Projects
                   </p>
                 </div>
-                <div className="border border-[#464646] rounded-xl p-2 flex items-center justify-between col-span-4 max-xl:col-span-6 max-[640px]:col-span-12">
-                  <p className="text-sm capitalize font-medium text-[#767877] me-4">
+                <div className="border border-[#464646] rounded-xl p-2 flex items-center justify-between col-span-6 max-xl:col-span-6 max-[640px]:col-span-8">
+                  <p className="text-sm capitalize font-medium text-[#767877] me-4 max-[525px]:me-2">
                     Cutting -edge technologies and extensive expertise
                   </p>
                   <Image
@@ -218,7 +212,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-4 max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
+            <div className="col-span-1"></div>
+            <div className="col-span-5 max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
               <ResponsiveCarousal arrow={true} dots={false} slidetoshow={1}>
                 <div>
                   <Image
@@ -289,13 +284,13 @@ export default function Home() {
                   typesetting industry. Lorem Ipsum has been the industry&apos;s
                   standard dummy text ever since the 1500s.
                 </p>
-                {/* <div className="flex gap-3">
+                <div className="flex gap-3">
 
                   <Link href="#" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                     View More +
                   </Link>
 
-                </div> */}
+                </div>
               </div>
             </div>
 
@@ -458,39 +453,41 @@ export default function Home() {
       <section className="py-[100px] bg-[#212025] overflow-hidden max-lg:py-[70px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-8 max-xl:col-span-7 max-lg:col-span-12">
+            <div className="col-span-7 max-xl:col-span-7 max-lg:col-span-12">
               <div>
                 <p className="uppercase text-base font-normal text-[#858585]">
                   What we do
                 </p>
-                <h3 className="text-[42px] text-[#fcfcfc] font-bold leading-[60px] relative xl:w-1/2 max-xl:pr-[30px] max-xl:text-[30px] max-xl:leading-[42px]">
+                <h3 className="text-[42px] text-[#fcfcfc] font-bold leading-[60px] relative xl:w-3/5 max-xl:pr-[30px] max-xl:text-[30px] max-xl:leading-[42px]">
                   We Run all kinds of Services that your Success
                 </h3>
               </div>
               <div className="pl-[10%] pt-[30px]">
                 <div
-                  className="text-xl font-semibold capitalize text-[#a9afa9] border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
+                  className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981]"
                 >
-                  backup & recovery
+                  <p className="w-fit border-b border-transparent"> backup & recovery </p>
                 </div>
                 <div
-                  className="text-xl font-semibold capitalize text-[#a9afa9] border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
+                  className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981]"
                 >
-                  VoIP Solutions
+                  <p className="w-fit border-b border-transparent"> VoIP Solutions</p>
                 </div>
                 <div
-                  className="text-xl font-semibold capitalize text-[#a9afa9] border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
+                  className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981]"
                 >
-                  Consulting Planning
+                  <p className="w-fit border-b border-transparent">
+                  Consulting Planning</p>
                 </div>
                 <div
-                  className="text-xl font-semibold capitalize text-[#a9afa9] border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
+                  className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981]"
                 >
-                  IT Consulting
+                  <p className="w-fit border-b border-transparent">
+                  IT Consulting</p>
                 </div>
 
                 <Link href="/services" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 w-fit">
@@ -499,7 +496,8 @@ export default function Home() {
 
               </div>
             </div>
-            <div className="col-span-4 success-slider max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
+           
+            <div className="col-span-5 success-slider max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
               <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1}>
                 <div className="relative ">
                   <Image
@@ -647,7 +645,7 @@ export default function Home() {
               <div className="lg:pb-0 pb-5">
                 <div className="grid grid-cols-12 gap-5 pt-10">
                   <div className="col-span-5 max-lg:col-span-12">
-                    <div className="xl:px-16 max-xl:px-5">
+                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative">
                       <Image
                         src={image3}
                         alt="menu-icon"
@@ -665,9 +663,9 @@ export default function Home() {
                             <Image
                               src={user}
                               alt="user image"
-                              width={40}
-                              height={40}
-                              className="object-cover h-full w-full rounded-full"
+                              width={50}
+                              height={50}
+                              className="object-cover rounded-full"
                             />
                           </div>
                           <div className="pl-4">
@@ -733,7 +731,7 @@ export default function Home() {
               <div>
                 <div className="grid grid-cols-12 gap-5 pt-10">
                   <div className="col-span-5 max-lg:col-span-12">
-                    <div className="px-12">
+                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative">
                       <Image
                         src={image3}
                         alt="menu-icon"
@@ -751,9 +749,9 @@ export default function Home() {
                             <Image
                               src={user}
                               alt="user image"
-                              width={40}
-                              height={40}
-                              className="object-cover h-full w-full rounded-full"
+                              width={50}
+                              height={50}
+                              className="object-cover rounded-full"
                             />
                           </div>
                           <div className="pl-4">
@@ -819,7 +817,7 @@ export default function Home() {
               <div>
                 <div className="grid grid-cols-12 gap-5 pt-10">
                   <div className="col-span-5 max-lg:col-span-12">
-                    <div className="px-12">
+                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative">
                       <Image
                         src={image3}
                         alt="menu-icon"
@@ -837,9 +835,9 @@ export default function Home() {
                             <Image
                               src={user}
                               alt="user image"
-                              width={40}
-                              height={40}
-                              className="object-cover h-full w-full rounded-full"
+                              width={50}
+                              height={50}
+                              className="object-cover rounded-full"
                             />
                           </div>
                           <div className="pl-4">
@@ -968,7 +966,55 @@ export default function Home() {
               <div className="relative">
                 <div className="grid grid-cols-12 pt-10">
                   <div className="col-span-6 max-[640px]:col-span-12">
-                    <div className="">
+                    <div className="relative blog-shadow">
+                      <Image
+                        src={image3}
+                        alt="menu-icon"
+                        width={400}
+                        height={100}
+                        className="object-cover w-full h-[538px] object-center max-sm:h-[400px]"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-span-6 bg-[#212025] max-[640px]:col-span-12">
+                    <div className="px-10">
+                      <div className="py-[3rem] max-sm:py-[2rem]">
+                        <Image
+                          src={quote}
+                          alt="user image"
+                          width={50}
+                          height={50}
+                          className="object-cover !m-0"
+                        />
+                      </div>
+                      <p className="text-base leading-[26px] text-[#a9afa9] font-normal mb-4 testimonial-content">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industrys
+                        standard dummy text ever since the 1500s Lorem Ipsum is
+                        simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industrys standard
+                        dummy text ever since the 1500s. Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industrys standard dummy text
+                        ever since the 1500s Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry. 
+                      </p>
+                      <div className="pl-8 py-[2rem]">
+                        <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
+                          Arlene McCoy
+                        </h5>
+                        <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
+                          Desgination
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="grid grid-cols-12 pt-10">
+                  <div className="col-span-6 max-[640px]:col-span-12">
+                    <div className="relative blog-shadow">
                       <Image
                         src={image3}
                         alt="menu-icon"
@@ -999,10 +1045,7 @@ export default function Home() {
                         dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industrys standard dummy text
                         ever since the 1500s Lorem Ipsum is simply dummy text of
-                        the printing and typesetting industry. Lorem Ipsum has
-                        been the industrys standard dummy text ever since the
-                        1500s. dummy text of the printing and typesetting
-                        industry.
+                        the printing and typesetting industry. 
                       </p>
                       <div className="pl-8 py-[3rem]">
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
@@ -1019,7 +1062,7 @@ export default function Home() {
               <div>
                 <div className="grid grid-cols-12 pt-10">
                   <div className="col-span-6 max-[640px]:col-span-12">
-                    <div className="">
+                    <div className="relative blog-shadow">
                       <Image
                         src={image3}
                         alt="menu-icon"
@@ -1050,61 +1093,7 @@ export default function Home() {
                         dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industrys standard dummy text
                         ever since the 1500s Lorem Ipsum is simply dummy text of
-                        the printing and typesetting industry. Lorem Ipsum has
-                        been the industrys standard dummy text ever since the
-                        1500s. dummy text of the printing and typesetting
-                        industry.
-                      </p>
-                      <div className="pl-8 py-[3rem]">
-                        <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
-                          Arlene McCoy
-                        </h5>
-                        <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
-                          Desgination
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="grid grid-cols-12 pt-10">
-                  <div className="col-span-6 max-[640px]:col-span-12">
-                    <div className="">
-                      <Image
-                        src={image3}
-                        alt="menu-icon"
-                        width={400}
-                        height={100}
-                        className="object-cover w-full h-[538px] object-center max-sm:h-[400px]"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-span-6 bg-[#212025] max-[640px]:col-span-12">
-                    <div className="px-10">
-                      <div className="py-[4rem] max-sm:py-[2rem]">
-                        <Image
-                          src={quote}
-                          alt="user image"
-                          width={50}
-                          height={50}
-                          className="object-cover !m-0"
-                        />
-                      </div>
-                      <p className="text-base leading-[26px] text-[#a9afa9] font-normal mb-4 testimonial-content">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industrys
-                        standard dummy text ever since the 1500s Lorem Ipsum is
-                        simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industrys standard
-                        dummy text ever since the 1500s. Lorem Ipsum is simply
-                        dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industrys standard dummy text
-                        ever since the 1500s Lorem Ipsum is simply dummy text of
-                        the printing and typesetting industry. Lorem Ipsum has
-                        been the industrys standard dummy text ever since the
-                        1500s. dummy text of the printing and typesetting
-                        industry.
+                        the printing and typesetting industry. 
                       </p>
                       <div className="pl-8 py-[3rem]">
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
@@ -1120,7 +1109,7 @@ export default function Home() {
               </div>
             </ResponsiveCarousal>
           </div>
-          <div className="absolute right-0 bottom-[6px] z-[-1] before:bg-[#000]  before:h-full before:w-full before:top-0 before:right-0 before:absolute before:opacity-80 max-lg:hidden">
+          <div className="absolute right-0 bottom-[32px] z-[-1] before:bg-[#000]  before:h-full before:w-full before:top-0 before:right-0 before:absolute before:opacity-80 max-lg:hidden">
             <Image
               src={image3}
               alt="menu-icon"
@@ -1272,9 +1261,9 @@ export default function Home() {
               Small or big, we have got you covered!
             </p>
 
-            <Link href="#" className="bg-[#fff] uppercase text-sm flex mx-auto rounded-full items-center  font-medium text-[#1d1c20] py-2 px-4 w-fit">
-              Get in touch +
-            </Link>
+            <div className="bg-[#fff] uppercase text-sm flex mx-auto rounded-full items-center  font-medium text-[#1d1c20] py-2 px-4 w-fit">
+              <GetInTouch />
+            </div>
 
           </div>
         </div>
