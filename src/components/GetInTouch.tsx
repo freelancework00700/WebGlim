@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     Dialog,
     DialogContent,
@@ -13,13 +13,34 @@ import { Textarea } from "@/components/ui/textarea"
 import Image from "next/image";
 import getInTouch from '../../public/images/getInTouch.jpg'
 import Link from 'next/link'
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 const GetInTouch = () => {
+
+    useEffect(() => {
+        postMessage();
+    }, [])
+
+    async function postMessage() {
+
+        await fetch("/api/sendmail", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({
+                name: "Urvashi",
+                email: "urvashi.disolutions@gmail.com",
+                business_type: "manager",
+                message: "Succes"
+            })
+        })
+    }
+
     return (
         <Dialog>
             <DialogTrigger>
                 Get in touch +
-                </DialogTrigger>
+            </DialogTrigger>
             <DialogContent>
                 <DialogDescription>
                     <div className='grid grid-cols-12 border-t border-t-4 border-[#10e981]'>
@@ -52,6 +73,7 @@ const GetInTouch = () => {
                             </div>
                         </div>
                     </div>
+
                 </DialogDescription>
             </DialogContent>
         </Dialog>
