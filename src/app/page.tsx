@@ -36,8 +36,8 @@ export default function Home() {
   }, []);
   return (
     <main>
-      <div className="bg-[#212025] hero-slider overflow-hidden relative">
         <Header />
+      <div className="bg-[#212025] hero-slider overflow-hidden relative">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-4 pt-[50px] pb-[100px] max-lg:pb-[70px]">
             <div className="col-span-6 max-xl:col-span-6 max-lg:col-span-12">
