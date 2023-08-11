@@ -1,17 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import search from "../../../public/images/search.png";
-import close from "../../../public/images/close.png";
-import menu from "../../../public/images/menu.png";
-import upArrow from "../../../public/images/up-arrow.png";
+import { useState } from "react";
 import highlight from "../../../public/images/highlight.png";
 import image1 from "../../../public/images/image1.jpg";
 import image2 from "../../../public/images/image2.png";
 import image3 from "../../../public/images/image3.png";
-import ResponsiveCarousal from "../../components/carousal";
 import man from "../../../public/images/man.png";
 import man1 from "../../../public/images/man1.png";
 import Header from "@/components/Header";
@@ -20,7 +14,6 @@ import Footer from "@/components/Footer";
 
 
 export default function About() {
-  const [menuShowResponsive, setMenuShowResponsive] = useState(false);
   return (
     <div>
       <Header />
@@ -38,7 +31,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       <section className="py-[100px] relative max-lg:py-[70px] max-sm:py-[50px] overflow-hidden">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8 items-center max-lg:gap-4 max-lg:gap-3">
@@ -110,8 +102,8 @@ export default function About() {
                 </div>
               </div>
             </div>
-            </div>
-            <div className="grid grid-cols-12 gap-8 items-center max-lg:gap-4 max-lg:gap-3 max-md:flex max-md:flex-col-reverse max-sm:mt-4">
+          </div>
+          <div className="grid grid-cols-12 gap-8 items-center max-lg:gap-4 max-lg:gap-3 max-md:flex max-md:flex-col-reverse max-sm:mt-4">
             <div className="col-span-6 mt-[80px] max-sm:mt-[40px]">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-6">
@@ -183,7 +175,6 @@ export default function About() {
           </div>
         </div>
       </section>
-      
       <section className="relative py-[100px] bg-[#ebfff5] max-lg:py-[70px] max-sm:py-[50px] overflow-hidden">
         <div className="container mx-auto">
           <div className="text-center">
@@ -331,22 +322,16 @@ export default function About() {
           </div>
         </div>
       </section>
-
       <section className="relative overflow-hidden py-[100px] max-lg:py-[70px] max-sm:py-[50px] overflow-hidden">
         <div className="container mx-auto">
           <div className="text-center mb-[40px] max-sm:mb-[20px]">
-            {/* <p className="uppercase text-base font-medium text-[#3d3c40] mb-3">
-              Some Reasons
-            </p> */}
             <h3 className="text-[#1d1c20] text-[42px] font-bold capitalize leading-[60px] relative  max-xl:text-[30px] max-xl:leading-[42px]">
               Meet With Expert Team
             </h3>
           </div>
-          <div>
-            <div className="grid grid-cols-12 gap-6">
-              <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-6 max-sm:col-span-12">
-              
-                <div className="bg-[#ebfff5] rounded-t-xl">
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-3">
+            <div >
+              <div className="bg-[#ebfff5] rounded-t-xl">
                 <Image
                   src={man}
                   alt="menu-icon"
@@ -354,18 +339,15 @@ export default function About() {
                   height={200}
                   className="object-cover h-[300px] max-lg:h-[250px] object-top mx-auto"
                 />
-                </div>
-                <div className="shadow-md p-6 text-center rounded-b-xl">
-                  <h5 className="text-[20px] text-[#222] capitalize leading-[24px] font-bold mb-2">
-                      Tim Kamerer 
-                  </h5>
-                  <p className="text-base text-[#666] leading-[20px] font-normal">Team Leader </p>
-                </div>
-              
               </div>
-
-              <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-6 max-sm:col-span-12">
-              
+              <div className="shadow-md py-6 text-center rounded-b-xl">
+                <h5 className="text-[20px] text-[#222] capitalize leading-[24px] font-bold mb-2">
+                  Tim Kamerer
+                </h5>
+                <p className="text-base text-[#666] leading-[20px] font-normal">Team Leader </p>
+              </div>
+            </div>
+            <div >
               <div className="bg-[#ebfff5] rounded-t-xl">
                 <Image
                   src={man1}
@@ -374,18 +356,15 @@ export default function About() {
                   height={200}
                   className="object-cover h-[300px] max-lg:h-[250px] object-top mx-auto"
                 />
-                </div>
-                <div className="shadow-md p-6 text-center rounded-b-xl">
-                  <h5 className="text-[20px] text-[#222] capitalize leading-[24px] font-bold mb-2">
-                      Lindsay Perlen
-                  </h5>
-                  <p className="text-base text-[#666] leading-[20px] font-normal">Project Manager </p>
-                </div>
-              
               </div>
-
-              <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-6 max-sm:col-span-12">
-             
+              <div className="shadow-md py-6 text-center rounded-b-xl">
+                <h5 className="text-[20px] text-[#222] capitalize leading-[24px] font-bold mb-2">
+                  Lindsay Perlen
+                </h5>
+                <p className="text-base text-[#666] leading-[20px] font-normal">Project Manager </p>
+              </div>
+            </div>
+            <div >
               <div className="bg-[#ebfff5] rounded-t-xl">
                 <Image
                   src={man}
@@ -394,42 +373,33 @@ export default function About() {
                   height={200}
                   className="object-cover h-[300px] max-lg:h-[250px] object-top mx-auto"
                 /></div>
-                <div className="shadow-md p-6 text-center rounded-b-xl">
-                  <h5 className="text-[20px] text-[#222] capitalize leading-[24px] font-bold mb-2">
-                    Jhon Brown
-                  </h5>
-                  <p className="text-base text-[#666] leading-[20px] font-normal">MD </p>
-                </div>
-              
+              <div className="shadow-md py-6 text-center rounded-b-xl">
+                <h5 className="text-[20px] text-[#222] capitalize leading-[24px] font-bold mb-2">
+                  Jhon Brown
+                </h5>
+                <p className="text-base text-[#666] leading-[20px] font-normal">MD </p>
               </div>
-
-              <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-6 max-sm:col-span-12">
-              
+            </div>
+            <div >
               <div className="bg-[#ebfff5] rounded-t-xl">
                 <Image
                   src={man1}
                   alt="menu-icon"
                   width={200}
                   height={200}
-                  className="object-cover h-[300px] max-lg:h-[250px] mx-auto"
+                  className="object-cover h-[300px] object-top max-lg:h-[250px] mx-auto"
                 />
-                </div>
-                <div className="shadow-md p-6 text-center rounded-b-xl">
-                  <h5 className="text-[20px] text-[#222] capitalize leading-[24px] font-bold mb-2">
-                      Tim Kamerer
-                  </h5>
-                  <p className="text-base text-[#666] leading-[20px] font-normal">Ceo </p>
-                </div>
-              
               </div>
-              
-             
-
-            </div>{" "}
+              <div className="shadow-md py-6 text-center rounded-b-xl">
+                <h5 className="text-[20px] text-[#222] capitalize leading-[24px] font-bold mb-2">
+                  Tim Kamerer
+                </h5>
+                <p className="text-base text-[#666] leading-[20px] font-normal">Ceo </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );

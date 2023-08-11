@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import project from "../../../public/images/project.png";
 import project1 from "../../../public/images/project1.png";
 import project2 from "../../../public/images/project2.png";

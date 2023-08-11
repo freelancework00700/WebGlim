@@ -1,15 +1,57 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import Link from 'next/link'
 import upArrow from "../../public/images/up-arrow.png";
 import GetInTouch from './GetInTouch';
+import { useToast } from "@/components/ui/use-toast"
+import { ToastAction } from "@/components/ui/toast"
+import { useFormik } from "formik";
+import axios from "axios";
+import * as yup from "yup";
 
 const Footer = () => {
-    return (
-        <>
-        <section className="bg-[#10e981] py-[80px] max-lg:py-[70px] max-sm:py-[50px]">
+  const { toast } = useToast()
+  const [initialValues, setInitialValues] = useState({
+    name: "",
+    email: "",
+  });
+
+  const FormSchema = yup.object().shape({
+    name: yup.string().required("Name Should be Required"),
+    email: yup
+      .string()
+      .required("Email address Required")
+      .email("Valid email required"),
+  });
+
+  const formik = useFormik({
+    initialValues: initialValues,
+    validationSchema: FormSchema,
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        let response: any = await axios.post(
+          "/api/sendmail",
+          values
+        );
+        resetForm();
+        toast({
+          description: "Your Request has been sent.",
+        })
+      } catch (error: any) {
+        console.log("error:", error.response.data.message);
+        toast({
+          title: "Uh oh! Something went wrong.",
+          description: "There was a problem with your request.",
+          action: <ToastAction altText="Try again">Try again</ToastAction>,
+        })
+      }
+    },
+  });
+  return (
+    <>
+      <section className="bg-[#10e981] py-[80px] max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className="mx-auto text-center w-1/2 max-[640px]:w-full">
             <h3 className="text-[#1d1c20] text-[42px] font-bold capitalize leading-[50px] mb-[20px] relative max-xl:text-[30px] max-xl:leading-[42px]">
@@ -18,11 +60,9 @@ const Footer = () => {
             <p className="text-[#3d3c40] font-semibold leading-[26px] text-base mb-[30px]">
               Small or big, we have got you covered!
             </p>
-
             <div className="bg-[#fff] uppercase text-sm flex mx-auto rounded-full items-center  font-medium text-[#1d1c20] py-2 px-4 w-fit">
               <GetInTouch />
             </div>
-
           </div>
         </div>
       </section>
@@ -33,7 +73,7 @@ const Footer = () => {
               <div>
                 <div>
                   <Link href="#" className="cursor-pointer text-2xl text-[#fff] leading-[26px] font-semibold">
-                  Web<span className="text-[#10e981]">Glim</span>
+                    Web<span className="text-[#10e981]">Glim</span>
                   </Link>
                 </div>
                 <div className="pt-[3rem] max-sm:pt-2">
@@ -61,36 +101,54 @@ const Footer = () => {
                 <h5 className="text-xl text-[#fff] leading-[26px] font-semibold uppercase">
                   OUR newsletter
                 </h5>
-                <div className="mt-6">
-                  <label className="capitalize text-sm text-[#a9afa9] font-normal">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    className="border-[#3c3c3c] border-b-2 mt-3 bg-transparent w-full text-white max-sm:mt-1"
-                  />
-                </div>
-                <div className="mt-6">
-                  <label className="capitalize text-sm text-[#a9afa9] font-normal">
-                    Email
-                  </label>
-                  <input
-                    type="text"
-                    className="border-[#3c3c3c] border-b-2 mt-3 bg-transparent w-full text-white max-sm:mt-1"
-                  />
-                </div>
-
-                <Link href="#" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 mt-[3rem] px-4 rounded-full w-fit max-sm:mt-8">
-                  Subscribe
-                  <Image
-                    src={upArrow}
-                    alt="menu-icon"
-                    width={16}
-                    height={16}
-                    className="cursor-pointer rotate-45 ml-1"
-                  />
-                </Link>
-
+                <form onSubmit={formik.handleSubmit}>
+                  <div className="mt-6">
+                    <label className="capitalize text-sm text-[#a9afa9] font-normal">
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={formik.values.name}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      className="border-[#3c3c3c] border-b-2 mt-3 bg-transparent w-full text-white max-sm:mt-1"
+                    />
+                    {formik.errors.name && formik.touched.name && (
+                      <p className="alert-text">{formik.errors.name}</p>
+                    )}
+                  </div>
+                  <div className="mt-6">
+                    <label className="capitalize text-sm text-[#a9afa9] font-normal">
+                      Email
+                    </label>
+                    <input
+                      type="text"
+                      name="email"
+                      value={formik.values.email}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      className="border-[#3c3c3c] border-b-2 mt-3 bg-transparent w-full text-white max-sm:mt-1"
+                    />
+                    {formik.errors.email && formik.touched.email && (
+                      <p className="alert-text">{formik.errors.email}</p>
+                    )}
+                  </div>
+                  <div className='mb-3 pt-3'>
+                    <button
+                      type="submit"
+                      className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 mt-[3rem] px-4 rounded-full w-fit max-sm:mt-8">
+                      Subscribe
+                      <Image
+                        src={upArrow}
+                        alt="menu-icon"
+                        width={16}
+                        height={16}
+                        className="cursor-pointer rotate-45 ml-1"
+                      />
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
             <div className="col-span-1"></div>
@@ -119,13 +177,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="text-sm font-normal text-[#a9afa9] pb-[30px]">
+          <div className="text-sm font-normal text-[#a9afa9] pb-[30px] text-center">
             © 2023 . All Right Reserved
           </div>
         </div>
       </footer>
-        </>
-    )
+    </>
+  )
 }
 
 export default Footer

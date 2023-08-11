@@ -283,18 +283,18 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-12 gap-4 pt-[30px] items-center">
-            <div className="col-span-4 max-xl:col-span-5 max-lg:col-span-12">
+            <div className="col-span-4 max-xl:col-span-5 max-md:col-span-12">
               <div>
                 <Image
                   src={image2}
                   alt="about image"
                   width={400}
                   height={200}
-                  className="cursor-pointer rounded-t-lg"
+                  className="cursor-pointer rounded-t-lg max-md:w-full max-md:max-h-[330px] max-md:object-cover"
                 />
               </div>
             </div>
-            <div className="col-span-8 max-xl:col-span-7 max-lg:col-span-12 mt-10 max-sm:mt-6">
+            <div className="col-span-8 max-xl:col-span-7 max-md:col-span-12 mt-10 max-sm:mt-6">
               <div>
                 <div className="ps-4 border-s-2 border-[#10e981] mb-[40px] about-wrap max-sm:mb-[30px]">
                   <h4 className="text-xl capitalize text-[#141318] font-bold mb-4">
@@ -836,7 +836,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative testimonial-slider">
-          <div className="absolute left-0 top-[40px] before:bg-[#000] w-1/2  before:h-full before:w-full before:top-0 before:right-0 before:absolute before:opacity-80 max-lg:hidden">
+          <div className="absolute left-0 top-[40px] before:bg-[#000] w-1/2 before:h-full before:w-full before:top-0 before:right-0 before:absolute before:opacity-80 max-[1279px]:hidden">
             <Image
               src={image3}
               alt="menu-icon"
@@ -865,7 +865,7 @@ export default function Home() {
                         alt="menu-icon"
                         width={400}
                         height={100}
-                        className="object-cover w-full h-[600px] object-center max-sm:h-[400px]"
+                        className="object-cover w-full h-[618px] object-center max-sm:h-[400px]"
                       />
                     </div>
                   </div>
@@ -913,7 +913,7 @@ export default function Home() {
                         alt="menu-icon"
                         width={400}
                         height={100}
-                        className="object-cover w-full h-[600px] object-center max-sm:h-[400px]"
+                        className="object-cover w-full h-[618px] object-center max-sm:h-[400px]"
                       />
                     </div>
                   </div>
@@ -961,7 +961,7 @@ export default function Home() {
                         alt="menu-icon"
                         width={400}
                         height={100}
-                        className="object-cover w-full h-[600px] object-center max-sm:h-[400px]"
+                        className="object-cover w-full h-[618px] object-center max-sm:h-[400px]"
                       />
                     </div>
                   </div>
@@ -1002,7 +1002,7 @@ export default function Home() {
               </div>
             </ResponsiveCarousal>
           </div>
-          <div className="absolute right-0 bottom-[32px] z-[-1] w-1/2 before:bg-[#000]  before:h-full before:w-full before:top-0 before:right-0 before:absolute before:opacity-80 max-lg:hidden">
+          <div className="absolute right-0 bottom-[6px] z-[-1] w-1/2 before:bg-[#000] before:h-full before:w-full before:top-0 before:right-0 before:absolute before:opacity-80 max-[1279px]:hidden">
             <Image
               src={image3}
               alt="menu-icon"

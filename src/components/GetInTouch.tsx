@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import Image from "next/image";
 import getInTouch from '../../public/images/getInTouch.jpg'
-import Link from 'next/link'
+import { useToast } from "@/components/ui/use-toast"
 import { useFormik } from "formik";
 import axios from "axios";
 import * as yup from "yup";
@@ -28,7 +28,7 @@ const FormSchema = yup.object().shape({
 });
 
 const GetInTouch = () => {
-
+    const { toast } = useToast()
     const [initialValues, setInitialValues] = useState({
         name: "",
         email: "",
@@ -44,9 +44,12 @@ const GetInTouch = () => {
                 let response: any = await axios.post(
                     "/api/sendmail",
                     values
-                    );
-                    console.log('response:11111 ', response);
+                );
                 resetForm();
+                console.log('response:Hardik ', response);
+                toast({
+                    description: "Your Request has been sent.",
+                })
             } catch (error: any) {
                 console.log("error:", error.response.data.message);
             }
@@ -79,7 +82,11 @@ const GetInTouch = () => {
                                             value={formik.values.name}
                                             onChange={formik.handleChange}
                                             onBlur={formik.handleBlur}
+
                                         />
+                                        {formik.errors.name && formik.touched.name && (
+                                            <p className="alert-text">{formik.errors.name}</p>
+                                        )}
                                     </div>
                                     <div className='mb-3'>
                                         <Input
@@ -90,6 +97,9 @@ const GetInTouch = () => {
                                             onChange={formik.handleChange}
                                             onBlur={formik.handleBlur}
                                         />
+                                        {formik.errors.email && formik.touched.email && (
+                                            <p className="alert-text">{formik.errors.email}</p>
+                                        )}
                                     </div>
                                     <div className='mb-3'>
                                         <Input
@@ -100,6 +110,12 @@ const GetInTouch = () => {
                                             onChange={formik.handleChange}
                                             onBlur={formik.handleBlur}
                                         />
+                                        {formik.errors.business_type &&
+                                            formik.touched.business_type && (
+                                                <p className="alert-text">
+                                                    {formik.errors.business_type}
+                                                </p>
+                                            )}
                                     </div>
                                     <div className='mb-3'>
                                         <Textarea
@@ -109,6 +125,9 @@ const GetInTouch = () => {
                                             onChange={formik.handleChange}
                                             onBlur={formik.handleBlur}
                                         />
+                                        {formik.errors.message && formik.touched.message && (
+                                            <p className="alert-text">{formik.errors.message}</p>
+                                        )}
                                     </div>
                                     <div className='mb-3 pt-3'>
                                         <button
