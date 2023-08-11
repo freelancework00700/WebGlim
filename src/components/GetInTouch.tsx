@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
     Dialog,
     DialogContent,
@@ -13,28 +13,45 @@ import { Textarea } from "@/components/ui/textarea"
 import Image from "next/image";
 import getInTouch from '../../public/images/getInTouch.jpg'
 import Link from 'next/link'
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
+import { useFormik } from "formik";
+import axios from "axios";
+import * as yup from "yup";
+
+const FormSchema = yup.object().shape({
+    name: yup.string().required("Name Should be Required"),
+    email: yup
+        .string()
+        .required("Email address Required")
+        .email("Valid email required"),
+    business_type: yup.string().required("Business Type Should be Required"),
+    message: yup.string().required("Message Should be Required"),
+});
 
 const GetInTouch = () => {
 
-    useEffect(() => {
-        postMessage();
-    }, [])
+    const [initialValues, setInitialValues] = useState({
+        name: "",
+        email: "",
+        business_type: "",
+        message: "",
+    });
 
-    async function postMessage() {
-
-        await fetch("/api/sendmail", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify({
-                name: "Urvashi",
-                email: "urvashi.disolutions@gmail.com",
-                business_type: "manager",
-                message: "Succes"
-            })
-        })
-    }
+    const formik = useFormik({
+        initialValues: initialValues,
+        validationSchema: FormSchema,
+        onSubmit: async (values, { resetForm }) => {
+            try {
+                let response: any = await axios.post(
+                    "/api/sendmail",
+                    values
+                    );
+                    console.log('response:11111 ', response);
+                resetForm();
+            } catch (error: any) {
+                console.log("error:", error.response.data.message);
+            }
+        },
+    });
 
     return (
         <Dialog>
@@ -53,23 +70,54 @@ const GetInTouch = () => {
                                 <DialogDescription className='text-[18px] mb-7 leading-6'>
                                     Let us help you achieve your business goals
                                 </DialogDescription>
-                                <div className='mb-3'>
-                                    <Input type="text" placeholder="Name" />
-                                </div>
-                                <div className='mb-3'>
-                                    <Input type="email" placeholder="Email" />
-                                </div>
-                                <div className='mb-3'>
-                                    <Input type="text" placeholder="Business Type" />
-                                </div>
-                                <div className='mb-3'>
-                                    <Textarea placeholder="Message Here" />
-                                </div>
-                                <div className='mb-3 pt-3'>
-                                    <Link href="#" className="bg-[#10e981] rounded-md uppercase text-sm flex w-full justify-center items-center font-semibold text-[#1d1c20] py-3 px-4 w-fit">
-                                        Get A Quote
-                                    </Link>
-                                </div>
+                                <form onSubmit={formik.handleSubmit}>
+                                    <div className='mb-3'>
+                                        <Input
+                                            type="text"
+                                            placeholder="Name"
+                                            name="name"
+                                            value={formik.values.name}
+                                            onChange={formik.handleChange}
+                                            onBlur={formik.handleBlur}
+                                        />
+                                    </div>
+                                    <div className='mb-3'>
+                                        <Input
+                                            type="email"
+                                            placeholder="Email"
+                                            name="email"
+                                            value={formik.values.email}
+                                            onChange={formik.handleChange}
+                                            onBlur={formik.handleBlur}
+                                        />
+                                    </div>
+                                    <div className='mb-3'>
+                                        <Input
+                                            type="text"
+                                            placeholder="Business Type"
+                                            name="business_type"
+                                            value={formik.values.business_type}
+                                            onChange={formik.handleChange}
+                                            onBlur={formik.handleBlur}
+                                        />
+                                    </div>
+                                    <div className='mb-3'>
+                                        <Textarea
+                                            placeholder="Message Here"
+                                            name="message"
+                                            value={formik.values.message}
+                                            onChange={formik.handleChange}
+                                            onBlur={formik.handleBlur}
+                                        />
+                                    </div>
+                                    <div className='mb-3 pt-3'>
+                                        <button
+                                            type="submit"
+                                            className="bg-[#10e981] rounded-md uppercase text-sm flex w-full justify-center items-center font-semibold text-[#1d1c20] py-3 px-4 w-fit">
+                                            Get A Quote
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

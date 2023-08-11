@@ -48,7 +48,7 @@ export default function Home() {
                 <h1 className="text-[#fdfdfd] text-[48px] font-bold max-xl:text-[36px] max-[640px]:text-[32px]">
                   IT Solution Company
                 </h1>
-                <div className="absolute right-[10%] top-[100px]">
+                <div className="absolute right-[10%] top-[100px] max-sm:right-[5%]">
                   <Image
                     src={highlight}
                     alt="menu-icon"
@@ -58,7 +58,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="mt-[60px]">
+              <div className="mt-[60px] max-sm:mt-[30px]">
                 <p className="text-[#9ba09c] font-normal leading-[30px] text-base lg:w-1/2 mb-[30px] max-lg:pr-[2rem]">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry&apos;s
@@ -80,7 +80,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="mt-[7rem] grid grid-cols-12 gap-3 max-lg:mt-[4rem]">
+              <div className="mt-[7rem] grid grid-cols-12 gap-3 max-lg:mt-[4rem] max-sm:mt-[3rem]">
                 <div className="border border-[#464646] rounded-xl p-3 col-span-4 max-xl:col-span-4 max-[640px]:col-span-4">
                   <h5 className="text-[22px] text-[#fbfbfb] font-semibold leading-[24px] mb-3 max-[640px]:mb-2">
                     +129K
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-span-1"></div>
-            <div className="col-span-5 max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
+            <div className="col-span-5 max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10 max-sm:mt-5">
               <ResponsiveCarousal arrow={true} dots={false} slidetoshow={1}>
                 <div>
                   <Image
@@ -148,7 +148,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="py-[100px] relative overflow-hidden max-lg:py-[70px]">
+      <section className="py-[100px] relative overflow-hidden max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8 relative max-[640px]:gap-3">
             <div className="col-span-6 relative max-[640px]:col-span-12">
@@ -185,7 +185,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-span-6 max-[640px]:col-span-12">
+            <div className="col-span-6 max-[640px]:col-span-12 relative max-sm:pb-[30px]">
               <div className="grid grid-cols-3">
                 <div className="p-4 border-[#efefef] border-2 border-l-transparent border-b-transparent h-[125px] flex items-center">
                   <Image
@@ -243,7 +243,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="mt-[5rem]">
+              <div className=" absolute right-[30px] bottom-0 max-sm:bottom-[-50px] max-sm:right-0">
                 <Image
                   src={ArrowIllustration}
                   alt="all brand logo image"
@@ -255,7 +255,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-[20px] ">
+        <div className="absolute right-0 top-[20px] max-sm:top-0">
           <Image
             src={highlight2}
             alt="menu-icon"
@@ -266,7 +266,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pb-[100px] max-lg:pb-[70px]">
+      <section className="pb-[100px] max-lg:pb-[70px] max-sm:pb-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 gap-6 border-b-2 border-[#f9f9f9] pb-[30px] border-b-2 border-[#f9f9f9] items-center max-[640px]:grid-cols-1">
             <div>
@@ -294,9 +294,9 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="col-span-8 max-xl:col-span-7 max-lg:col-span-12 mt-10">
+            <div className="col-span-8 max-xl:col-span-7 max-lg:col-span-12 mt-10 max-sm:mt-6">
               <div>
-                <div className="ps-4 border-s-2 border-[#10e981] mb-[40px] about-wrap">
+                <div className="ps-4 border-s-2 border-[#10e981] mb-[40px] about-wrap max-sm:mb-[30px]">
                   <h4 className="text-xl capitalize text-[#141318] font-bold mb-4">
                     Why Choose Us?
                   </h4>
@@ -310,7 +310,7 @@ export default function Home() {
                     text.
                   </p>
                 </div>
-                <div className="ps-4 border-s-2 border-transparent mb-[40px] about-wrap">
+                <div className="ps-4 border-s-2 border-transparent mb-[40px] about-wrap max-sm:mb-[30px]">
                   <h4 className="text-xl capitalize text-[#898989] font-bold mb-4">
                     What to Expect?{" "}
                   </h4>
@@ -342,7 +342,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-[100px] bg-[#212025] overflow-hidden max-lg:py-[70px]">
+      <section className="py-[100px] bg-[#212025] overflow-hidden max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-7 max-xl:col-span-7 max-lg:col-span-12">
@@ -357,26 +357,26 @@ export default function Home() {
               <div className="pl-[10%] pt-[30px]">
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
-                                   hover:border-l hover:border-[#10e981]"
+                                   hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
                   <p className="w-fit border-b border-transparent"> backup & recovery </p>
                 </div>
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
-                                   hover:border-l hover:border-[#10e981]"
+                                   hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
                   <p className="w-fit border-b border-transparent"> VoIP Solutions</p>
                 </div>
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
-                                   hover:border-l hover:border-[#10e981]"
+                                   hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
                   <p className="w-fit border-b border-transparent">
                     Consulting Planning</p>
                 </div>
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
-                                   hover:border-l hover:border-[#10e981]"
+                                   hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
                   <p className="w-fit border-b border-transparent">
                     IT Consulting</p>
@@ -497,7 +497,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pt-[100px] pb-[30px] relative max-lg:pt-[70px]">
+      <section className="pt-[100px] pb-[30px] relative max-lg:pt-[70px] max-sm:pt-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5 items-center  border-b-2 border-[#f9f9f9] pb-3 relative">
             <div className="col-span-5 max-[640px]:col-span-12">
@@ -537,7 +537,7 @@ export default function Home() {
               <div className="lg:pb-0 pb-5">
                 <div className="grid grid-cols-12 gap-5 pt-10">
                   <div className="col-span-5 max-lg:col-span-12">
-                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative">
+                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
                       <Image
                         src={image3}
                         alt="menu-icon"
@@ -547,9 +547,9 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3]">
-                    <div className="pl-10 ">
-                      <div className="flex items-center justify-between py-[4rem] max-[640px]:py-[2rem]">
+                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
+                    <div className="pl-10 max-sm:pl-0 max-lg:pl-5">
+                      <div className="flex items-center justify-between py-[4rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
                         <div className="flex items-center justify-between">
                           <div>
                             <Image
@@ -623,7 +623,7 @@ export default function Home() {
               <div>
                 <div className="grid grid-cols-12 gap-5 pt-10">
                   <div className="col-span-5 max-lg:col-span-12">
-                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative">
+                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
                       <Image
                         src={image3}
                         alt="menu-icon"
@@ -633,9 +633,9 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3]">
-                    <div className="pl-10">
-                      <div className="flex items-center justify-between py-[4rem] max-[640px]:py-[2rem]">
+                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
+                    <div className="pl-10 max-lg:pl-5 max-sm:pl-0">
+                      <div className="flex items-center justify-between py-[4rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
                         <div className="flex items-center justify-between">
                           <div>
                             <Image
@@ -709,7 +709,7 @@ export default function Home() {
               <div>
                 <div className="grid grid-cols-12 gap-5 pt-10">
                   <div className="col-span-5 max-lg:col-span-12">
-                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative">
+                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
                       <Image
                         src={image3}
                         alt="menu-icon"
@@ -719,9 +719,9 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3]">
-                    <div className="pl-10">
-                      <div className="flex items-center justify-between py-[4rem] max-[640px]:py-[2rem]">
+                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
+                    <div className="pl-10 max-lg:pl-5 max-sm:pl-0">
+                      <div className="flex items-center justify-between py-[4rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
                         <div className="flex items-center justify-between">
                           <div>
                             <Image
@@ -892,7 +892,55 @@ export default function Home() {
                         ever since the 1500s Lorem Ipsum is simply dummy text of
                         the printing and typesetting industry.
                       </p>
-                      <div className="pl-8 py-[2rem]">
+                      <div className="pl-8 py-[3rem] max-lg:py-[1.5rem]">
+                        <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
+                          Arlene McCoy
+                        </h5>
+                        <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
+                          Desgination1
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="grid grid-cols-12 pt-10">
+                  <div className="col-span-6 max-[640px]:col-span-12">
+                    <div className="relative blog-shadow">
+                      <Image
+                        src={image3}
+                        alt="menu-icon"
+                        width={400}
+                        height={100}
+                        className="object-cover w-full h-[600px] object-center max-sm:h-[400px]"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-span-6 bg-[#212025] max-[640px]:col-span-12">
+                    <div className="px-10">
+                      <div className="py-[4rem] max-sm:py-[2rem]">
+                        <Image
+                          src={quote}
+                          alt="user image"
+                          width={50}
+                          height={50}
+                          className="object-cover !m-0"
+                        />
+                      </div>
+                      <p className="text-base leading-[26px] text-[#a9afa9] font-normal mb-4 testimonial-content">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industrys
+                        standard dummy text ever since the 1500s Lorem Ipsum is
+                        simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industrys standard
+                        dummy text ever since the 1500s. Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industrys standard dummy text
+                        ever since the 1500s Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.
+                      </p>
+                      <div className="pl-8 py-[3rem] max-lg:py-[1.5rem]">
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
                           Arlene McCoy
                         </h5>
@@ -940,55 +988,7 @@ export default function Home() {
                         ever since the 1500s Lorem Ipsum is simply dummy text of
                         the printing and typesetting industry.
                       </p>
-                      <div className="pl-8 py-[3rem]">
-                        <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
-                          Arlene McCoy
-                        </h5>
-                        <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
-                          Desgination
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="grid grid-cols-12 pt-10">
-                  <div className="col-span-6 max-[640px]:col-span-12">
-                    <div className="relative blog-shadow">
-                      <Image
-                        src={image3}
-                        alt="menu-icon"
-                        width={400}
-                        height={100}
-                        className="object-cover w-full h-[600px] object-center max-sm:h-[400px]"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-span-6 bg-[#212025] max-[640px]:col-span-12">
-                    <div className="px-10">
-                      <div className="py-[4rem] max-sm:py-[2rem]">
-                        <Image
-                          src={quote}
-                          alt="user image"
-                          width={50}
-                          height={50}
-                          className="object-cover !m-0"
-                        />
-                      </div>
-                      <p className="text-base leading-[26px] text-[#a9afa9] font-normal mb-4 testimonial-content">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industrys
-                        standard dummy text ever since the 1500s Lorem Ipsum is
-                        simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industrys standard
-                        dummy text ever since the 1500s. Lorem Ipsum is simply
-                        dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industrys standard dummy text
-                        ever since the 1500s Lorem Ipsum is simply dummy text of
-                        the printing and typesetting industry.
-                      </p>
-                      <div className="pl-8 py-[3rem]">
+                      <div className="pl-8 py-[3rem] max-lg:py-[1.5rem]">
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
                           Arlene McCoy
                         </h5>
@@ -1014,7 +1014,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-[100px] explore-slider overflow-hidden relative max-lg:py-[70px]">
+      <section className="py-[100px] explore-slider overflow-hidden relative max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className=" pb-[30px] text-center xl:w-1/2 mx-auto relative">
             <h3 className="text-[#1d1c20] text-[42px] font-bold capitalize leading-[50px] mb-[20px] relative max-xl:text-[30px] max-xl:leading-[42px]">
@@ -1064,7 +1064,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="col-span-6 relative max-[640px]:col-span-12">
-                      <div className="px-10 pt-[4rem] max-sm:pb-[5rem]">
+                      <div className="px-10 pt-[4rem] max-sm:pb-[5rem] max-sm:pt-[2rem] max-sm:px-4">
                         <h4 className="text-[32px] font-medium text-[#1d1c20] leading-[40px] max-xl:text-[26px] max-xl:leading-[36px]">
                           Beyond a coworking space with BizDev
                         </h4>
@@ -1108,7 +1108,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="col-span-6 relative max-[640px]:col-span-12">
-                      <div className="px-10 pt-[4rem] max-sm:pb-[5rem]">
+                      <div className="px-10 pt-[4rem] max-sm:pb-[5rem] max-sm:pt-[2rem] max-sm:px-4">
                         <h4 className="text-[32px] font-medium text-[#1d1c20] leading-[40px] max-xl:text-[26px] max-xl:leading-[36px]">
                           Beyond a coworking space with BizDev
                         </h4>

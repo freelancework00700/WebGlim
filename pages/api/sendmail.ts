@@ -48,7 +48,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         html,
       };
 
-      const data = await transporter.sendMail(mailOptions)
+      transporter.sendMail(mailOptions)
 
       res.status(200).json({ message: 'Email sent successfully!' });
     } catch (error) {
