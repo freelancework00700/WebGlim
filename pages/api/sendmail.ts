@@ -9,6 +9,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       const param = req.body;
       let url;
       let html;
+      let subject = '';
+
       if (param.business_type && param.message) {
         url = path.join(__dirname, '/../../../../pages/api/format.html')
         html = fs.readFileSync(url, 'utf8');
@@ -18,12 +20,16 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         html = html.replace(/{business_type}/g, param?.business_type);
         html = html.replace(/{message}/g, param.message);
 
+        subject = 'General Inquiry'
+
       }
       else {
         url = path.join(__dirname, '/../../../../pages/api/formatSubscriber.html')
         html = fs.readFileSync(url, 'utf8');
         html = html.replace(/{name}/g, param.name);
         html = html.replace(/{email}/g, param.email);
+
+        subject = 'A new subscription request'
 
       }
 
@@ -43,8 +49,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
       const mailOptions = {
         from: process.env.EMAIL_USERNAME,
-        to: 'urvashi.disolutions@gmail.com',
-        subject: "Send mail.!",
+        to: process.env.RECEIVER_EMAIL,
+        subject,
         html,
       };
 
