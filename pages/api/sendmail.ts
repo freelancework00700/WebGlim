@@ -37,7 +37,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         let userHtml = fs.readFileSync(userUrl, 'utf8');
         userHtml = userHtml.replace(/{name}/g, param.name);
         userHtml = userHtml.replace(/{email}/g, param.email);
-        userHtml = userHtml.replace(/{URL}/g, `http://192.168.1.145:3000/api/unsubscribe?name=${param.name}&email=${param.email}`)
+        userHtml = userHtml.replace(/{URL}/g, `${process.env.API_URL}api/unsubscribe?name=${param.name}&email=${param.email}`)
         let userTo = req.body.email
         let userSubject = 'Stay Connected with Webglim!'
 
