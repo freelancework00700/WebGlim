@@ -16,8 +16,8 @@ const Header = () => {
                 <div className="container mx-auto">
                     <div className="flex items-center justify-between py-4 border-b-2 border-[#2c2c2c]">
                         <div className="flex items-center">
-                            <div className="main-logo me-[5rem]">
-                                <Link href="#" className="text-[#e7e7e8] text-3xl font-semibold cursor-pointer">
+                            <div className="main-logo me-[2rem]">
+                                <Link href="/" className="text-[#e7e7e8] text-3xl font-semibold cursor-pointer">
                                     Web<span className="text-[#10e981]">Glim</span>
                                 </Link>
                             </div>
@@ -44,6 +44,16 @@ const Header = () => {
                                                 Projects
                                             </Link>
                                         </li>
+                                        <li className="px-4">
+                                            <Link href="/blogs" className="text-sm font-medium leading-[16px] text-[#afaeb0] hover:text-[#10e981] cursor-pointer">
+                                                Our Blogs
+                                            </Link>
+                                        </li>
+                                        {/* <li className="px-4">
+                                            <Link href="/contactUs" className="text-sm font-medium leading-[16px] text-[#afaeb0] hover:text-[#10e981] cursor-pointer">
+                                                Contact Us
+                                            </Link>
+                                        </li> */}
                                     </ul>
                                 </nav>
                             </div>
@@ -56,13 +66,16 @@ const Header = () => {
                                 </Link>
                             </div>
                             <div className="ps-4 pe-8 lg:pe-0">
-                                <Image
+                                {/* <Image
                                     src={search}
                                     alt="search image"
                                     width={16}
                                     height={16}
                                     className="cursor-pointer"
-                                />
+                                /> */}
+                                <Link href="/contactUs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 max-[1023px]:hidden">
+                                    Contact Us
+                                </Link>
                             </div>
                             <div className="bg-[#fefefe26] rounded-sm p-2 lg:hidden flex" onClick={() => setMenuShowResponsive(!menuShowResponsive)}>
                                 {!menuShowResponsive ? (<>
@@ -107,6 +120,16 @@ const Header = () => {
                                             <li className="py-2">
                                                 <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Projects
+                                                </Link>
+                                            </li>
+                                            <li className="py-2">
+                                                <Link href="/blogs" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                    Our Blogs
+                                                </Link>
+                                            </li>
+                                            <li className="py-2">
+                                                <Link href="/contactUs" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                    Contact Us
                                                 </Link>
                                             </li>
                                         </ul>

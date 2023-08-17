@@ -69,7 +69,7 @@ const GetInTouch = () => {
                         </div>
                         <div className='col-span-6 max-md:col-span-12'>
                             <div className='p-6 py-10 text-center'>
-                                <DialogTitle className='text-3xl text-[#102d5e] mb-4'>Get A Quote</DialogTitle>
+                                <DialogTitle className='text-3xl text-[#102d5e] mb-4'>Get In Touch</DialogTitle>
                                 <DialogDescription className='text-[18px] mb-7 leading-6'>
                                     Let us help you achieve your business goals
                                 </DialogDescription>
@@ -133,7 +133,7 @@ const GetInTouch = () => {
                                         <button
                                             type="submit"
                                             className="bg-[#10e981] rounded-md uppercase text-sm flex w-full justify-center items-center font-semibold text-[#1d1c20] py-3 px-4 w-fit">
-                                            Get A Quote
+                                            Submit
                                         </button>
                                     </div>
                                 </form>

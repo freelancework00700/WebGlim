@@ -5,18 +5,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ResponsiveCarousal = ({children,arrow,dots,slidetoshow}:any) => {
+const ResponsiveCarousal = ({children,arrow,dots,slidetoshow,autoplay}:any) => {
   const settings = {
     dots: dots,
     infinite: true,
     arrows: arrow,
     speed: 500,
-    autoplay: false,
+    autoplay: autoplay,
+    autoplaySpeed: 3000,
     slidesToShow: slidetoshow,
     slidesToScroll: 1,
     centerMode:false,
-    responsive: [
-      
+    responsive: [      
       {
         breakpoint: 767,
         settings: {

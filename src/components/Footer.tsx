@@ -86,10 +86,19 @@ const Footer = () => {
                 <div className="pt-[3rem] max-sm:pt-[1rem]">
                   <ul>
                     <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
-                      Terms of service
+                      <Link href="contactUs" className="cursor-pointer">
+                       Contact Us
+                      </Link>
+                    </li>
+                    <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
+                      <Link href="termsOfServices" className="cursor-pointer">
+                        Terms of service
+                      </Link>
                     </li>
                     <li className="uppercase text-sm text-[#a9afa9] font-normal">
-                      Privacy Policy
+                      <Link href="privacyPolicy" className="cursor-pointer">
+                        Privacy Policy
+                      </Link>
                     </li>
                   </ul>
                 </div>

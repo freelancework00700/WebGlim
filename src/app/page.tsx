@@ -29,7 +29,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const [menuShowResponsive, setMenuShowResponsive] = useState(false)
   useEffect(() => {
     initGA(); // Initialize Google Analytics
     logPageView(); // Log the initial pageview
@@ -65,7 +64,7 @@ export default function Home() {
                   standard dummy text ever since the 1500s.
                 </p>
                 <div className="flex gap-3">
-                  <Link href="#" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
+                  <Link href="contactUs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                     Get Started
                     <Image
                       src={upArrow}
@@ -105,7 +104,7 @@ export default function Home() {
             </div>
             <div className="col-span-1"></div>
             <div className="col-span-5 max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10 max-sm:mt-5">
-              <ResponsiveCarousal arrow={true} dots={false} slidetoshow={1}>
+              <ResponsiveCarousal arrow={true} dots={false} slidetoshow={1} autoplay={true}>
                 <div>
                   <Image
                     src={image3}
@@ -175,13 +174,13 @@ export default function Home() {
                   typesetting industry. Lorem Ipsum has been the industry&apos;s
                   standard dummy text ever since the 1500s.
                 </p>
-                <div className="flex gap-3">
+                {/* <div className="flex gap-3">
 
                   <Link href="#" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                     View More +
                   </Link>
 
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -390,7 +389,7 @@ export default function Home() {
             </div>
 
             <div className="col-span-5 success-slider max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
-              <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1}>
+              <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1} autoplay={true}>
                 <div className="relative ">
                   <Image
                     src={image3}
@@ -533,7 +532,7 @@ export default function Home() {
           </div>
 
           <div className="trending-slider overflow-hidden">
-            <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1}>
+            <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1} autoplay={false}>
               <div className="lg:pb-0 pb-5">
                 <div className="grid grid-cols-12 gap-5 pt-10">
                   <div className="col-span-5 max-lg:col-span-12">
@@ -600,7 +599,7 @@ export default function Home() {
                       <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
                         Organisational Teams are Just Like Families
                       </h4>
-                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content">
+                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industrys
                         standard dummy text ever since the 1500s Lorem Ipsum is
@@ -686,7 +685,7 @@ export default function Home() {
                       <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
                         Organisational Teams are Just Like Families
                       </h4>
-                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content">
+                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industrys
                         standard dummy text ever since the 1500s Lorem Ipsum is
@@ -772,7 +771,7 @@ export default function Home() {
                       <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
                         Organisational Teams are Just Like Families
                       </h4>
-                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content">
+                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industrys
                         standard dummy text ever since the 1500s Lorem Ipsum is
@@ -855,7 +854,7 @@ export default function Home() {
             />
           </div>
           <div className="container mx-auto">
-            <ResponsiveCarousal arrow={true} dots={false} slidetoshow={1}>
+            <ResponsiveCarousal arrow={true} dots={false} slidetoshow={1} autoplay={false}>
               <div className="relative">
                 <div className="grid grid-cols-12 pt-10">
                   <div className="col-span-6 max-[640px]:col-span-12">
