@@ -21,6 +21,7 @@ import next from "../../public/images/next.png";
 import quote from "../../public/images/quote.png";
 import user from "../../public/images/user.png";
 import upArrow from "../../public/images/up-arrow.png";
+import downArrow from "../../public/images/downArrow.png";
 import highlight from "../../public/images/highlight.png";
 import SliderImage1 from "../../public/images/image1.jpg";
 import ResponsiveCarousal from "../components/carousal";
@@ -79,7 +80,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="mt-[7rem] grid grid-cols-12 gap-3 max-lg:mt-[4rem] max-sm:mt-[3rem]">
+              <div className="mt-[7rem] grid grid-cols-12 relative gap-3 max-lg:mt-[4rem] max-sm:mt-[3rem]">
                 <div className="border border-[#464646] rounded-xl p-3 col-span-4 max-xl:col-span-4 max-[640px]:col-span-4">
                   <h5 className="text-[22px] text-[#fbfbfb] font-semibold leading-[24px] mb-3 max-[640px]:mb-2">
                     +129K
@@ -98,6 +99,16 @@ export default function Home() {
                     width={100}
                     height={30}
                     className="cursor-pointer rounded-2xl"
+                  />
+                </div>
+
+                <div className="absolute right-0 bottom-0">
+                <Image
+                    src={downArrow}
+                    alt="menu-icon"
+                    width={36}
+                    height={36}
+                    className="cursor-pointer"
                   />
                 </div>
               </div>
@@ -353,40 +364,43 @@ export default function Home() {
                   We Run all kinds of Services that your Success
                 </h3>
               </div>
-              <div className="pl-[10%] pt-[30px]">
+              <div className="pl-[30px] pt-[30px] max-w-max">
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
-                  <p className="w-fit border-b border-transparent"> backup & recovery </p>
+                  <p className="w-fit border-b border-transparent cursor-pointer"> MOBILE APP DEVELOPMENT </p>
                 </div>
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
-                  <p className="w-fit border-b border-transparent"> VoIP Solutions</p>
+                  <p className="w-fit border-b border-transparent cursor-pointer"> BUSINESS ANALYSIS</p>
                 </div>
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
-                  <p className="w-fit border-b border-transparent">
-                    Consulting Planning</p>
+                  <p className="w-fit border-b border-transparent cursor-pointer">
+                  DESIGN CONSULTANCY</p>
                 </div>
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
-                  <p className="w-fit border-b border-transparent">
-                    IT Consulting</p>
+                  <p className="w-fit border-b border-transparent cursor-pointer">
+                  WORDPRESS DEVELOPMENT</p>
                 </div>
 
-                <Link href="/services" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 w-fit">
+
+                <Link href="/services" className="ml-3 bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 w-fit">
                   More Service +
                 </Link>
 
+
               </div>
             </div>
+
 
             <div className="col-span-5 success-slider max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
               <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1} autoplay={true}>

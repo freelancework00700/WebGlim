@@ -1,10 +1,17 @@
 "use client";
 
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import { useState } from "react";
 import mobileApp from "../../../public/images/mobileApp.png";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import mail from "../../../public/images/mail2.png";
+import location from "../../../public/images/location2.png";
+import user from "../../../public/images/user1.png";
+import mailInput from "../../../public/images/mailInput.png";
+import business from "../../../public/images/business.png";
 
 export default function ContactUs() {
   const [menuShowResponsive, setMenuShowResponsive] = useState(false);
@@ -28,20 +35,129 @@ export default function ContactUs() {
 
       <section className="py-[100px] relative max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
-          <div className="grid grid-cols-12 gap-6 items-center max-lg:gap-4 max-sm:gap-3 max-md:flex max-md:flex-col-reverse max-md:mb-7">
-            <div className="col-span-6 max-lg:col-span-6 max-sm:col-span-12 w-full">
-            <h3 className="text-center text-[18px] font-bold text-[#222] leading-[50px] max-xl:text-[24px] max-xl:leading-[42px]">
-            Contact Information
-            </h3>
+          <div className="grid grid-cols-12 bg-[#212025] p-10 rounded-xl gap-6 items-center max-sm:p-6 max-lg:gap-4 max-sm:gap-3 max-md:mb-7">
+            <div className="col-span-5 max-lg:col-span-6 max-sm:col-span-12 w-full">
+              <h3 className="text-start text-[20px] font-bold text-white leading-[24px] max-xl:text-[24px]">
+                Contact Information
+              </h3>
+              <p className="text-base text-[#999] leading-[22px] font-normal mt-3">
+                Lorem Ipsum has been the when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div className="flex items-start border border-[#484848] rounded-lg p-5 max-sm:p-4 mt-[60px] max-sm:mt-[20px]">
+                <div className="pr-5">
+                  <Image
+                    src={mail}
+                    alt="menu-icon"
+                    width={40}
+                    height={40}
+                    className="cursor-pointer mt-[-2px] max-lg:w-[26px] max-lg:h-[26px]"
+                  />
+                </div>
+                <div>
+                  <h5 className="text-[18px] text-white font-semibold leading-[22px] capitalize">
+                    Email Us Now
+                  </h5>
+                  <p className="text-sm font-normal leading-[16px] text-[#999] mt-2">
+                    webglim@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start mt-[40px] border border-[#484848] rounded-lg p-5 max-sm:p-4 max-sm:mt-[20px]">
+                <div className="pr-5 block">
+                  <Image
+                    src={location}
+                    alt="menu-icon"
+                    width={60}
+                    height={60}
+                    className="cursor-pointer max-lg:w-[26px] max-lg:h-[26px] max-w-fit"
+                  />
+                </div>
+                <div>
+                  <h5 className="text-[18px] text-white font-semibold leading-[22px] capitalize">
+                    Our Location
+                  </h5>
+                  <p className="text-sm font-normal leading-[22px] text-[#999] mt-2">
+                    Lorem Ipsum has been the when an unknown printer took a
+                    galley of type and scrambled it to make
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="col-span-6 max-lg:col-span-6 max-sm:col-span-12">
-            <h3 className="text-center text-[18px] font-bold text-[#222] leading-[50px] max-xl:text-[24px] max-xl:leading-[42px]">
-            Connect With Us!
-            </h3>           
+            <div className="col-span-2 max-lg:hidden">
+
+            </div>
+            <div className="col-span-5 max-lg:col-span-6 max-sm:col-span-12">
+              <div className="shadow-md rounded-xl bg-[#f5fffa] p-6">
+                <h3 className="text-start text-[20px] font-bold mb-[20px] text-[#222] leading-[24px] max-xl:text-[24px]">
+                  Connect With Us!
+                </h3>
+                <div>
+                  <form>
+                    <div className="mb-3 relative">
+                    <Image
+                    src={user}
+                    alt="menu-icon"
+                    width={16}
+                    height={16}
+                    className="cursor-pointer absolute top-[13px] left-[10px]"
+                  />
+                      <Input type="text" placeholder="Name" name="name" className="pl-8"/>
+                    </div>
+                    <div className="mb-3 relative">
+                    <Image
+                    src={mailInput}
+                    alt="menu-icon"
+                    width={16}
+                    height={16}
+                    className="cursor-pointer absolute top-[13px] left-[10px]" />
+                      <Input type="email" placeholder="Email" name="email" className="pl-8"/>
+                    </div>
+
+                    <div className="mb-3 relative">
+                    <Image
+                    src={business}
+                    alt="menu-icon"
+                    width={16}
+                    height={16}
+                    className="cursor-pointer absolute top-[13px] left-[10px]"
+                  />
+                      <Input
+                        type="text"
+                        placeholder="Business Type"
+                        name="business_type"
+                        className="pl-8"
+                      />
+                    </div>
+                    <div className="mb-3 relative">
+                      <Textarea placeholder="Message Here" name="message" />
+                    </div>
+                    <div className="mb-3 pt-3">
+                      <button
+                        type="submit"
+                        className="bg-[#10e981] rounded-md text-end ml-auto uppercase text-sm flex justify-center items-center font-semibold text-[#1d1c20] py-3 px-6 w-fit"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="relative">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.52982230402!2d72.82229625000001!3d21.15920015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1692264196594!5m2!1sen!2sin"
+            width={600}
+            height={450}
+            className="w-full"
+            loading="lazy"
+          ></iframe>
+      </section>
+
       <Footer />
     </div>
   );
