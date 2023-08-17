@@ -75,7 +75,7 @@ export default function Home() {
                       className="cursor-pointer rotate-45 ml-1"
                     />
                   </Link>
-                  <Link href="#" className=" rounded-full uppercase text-sm font-medium text-[#a1a5a1] py-2 px-4 border-[#a1a5a1] border">
+                  <Link href="/about" className=" rounded-full uppercase text-sm font-medium text-[#a1a5a1] py-2 px-4 border-[#a1a5a1] border">
                     More Details +
                   </Link>
                 </div>
