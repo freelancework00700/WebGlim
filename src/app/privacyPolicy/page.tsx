@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
             </p>
           </div>
           <div className="mt-8 max-sm:mt-6">
-            <h4 className="text-[24px] font-bold text-black leading-[30px]">Children's Privacy:</h4>
+            <h4 className="text-[24px] font-bold text-black leading-[30px]">Childrens Privacy:</h4>
             <p className="text-sm text-[#000] leading-[22px] font-normal mt-3">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point

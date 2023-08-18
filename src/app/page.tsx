@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from 'next/link'
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BrandImage1 from "../../public/images/brandname.png";
 import BrandImage2 from "../../public/images/creative.png";
 import BrandImage3 from "../../public/images/creative1.png";
@@ -30,13 +30,20 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function Home() {
+  const brandSectionRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     initGA(); // Initialize Google Analytics
     logPageView(); // Log the initial pageview
   }, []);
+
+  function handleScrollToBrandSection() {
+    brandSectionRef.current?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <main>
-        <Header />
+      <Header />
       <div className="bg-[#212025] hero-slider overflow-hidden relative">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-4 pt-[50px] pb-[100px] max-lg:pb-[70px]">
@@ -101,16 +108,6 @@ export default function Home() {
                     className="cursor-pointer rounded-2xl"
                   />
                 </div>
-
-                <div className="absolute right-0 bottom-0">
-                <Image
-                    src={downArrow}
-                    alt="menu-icon"
-                    width={36}
-                    height={36}
-                    className="cursor-pointer"
-                  />
-                </div>
               </div>
             </div>
             <div className="col-span-1"></div>
@@ -154,11 +151,23 @@ export default function Home() {
                 </div>
               </ResponsiveCarousal>
             </div>
+            <div
+              className="downarrow-animation absolute left-[50%] bottom-[120px] max-lg:left-[40px] max-lg:bottom-[10px]  h-[76px] w-[36px]  border border-[#10e981] rounded-[60px] px-2 py-4 max-md:hidden"
+              onClick={() => handleScrollToBrandSection()}
+            >
+              <Image
+                src={downArrow}
+                alt="menu-icon"
+                width={60}
+                height={60}
+                className="cursor-pointer w-[20px] h-auto max-sm:h-auto max-sm:w-[18px]"
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <section className="py-[100px] relative overflow-hidden max-lg:py-[70px] max-sm:py-[50px]">
+      <section className="py-[100px] relative overflow-hidden max-lg:py-[70px] max-sm:py-[50px]" ref={brandSectionRef}>
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8 relative max-[640px]:gap-3">
             <div className="col-span-6 relative max-[640px]:col-span-12">
@@ -382,14 +391,14 @@ export default function Home() {
                                    hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
                   <p className="w-fit border-b border-transparent cursor-pointer">
-                  DESIGN CONSULTANCY</p>
+                    DESIGN CONSULTANCY</p>
                 </div>
                 <div
                   className="text-xl font-semibold capitalize text-[#a9afa9] success-text border-l border-transparent pl-4 mb-[40px] hover:text-[#10e981] 
                                    hover:border-l hover:border-[#10e981] max-sm:mb-[20px]"
                 >
                   <p className="w-fit border-b border-transparent cursor-pointer">
-                  WORDPRESS DEVELOPMENT</p>
+                    WORDPRESS DEVELOPMENT</p>
                 </div>
 
 

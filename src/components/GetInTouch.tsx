@@ -46,7 +46,6 @@ const GetInTouch = () => {
                     values
                 );
                 resetForm();
-                console.log('response:Hardik ', response);
                 toast({
                     description: "Your Request has been sent.",
                 })
