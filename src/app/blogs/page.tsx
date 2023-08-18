@@ -54,7 +54,7 @@ export default function Blogs() {
                   <div className="text-base text-[#a1a1a1] leading-[18px] font-normal">
                     26 July
                   </div>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <Image
                       src={like}
                       alt="all brand logo image"
@@ -76,7 +76,7 @@ export default function Blogs() {
                       height={16}
                       className="cursor-pointer object-cover"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function Blogs() {
                   <div className="text-base text-[#a1a1a1] leading-[18px] font-normal">
                     08 Augst
                   </div>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <Image
                       src={like}
                       alt="all brand logo image"
@@ -125,7 +125,7 @@ export default function Blogs() {
                       height={16}
                       className="cursor-pointer object-cover"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Blogs() {
                   <div className="text-base text-[#a1a1a1] leading-[18px] font-normal">
                     22 September
                   </div>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <Image
                       src={like}
                       alt="all brand logo image"
@@ -174,7 +174,7 @@ export default function Blogs() {
                       height={16}
                       className="cursor-pointer object-cover"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function Blogs() {
                   <div className="text-base text-[#a1a1a1] leading-[18px] font-normal">
                     15 June
                   </div>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <Image
                       src={like}
                       alt="all brand logo image"
@@ -223,7 +223,7 @@ export default function Blogs() {
                       height={16}
                       className="cursor-pointer object-cover"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -250,7 +250,7 @@ export default function Blogs() {
                   <div className="text-base text-[#a1a1a1] leading-[18px] font-normal">
                     22 September
                   </div>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <Image
                       src={like}
                       alt="all brand logo image"
@@ -272,7 +272,7 @@ export default function Blogs() {
                       height={16}
                       className="cursor-pointer object-cover"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -299,7 +299,7 @@ export default function Blogs() {
                   <div className="text-base text-[#a1a1a1] leading-[18px] font-normal">
                     15 June
                   </div>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <Image
                       src={like}
                       alt="all brand logo image"
@@ -321,7 +321,7 @@ export default function Blogs() {
                       height={16}
                       className="cursor-pointer object-cover"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

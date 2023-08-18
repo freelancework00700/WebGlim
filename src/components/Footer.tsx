@@ -4,6 +4,11 @@ import React, { useState } from 'react'
 import Image from "next/image";
 import Link from 'next/link'
 import upArrow from "../../public/images/up-arrow.png";
+import facebookIcon from "../../public/images/social_facebook.png";
+import InstagramIcon from "../../public/images/social_instagram.png";
+import LinkedInIcon from "../../public/images/social_linkedin.png";
+import youtubeIcon from "../../public/images/social_youtube.png";
+import tiktokIcon from "../../public/images/social_tiktok.png";
 import GetInTouch from './GetInTouch';
 import { useToast } from "@/components/ui/use-toast"
 import { ToastAction } from "@/components/ui/toast"
@@ -86,17 +91,17 @@ const Footer = () => {
                 <div className="pt-[3rem] max-sm:pt-[1rem]">
                   <ul>
                     <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
-                      <Link href="contactUs" className="cursor-pointer">
-                       Contact Us
+                      <Link href="contactUs" className="cursor-pointer hover:text-[#10e981]">
+                        Contact Us
                       </Link>
                     </li>
                     <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
-                      <Link href="termsOfServices" className="cursor-pointer">
+                      <Link href="termsOfServices" className="cursor-pointer hover:text-[#10e981]">
                         Terms of service
                       </Link>
                     </li>
                     <li className="uppercase text-sm text-[#a9afa9] font-normal">
-                      <Link href="privacyPolicy" className="cursor-pointer">
+                      <Link href="privacyPolicy" className="cursor-pointer hover:text-[#10e981]">
                         Privacy Policy
                       </Link>
                     </li>
@@ -183,6 +188,23 @@ const Footer = () => {
                     Make An Appointment
                   </li>
                 </ul>
+              </div> 
+              <div className='flex gap-2'>
+                <Link href='https://www.facebook.com/WebGlim' target='_blank' className='h-[30px] w-[30px] rounded-full bg-[#fff] flex justify-center items-center'>
+                  <Image src={facebookIcon} alt='facebook' className='h-[20px] w-[20px]'></Image>
+                </Link>
+                <Link href='https://www.instagram.com/WebGlim' target='_blank' className='h-[30px] w-[30px] rounded-full bg-[#fff] flex justify-center items-center'>
+                  <Image src={InstagramIcon} alt='instagram' className='h-[20px] w-[20px]'></Image>
+                </Link>
+                <Link href='https://www.linkedin.com/company/WebGlim' target='_blank' className='h-[30px] w-[30px] rounded-full bg-[#fff] flex justify-center items-center'>
+                  <Image src={LinkedInIcon} alt='LinkedInIcon' className='h-[20px] w-[20px]'></Image>
+                </Link>
+                <Link href='https://www.youtube.com/@WebGlim' target='_blank' className='h-[30px] w-[30px] rounded-full bg-[#fff] flex justify-center items-center'>
+                  <Image src={youtubeIcon} alt='youtubeIcon' className='h-[20px] w-[20px]'></Image>
+                </Link>
+                <Link href='https://www.tiktok.com/@WebGlim' target='_blank' className='h-[30px] w-[30px] rounded-full bg-[#fff] flex justify-center items-center'>
+                  <Image src={tiktokIcon} alt='tiktokIcon' className='h-[20px] w-[20px]'></Image>
+                </Link>
               </div>
             </div>
           </div>
