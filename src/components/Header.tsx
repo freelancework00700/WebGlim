@@ -90,20 +90,15 @@ const Header = () => {
                                                 Our Blogs
                                             </Link>
                                         </li>
-                                        {/* <li className="px-4">
-                                            <Link href="/contactUs" className="text-sm font-medium leading-[16px] text-[#afaeb0] hover:text-[#10e981] cursor-pointer">
-                                                Contact Us
-                                            </Link>
-                                        </li> */}
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div className="flex items-center">
                             <div className="hidden lg:flex">
-                                <Link href="#" className="text-sm text-[#fff] font-medium leading-[16px] pe-4 border-[#79787b] border-r-2 cursor-pointer">
+                                <Link href="tel:+612852667445" className="text-sm text-[#fff] font-medium leading-[16px] pe-4 border-[#79787b] border-r-2 cursor-pointer">
                                     <span className="text-[#10e981]">Call Us: </span>{" "}
-                                    (+080)1234567890
+                                    +61 2852667445
                                 </Link>
                             </div>
                             <div className="ps-4 pe-8 lg:pe-0">

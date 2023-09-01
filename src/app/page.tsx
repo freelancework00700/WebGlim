@@ -50,10 +50,10 @@ export default function Home() {
             <div className="col-span-6 max-xl:col-span-6 max-lg:col-span-12">
               <div className="relative">
                 <p className="text-[#858886] text-lg font-normal uppercase mt-4">
-                  we are creative
+                  We Deliver Expertise In
                 </p>
                 <h1 className="text-[#fdfdfd] text-[48px] font-bold max-xl:text-[36px] max-[640px]:text-[32px]">
-                  IT Solution Company
+                  IT Solutions and Development
                 </h1>
                 <div className="absolute right-[10%] top-[100px] max-sm:right-[5%]">
                   <Image
@@ -66,14 +66,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-[60px] max-sm:mt-[30px]">
-                <p className="text-[#9ba09c] font-normal leading-[30px] text-base lg:w-1/2 mb-[30px] max-lg:pr-[2rem]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&apos;s
-                  standard dummy text ever since the 1500s.
+                <p className="text-[#9ba09c] font-normal leading-[30px] text-base lg:w-9/12 mb-[30px] max-lg:pr-[2rem]">
+                IT Solutions and Development involves creating and implementing technology driven solutions to solve challenges, optimize processes, and enhance communication within organizations. 
+                It encompasses software development, customization, and integration to improve efficiency and achieve business objectives.
                 </p>
                 <div className="flex gap-3">
                   <Link href="contactUs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
-                    Get Started
+                    Book a Free Consultation
                     <Image
                       src={upArrow}
                       alt="menu-icon"
@@ -83,7 +82,7 @@ export default function Home() {
                     />
                   </Link>
                   <Link href="/about" className=" rounded-full uppercase text-sm font-medium text-[#a1a5a1] py-2 px-4 border-[#a1a5a1] border">
-                    More Details +
+                    Explore Our Services +
                   </Link>
                 </div>
               </div>
