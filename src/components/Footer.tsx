@@ -83,9 +83,9 @@ const Footer = () => {
                 </div>
                 <div className="pt-[3rem] max-sm:pt-2">
                   <p className="text-sm leading-[20px] text-[#a9afa9] font-normal pt-[20px]">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry Lorem Ipsum has been the industrys
-                    standard dummy text ever since the 1500s.
+                    Your Trusted Partner in It Excellence. 
+                    WebGlim delivers cutting-edge solutions in web development, mobile apps and 
+                    cloud services, driving digital transformation with innovation and expertise.
                   </p>
                 </div>
                 <div className="pt-[3rem] max-sm:pt-[1rem]">

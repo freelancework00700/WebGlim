@@ -64,9 +64,8 @@ export default function ContactUs() {
               Contact Us
             </h3>
             <p className="w-1/2 mx-auto text-base leading-[26px] text-[#666] text-center mt-4 max-lg:w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the industry standard dummy text
-              ever when an unknown printer took.
+              Connect with WebGlim to kickstart your IT Journey. Reach out for inquiries, support or collaboration. We&apos;re here to assist you, 
+              committed to transforming your digital aspirations into reality.
             </p>
           </div>
         </div>
@@ -79,8 +78,8 @@ export default function ContactUs() {
                 Contact Information
               </h3>
               <p className="text-base text-[#999] leading-[22px] font-normal mt-3">
-                Lorem Ipsum has been the when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+              Connect Seamlessly with WebGlim - Your Premier Gateway to Expert IT Solutions, Support and Innovation. 
+              Reach Out Today to Transform Your Digital Journey!
               </p>
               <div className="flex items-start border border-[#484848] rounded-lg p-5 max-sm:p-4 mt-[60px] max-lg:mt-[20px]">
                 <div className="pr-5">
@@ -97,7 +96,7 @@ export default function ContactUs() {
                     Email Us Now
                   </h5>
                   <p className="text-sm font-normal leading-[16px] text-[#999] mt-2">
-                    webglim@gmail.com
+                    info@webglim.com.au
                   </p>
                 </div>
               </div>
@@ -116,8 +115,7 @@ export default function ContactUs() {
                     Our Location
                   </h5>
                   <p className="text-sm font-normal leading-[22px] text-[#999] mt-2">
-                    Lorem Ipsum has been the when an unknown printer took a
-                    galley of type and scrambled it to make
+                    1-5 Mason St, North Parramatta NSW 2151
                   </p>
                 </div>
               </div>
@@ -217,7 +215,7 @@ export default function ContactUs() {
           </div>
         </div>
       </section>
-      <section className="relative pb-[100px]">
+      {/* <section className="relative pb-[100px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 rounded-2xl overflow-hidden">
             <iframe
@@ -228,7 +226,7 @@ export default function ContactUs() {
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </div>
   );

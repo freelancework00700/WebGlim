@@ -41,6 +41,10 @@ export default function Home() {
     brandSectionRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
+  const [showContent, setShowContent] = useState(false)
+  const [showContent1, setShowContent1] = useState(false)
+  const [showContent2, setShowContent2] = useState(false)
+
   return (
     <main>
       <Header />
@@ -67,8 +71,8 @@ export default function Home() {
               </div>
               <div className="mt-[60px] max-sm:mt-[30px]">
                 <p className="text-[#9ba09c] font-normal leading-[30px] text-base lg:w-9/12 mb-[30px] max-lg:pr-[2rem]">
-                IT Solutions and Development involves creating and implementing technology driven solutions to solve challenges, optimize processes, and enhance communication within organizations. 
-                It encompasses software development, customization, and integration to improve efficiency and achieve business objectives.
+                  IT Solutions and Development involves creating and implementing technology driven solutions to solve challenges, optimize processes, and enhance communication within organizations.
+                  It encompasses software development, customization, and integration to improve efficiency and achieve business objectives.
                 </p>
                 <div className="flex gap-3">
                   <Link href="contactUs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
@@ -189,17 +193,10 @@ export default function Home() {
               </div>
               <div className="mt-[30px]">
                 <p className="text-[#3d3c40] font-normal leading-[30px] text-base mb-[30px] pr-[30px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry&apos;s
-                  standard dummy text ever since the 1500s.
+                  At WebGlim, we foster enduring collaborations with our valued partners.
+                  Our commitment to excellence in web development, mobile app and cloud services
+                  ensures that every projects we undertake is a long-term success story.
                 </p>
-                {/* <div className="flex gap-3">
-
-                  <Link href="#" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
-                    View More +
-                  </Link>
-
-                </div> */}
               </div>
             </div>
 
@@ -294,8 +291,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-[#3d3c40] font-normal leading-[30px] text-base">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry.
+                Discover the driving force behind WebGlim, where our history, values and dedicated team create a foundation for exceptional IT solutions.
               </p>
             </div>
           </div>
@@ -318,40 +314,73 @@ export default function Home() {
                   <h4 className="text-xl capitalize text-[#141318] font-bold mb-4">
                     Why Choose Us?
                   </h4>
-                  <p className="text-[#696869] text-sm leading-[24px] font-normal">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which
-                    don&apos;t look even slightly believable. If you are going
-                    to use a passage of Lorem Ipsum, you need to be sure there
-                    isn&apos;t anything embarrassing hidden in the middle of
-                    text.
+                  <p className="text-[#333] text-sm leading-[24px] font-normal">
+                    <span>&quot;<b>Local Expertise, Global Excellence:</b> WebBlim combines local insights with world-class IT
+                      solutions, ensuring you receive personalized service and cutting-edge technoloy perfectly alligned with the Australian market&apos;s unique demands&quot;
+                    </span>
+                    {!showContent &&
+                      <span className="text-[#10e981] cursor-pointer"
+                        onClick={() => setShowContent(true)}> <b>More &#xbb;</b></span>
+                    }
+                    <br></br>
+                    {showContent &&
+                      <div>
+                        <span>&quot;<b>Proven Track Record:</b> With a history of successful projects in Australia, we&apos;ve earned trust
+                          by consistently delivering results. Count on WebGlim for rellability, security and innovation.&quot;
+                        </span><br></br>
+                        <span>&quot;<b>Customers-Centric Approach:</b> At WebGlim, we prioritize your success. Our client-focused ethos means your goals are our golas.
+                          Experiences unparalleled dedication and IT solutionbs that elevate your business in the Australian lanscape.&quot;
+                        </span>
+                        <span className="text-[#10e981] cursor-pointer" onClick={() => setShowContent(false)}> <b>Less &#xbb;</b></span>
+                      </div>
+                    }
                   </p>
                 </div>
                 <div className="ps-4 border-s-2 border-transparent mb-[40px] about-wrap max-sm:mb-[30px]">
                   <h4 className="text-xl capitalize text-[#898989] font-bold mb-4">
                     What to Expect?{" "}
                   </h4>
-                  <p className="text-[#b5b5b5] text-sm leading-[24px] font-normal">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which dont
-                    look even slightly believable. If you are going to use a
-                    passage of Lorem Ipsum, you need to be sure there isnt
-                    anything embarrassing hidden in the middle of text.
+                  <p className="text-[#333] text-sm leading-[24px] font-normal">
+                    <span>&quot;<b>Tailored Solutions:</b> Expect IT solutions Customized to your precise needs, finely-turned for
+                      your business goals&quot;
+                    </span>
+                    {!showContent1 &&
+                      <span className="text-[#10e981] cursor-pointer"
+                        onClick={() => setShowContent1(true)}> <b>More &#xbb;</b></span>
+                    }
+                    <br></br>
+                    {showContent1 &&
+                      <div>
+                        <span>&quot;<b>Timely Delivery:</b> We adhere to strict timelines, ensuring your projects are completed on schedule.&quot;
+                        </span><br></br>
+                        <span>&quot;<b>Exceptional Support:</b> Count on WebGlim&apos;s dedicated teams for continuous assistance and support, even beyond projects completion.&quot;
+                        </span>
+                        <span className="text-[#10e981] cursor-pointer" onClick={() => setShowContent1(false)}> <b>Less &#xbb;</b></span>
+                      </div>
+                    }
                   </p>
                 </div>
                 <div className="ps-4 border-s-2 border-transparent about-wrap">
                   <h4 className="text-xl capitalize text-[#898989] font-bold mb-4">
                     What We Deliver
                   </h4>
-                  <p className="text-[#b5b5b5] text-sm leading-[24px] font-normal">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which dont
-                    look even slightly believable. If you are going to use a
-                    passage of Lorem Ipsum, you need to be sure there isnt
-                    anything embarrassing hidden in the middle of text.
+                  <p className="text-[#333] text-sm leading-[24px] font-normal">
+                    <span>&quot;<b>Innovative Solutions:</b> We deliver cutting-edge IT solutions that drive innovation, helping you stay ahead in your industry.&quot;
+                    </span>
+                    {!showContent2 &&
+                      <span className="text-[#10e981] cursor-pointer"
+                        onClick={() => setShowContent2(true)}> <b>More &#xbb;</b></span>
+                    }
+                    <br></br>
+                    {showContent2 &&
+                      <div>
+                    <span>&quot;<b>Quality Assurance:</b> Expect top-notch quality in every projects we undertake, ensuring your digital success.&quot;
+                    </span><br></br>
+                    <span>&quot;<b>Business Growth:</b> Our solutions are designed to not only meet your current needs but also to pave the way for your future growth and scalability.&quot;
+                    </span>
+                    <span className="text-[#10e981] cursor-pointer" onClick={() => setShowContent2(false)}> <b>Less &#xbb;</b></span>
+                    </div>
+                    }
                   </p>
                 </div>
               </div>

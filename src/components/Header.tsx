@@ -96,9 +96,9 @@ const Header = () => {
                         </div>
                         <div className="flex items-center">
                             <div className="hidden lg:flex">
-                                <Link href="tel:+612852667445" className="text-sm text-[#fff] font-medium leading-[16px] pe-4 border-[#79787b] border-r-2 cursor-pointer">
+                                <Link href="tel:+61285263964" className="text-sm text-[#fff] font-medium leading-[16px] pe-4 border-[#79787b] border-r-2 cursor-pointer">
                                     <span className="text-[#10e981]">Call Us: </span>{" "}
-                                    +61 2852667445
+                                    +61 2 8526 3964
                                 </Link>
                             </div>
                             <div className="ps-4 pe-8 lg:pe-0">
@@ -137,7 +137,7 @@ const Header = () => {
                             <div className="absolute w-full left-0 top-[70px] z-10 lg:hidden">
                                 <div className="bg-[#fff] p-3 px-5">
                                     <nav>
-                                        <ul className="flex items-center flex-col">
+                                        <ul className="flex items-start flex-col">
                                             <li className="py-2">
                                                 <Link href="/" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Home
@@ -170,10 +170,10 @@ const Header = () => {
                                             </li>
                                         </ul>
                                     </nav>
-                                    <div className="text-center py-4">
-                                        <Link href="tel:(+080)12345678900" className="text-sm text-[#1d1c21] font-medium leading-[16px] cursor-pointer">
+                                    <div className="text-left py-2">
+                                        <Link href="tel:+61285263964" className="text-sm text-[#1d1c21] font-medium leading-[16px] cursor-pointer">
                                             <span className="text-[#10e981]">Call Us: </span>
-                                            (+080)1234567890
+                                            +61 2 8526 3964
                                         </Link>
                                     </div>
                                 </div>
