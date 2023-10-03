@@ -21,12 +21,10 @@ export default function About() {
         <div className="container mx-auto">
           <div>
             <h3 className="text-center text-[42px] font-bold text-[#222] leading-[50px] max-xl:text-[30px] max-xl:leading-[42px]">
-              About Us
+            About WebGlim
             </h3>
             <p className="w-1/2 mx-auto text-base leading-[26px] text-[#666] text-center mt-4 max-lg:w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the industry standard dummy text
-              ever when an unknown printer took.
+            At WebGlim, innovation and excellence are at the heart of everything we do. Led by our visionary CEO, Zahid Panhwar, we are on a mission to revolutionize the IT services management landscape.
             </p>
           </div>
         </div>
@@ -158,11 +156,7 @@ export default function About() {
                 </div>
               </div>
               <p className="text-base text-[#666] leading-[24px] font-normal mt-8">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using Content
-                here, content here, making it look like readable English.
+              Our vision is clear: to empower businesses with cutting-edge IT solutions that drive success. We believe that technology should be a catalyst for growth, and our team is dedicated to making that vision a reality
               </p>
               <p className="text-base text-[#666] leading-[24px] font-normal mt-8 max-sm:mt-4">
                 It is a long established fact that a reader will be distracted
@@ -322,7 +316,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden py-[100px] max-lg:py-[70px] max-sm:py-[50px] overflow-hidden">
+      {/* <section className="relative overflow-hidden py-[100px] max-lg:py-[70px] max-sm:py-[50px] overflow-hidden">
         <div className="container mx-auto">
           <div className="text-center mb-[40px] max-sm:mb-[20px]">
             <h3 className="text-[#1d1c20] text-[42px] font-bold capitalize leading-[60px] relative  max-xl:text-[30px] max-xl:leading-[42px]">
@@ -399,7 +393,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </div>
   );

@@ -145,7 +145,7 @@
 }
 
 .about-wrap:hover {
-  border-left: 2px solid #10e981;
+  /* border-left: 2px solid #10e981; */
 }
 
 .about-wrap:hover h4 {
@@ -157,8 +157,8 @@
 }
 
 .service-slider {
-  box-shadow: rgba(0, 0, 0, .85) 0px -170px 40px -40px inset;
-  height: 300px;
+  box-shadow: rgba(0, 0, 0, .85) 0px -230px 40px -40px inset;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -185,7 +185,9 @@
   bottom: 60px;
   right: -20%;
 }
-
+.carousel-inner-img{
+  margin: 0 !important;
+}
 .trending-slider .slick-dots li button:before {
   font-size: 12px;
 }

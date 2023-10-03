@@ -8,6 +8,7 @@ import close from "../../public/images/close.png";
 import search from "../../public/images/search.png";
 import menu from "../../public/images/menu.png";
 import expandArrow from "../../public/images/expandArrow.png";
+import mainLogo from "../../public/images/main-logo_horizontal.png";
 
 const Header = () => {
     const [menuShowResponsive, setMenuShowResponsive] = useState(false)
@@ -22,8 +23,13 @@ const Header = () => {
                     <div className="flex items-center justify-between  border-b-2 border-[#2c2c2c] max-lg:py-4">
                         <div className="flex items-center">
                             <div className="main-logo me-[2rem]">
-                                <Link href="/" className="text-[#e7e7e8] text-3xl font-semibold cursor-pointer">
-                                    Web<span className="text-[#10e981]">Glim</span>
+                                <Link href="/" className="cursor-pointer">
+                                <Image
+                                        src={mainLogo}
+                                        alt="menu-icon"
+                                        height={60}
+                                        className="cursor-pointer"
+                                    />
                                 </Link>
                             </div>
                             <div className="hidden lg:flex">
@@ -53,25 +59,25 @@ const Header = () => {
                                                 <div className="fixed top-[70px] z-10 max-lg:hidden">
                                                     <div className="bg-[#000] p-3 px-5">
                                                         <nav>
-                                                            <ul className="flex items-center flex-col">
+                                                            <ul className="flex items-center flex-col">                                                                
                                                                 <li className="py-2 w-full">
                                                                     <Link href="/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
-                                                                        MOBILE APP DEVELOPMENT
+                                                                    Web Development
                                                                     </Link>
                                                                 </li>
                                                                 <li className="py-2 w-full">
                                                                     <Link href="/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
-                                                                        BUSINESS ANALYSIS
+                                                                    Mobile App Development
                                                                     </Link>
                                                                 </li>
                                                                 <li className="py-2 w-full">
                                                                     <Link href="/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
-                                                                        DESIGN CONSULTANCY
+                                                                    Cloud Service
                                                                     </Link>
                                                                 </li>
                                                                 <li className="py-2 w-full">
                                                                     <Link href="/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
-                                                                        WORDPRESS DEVELOPMENT
+                                                                    IT Consulting
                                                                     </Link>
                                                                 </li>
                                                             </ul>
@@ -80,11 +86,11 @@ const Header = () => {
                                                 </div>
                                             }
                                         </li>
-                                        <li className="px-4 py-[23px] cursor-pointer">
+                                        {/* <li className="px-4 py-[23px] cursor-pointer">
                                             <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
                                                 Projects
                                             </Link>
-                                        </li>
+                                        </li> */}
                                         <li className="px-4 py-[23px] cursor-pointer">
                                             <Link href="/blogs" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
                                                 Our Blogs
@@ -96,9 +102,9 @@ const Header = () => {
                         </div>
                         <div className="flex items-center">
                             <div className="hidden lg:flex">
-                                <Link href="tel:+61285263964" className="text-sm text-[#fff] font-medium leading-[16px] pe-4 border-[#79787b] border-r-2 cursor-pointer">
+                                <Link href="tel:02 8526 6744" className="text-sm text-[#fff] font-medium leading-[16px] pe-4 border-[#79787b] border-r-2 cursor-pointer">
                                     <span className="text-[#10e981]">Call Us: </span>{" "}
-                                    +61 2 8526 3964
+                                    02 8526 6744 
                                 </Link>
                             </div>
                             <div className="ps-4 pe-8 lg:pe-0">
@@ -153,11 +159,11 @@ const Header = () => {
                                                     Services
                                                 </Link>
                                             </li>
-                                            <li className="py-2">
+                                            {/* <li className="py-2">
                                                 <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Projects
                                                 </Link>
-                                            </li>
+                                            </li> */}
                                             <li className="py-2">
                                                 <Link href="/blogs" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Our Blogs
@@ -171,9 +177,9 @@ const Header = () => {
                                         </ul>
                                     </nav>
                                     <div className="text-left py-2">
-                                        <Link href="tel:+61285263964" className="text-sm text-[#1d1c21] font-medium leading-[16px] cursor-pointer">
+                                        <Link href="tel:02 8526 6744" className="text-sm text-[#1d1c21] font-medium leading-[16px] cursor-pointer">
                                             <span className="text-[#10e981]">Call Us: </span>
-                                            +61 2 8526 3964
+                                            02 8526 6744
                                         </Link>
                                     </div>
                                 </div>

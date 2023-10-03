@@ -18,9 +18,9 @@ export default function PrivacyPolicy() {
               Privacy Policy
             </h3>
             <p className="w-1/2 mx-auto text-base leading-[26px] text-[#666] text-center mt-4 max-lg:w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the industry standard dummy text
-              ever when an unknown printer took.
+              At WebGlim, we are committed to protecting your privacy. This Privacy Policy outlines how we
+              collect, use, disclose, and safeguard your personal information when you use our website and
+              services. By accessing or using our website and services, you agree to the terms of this Privacy Policy.
             </p>
           </div>
         </div>
@@ -28,89 +28,93 @@ export default function PrivacyPolicy() {
 
       <section className="py-[100px] relative max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
-          <div className="text-sm text-[#000] leading-[22px] font-normal">
+          {/* <div className="text-sm text-[#000] leading-[22px] font-normal">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
             distribution of letters, as opposed to using it has a more-or-less
             normal distribution of letters, as opposed to using Content here,
             content here, making it look like readable English
-          </div>
-          <div className="mt-8 max-sm:mt-6">
-            <h4 className="text-[24px] font-bold text-black leading-[30px]">Information Security:</h4>
+          </div> */}
+          <div className="mb-8">
+            <h4 className="text-[24px] font-bold text-black leading-[30px]">Information We Collect</h4>
             <p className="text-sm text-[#000] leading-[22px] font-normal mt-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using it has a more-or-less
-            normal distribution of letters, as opposed to using Content here,
-            content here, making it look like readable English
+              We collect various types of information to provide you with our services effectively. The information
+              we may collect includes:
+              <ul style={{ listStyleType: 'decimal' }} className="pl-4 mt-3">
+                <li><b>Personal Information:</b> This may include your name, contact information (email address,
+                  phone number), and other details you provide when contacting us or using our services.</li>
+                <li><b>Usage Data:</b> We collect information about your interactions with our website, such as your IP
+                  address, browser type, pages visited, and referring pages.</li>
+                <li><b>Cookies and Similar Technologies:</b>  We may use cookies and similar technologies to enhance
+                  your browsing experience. You can control cookie settings through your browser preferences.</li>
+              </ul>
             </p>
           </div>
-          <div className="mt-8 max-sm:mt-6">
-            <h4 className="text-[24px] font-bold text-black leading-[30px]">Information Collection and Use:</h4>
+          <div className="mb-8">
+            <h4 className="text-[24px] font-bold text-black leading-[30px]">How We Use Your Information</h4>
             <p className="text-sm text-[#000] leading-[22px] font-normal mt-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using it has a more-or-less
-            normal distribution of letters, as opposed to using Content here,
-            content here, making it look like readable English
+              We use the information we collect for various purposes, including:
+              <ul style={{ listStyleType: 'decimal' }} className="pl-4 mt-3">
+                <li><b>Providing Services:</b> To deliver the services you request, such as web design and
+                  development, app development, cloud consultancy, and IT consultancy.</li>
+                <li><b>Communication:</b> To respond to your inquiries, provide support, and send important updates
+                  and information related to our services.</li>
+                <li><b>Improving Our Services:</b> To analyse usage patterns, diagnose technical issues, and enhance
+                  the functionality and performance of our website and services.</li>
+                <li><b>Legal Compliance:</b> To comply with legal obligations and regulatory requirements, including
+                  data retention laws.</li>
+              </ul>
             </p>
           </div>
-          <div className="mt-8 max-sm:mt-6">
-            <h4 className="text-[24px] font-bold text-black leading-[30px]">Information Sharing:</h4>
+          <div className="mb-8">
+            <h4 className="text-[24px] font-bold text-black leading-[30px]">Disclosure of Your Information</h4>
             <p className="text-sm text-[#000] leading-[22px] font-normal mt-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using it has a more-or-less
-            normal distribution of letters, as opposed to using Content here,
-            content here, making it look like readable English
+              We may share your information with third parties in the following circumstances:
+              <ul style={{ listStyleType: 'decimal' }} className="pl-4 mt-3">
+                <li><b>Service Providers:</b> We may engage third-party service providers to assist us in delivering our
+                  services, and we may share your information with them as necessary.</li>
+                <li><b>Legal Obligations:</b> We may disclose your information to comply with applicable laws,
+                  regulations, or legal processes.</li>
+              </ul>
             </p>
           </div>
-          <div className="mt-8 max-sm:mt-6">
-            <h4 className="text-[24px] font-bold text-black leading-[30px]">Cookies and Tracking Technologies:</h4>
+          <div className="mb-8">
+            <h4 className="text-[24px] font-bold text-black leading-[30px]">Your Choices</h4>
             <p className="text-sm text-[#000] leading-[22px] font-normal mt-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using it has a more-or-less
-            normal distribution of letters, as opposed to using Content here,
-            content here, making it look like readable English
+              You have certain rights concerning your personal information:
+              <ul style={{ listStyleType: 'decimal' }} className="pl-4 mt-3">
+                <li><b>Access and Correction:</b> You may request access to your personal information and correct
+                  inaccuracies.</li>
+                <li><b>Opt-Out:</b> You can opt out of receiving promotional communications from us by following the
+                  instructions in the communications or by contacting us.</li>
+              </ul>
             </p>
           </div>
-          <div className="mt-8 max-sm:mt-6">
-            <h4 className="text-[24px] font-bold text-black leading-[30px]">Third-Party Links:</h4>
+          <div className="mb-8">
+            <h4 className="text-[24px] font-bold text-black leading-[30px]">Security</h4>
             <p className="text-sm text-[#000] leading-[22px] font-normal mt-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using it has a more-or-less
-            normal distribution of letters, as opposed to using Content here,
-            content here, making it look like readable English
+              We take reasonable measures to protect your personal information from unauthorized access,
+              disclosure, alteration, or destruction. However, no data transmission or storage system can be
+              guaranteed to be 100% secure.
             </p>
           </div>
-          <div className="mt-8 max-sm:mt-6">
-            <h4 className="text-[24px] font-bold text-black leading-[30px]">Childrens Privacy:</h4>
+          <div className="mb-8">
+            <h4 className="text-[24px] font-bold text-black leading-[30px]">Contact Us</h4>
             <p className="text-sm text-[#000] leading-[22px] font-normal mt-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using it has a more-or-less
-            normal distribution of letters, as opposed to using Content here,
-            content here, making it look like readable English
+              If you have any questions or concerns about our Privacy Policy, your personal information, or our
+              data practices, please contact us at:
+              <ul style={{ listStyleType: 'disc' }} className="pl-4 mt-3">
+                <li><b>Email:</b> support@webglim.com.au</li>
+              </ul>
             </p>
           </div>
-          <div className="mt-8 max-sm:mt-6">
-            <h4 className="text-[24px] font-bold text-black leading-[30px]">Changes to the Privacy Policy:</h4>
+          <div>
+            <h4 className="text-[24px] font-bold text-black leading-[30px]">Changes to This Privacy Policy</h4>
             <p className="text-sm text-[#000] leading-[22px] font-normal mt-3">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using it has a more-or-less
-            normal distribution of letters, as opposed to using Content here,
-            content here, making it look like readable English
+              We may update this Privacy Policy periodically to reflect changes in our practices or for other
+              operational, legal, or regulatory reasons. The updated Privacy Policy will be posted on our website
+              with the &quot;Last Updated&quot; date.
             </p>
           </div>
         </div>

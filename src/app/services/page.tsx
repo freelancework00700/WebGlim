@@ -43,15 +43,22 @@ export default function Services() {
             <div className="col-span-7 max-lg:col-span-6 max-sm:col-span-12">
               <div className="p-6 max-sm:p-0">
                 <h4 className="text-[30px] font-bold text-[#222] leading-[34px] uppercase max-lg:text-[24px] max-lg:text-leading-[30px] max-sm:mt-[20px]">
-                  Mobile App Development 
+                Web Design and Development
                 </h4>
-                <p className="text-base text-[#666] leading-[22px] font-normal mt-[30px] max-lg:mt-[20px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry Lorem Ipsum has been the industry
-                  standard dummy Lorem Ipsum is simply dummy text of the
-                  printing and typesetting industry Lorem Ipsum has been the
-                  industry standard dummy
+                <h6 className="text-[16px] font-bold text-[#555] leading-[34px] max-lg:text-[16px] max-lg:text-leading-[20px] max-sm:mt-[20px]">
+                Unlock Your Digital Potential
+                </h6>
+                <p className="text-base text-[#999] leading-[22px] font-normal mt-[16px] max-lg:mt-[10px]">
+                At WebGlim, we transform your vision into an engaging and efficient website. Our expert team blends creativity and technical prowess to craft visually stunning websites that are user-friendly and mobile-responsive. Your online presence is the gateway to success in the digital era.
+                <br></br>
+                Enhance Your Website: Consider the type of website that best suits your needs:
                 </p>
+                <br></br>
+                <ul style={{listStyle: 'disc'}} className="pl-5">
+                  <li><b>E-commerce Sites: </b>Boost online sales with secure e-commerce websites.</li>
+                  <li><b>Business Portfolios: </b>Showcase your achievements and services effectively.</li>
+                  <li><b>Business Portfolios: </b>Consider custom web applications for unique functionalities.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -59,15 +66,21 @@ export default function Services() {
             <div className="col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
               <div className="p-6 max-sm:py-2 max-sm:px-0">
                 <h4 className="text-[30px] font-bold text-[#222] leading-[34px] uppercase max-lg:text-[24px] max-lg:text-leading-[30px]">
-                  Business Analysis
+                Apps Design and Development
                 </h4>
-                <p className="text-base text-[#666] leading-[22px] font-normal mt-[30px] max-lg:mt-[20px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry Lorem Ipsum has been the industry
-                  standard dummy Lorem Ipsum is simply dummy text of the
-                  printing and typesetting industry Lorem Ipsum has been the
-                  industry standard dummy
+                <h6 className="text-[16px] font-bold text-[#555] leading-[34px] max-lg:text-[16px] max-lg:text-leading-[20px] max-sm:mt-[20px]">
+                Turning Ideas into Apps
+                </h6>
+                <p className="text-base text-[#666] leading-[22px] font-normal mt-[16px] max-lg:mt-[10px]">
+                WebGlim turns your ideas into intuitive and visually appealing apps. Our agile development process ensures efficient and secure app creation for iOS, Android, or cross-platform. Strengthen customer engagement, streamline processes, and boost brand loyalty through tailored mobile solutions.
+                <br></br>
+                Optimize Your App Strategy:
                 </p>
+                <br></br>
+                <ul style={{listStyle: 'disc'}} className="pl-5">
+                  <li><b>Native vs. Cross-Platform: </b>Choose the right app platform for your audience.</li>
+                  <li><b>Regular Updates: </b>Keep apps secure and functional with regular maintenance.</li>
+                </ul>
               </div>
             </div>
             <div className=" col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
@@ -97,15 +110,21 @@ export default function Services() {
             <div className=" col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12">
               <div className="p-6 max-sm:p-0">
                 <h4 className="text-[30px] font-bold text-[#222] leading-[34px] uppercase max-lg:text-[24px] max-lg:text-leading-[30px]">
-                  Design Consultancy 
+                Cloud Consulting and Migration
                 </h4>
-                <p className="text-base text-[#666] leading-[22px] font-normal mt-[30px] max-lg:mt-[20px] max-sm:mt-[20px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry Lorem Ipsum has been the industry
-                  standard dummy Lorem Ipsum is simply dummy text of the
-                  printing and typesetting industry Lorem Ipsum has been the
-                  industry standard dummy
+                <h6 className="text-[16px] font-bold text-[#555] leading-[34px] max-lg:text-[16px] max-lg:text-leading-[20px] max-sm:mt-[20px]">
+                Unleash Cloud Power
+                </h6>
+                <p className="text-base text-[#666] leading-[22px] font-normal mt-[10px] max-lg:mt-[10px] max-sm:mt-[16px]">
+                Our cloud consulting and migration services optimize your operations. We assess your infrastructure, select the ideal cloud solution, and execute a seamless migration. Cloud computing offers unmatched scalability, flexibility, and cost-efficiency, ensuring your business stays agile and competitive.
+                <br></br>
+                Secure and Scale Your Business:
                 </p>
+                <br></br>
+                <ul style={{listStyle: 'disc'}} className="pl-5">
+                  <li><b>Data Security: </b>Implement robust data security measures.</li>
+                  <li><b>Scalability: </b>Adjust resources to match your business growth.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -113,15 +132,21 @@ export default function Services() {
             <div className="col-span-7 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
               <div className="p-6 max-sm:p-0">
                 <h4 className="text-[30px] font-bold text-[#222] leading-[34px] uppercase max-lg:text-[24px] max-lg:text-leading-[30px]">
-                  wordpress development 
+                IT Consulting and Business Optimization
                 </h4>
-                <p className="text-base text-[#666] leading-[22px] font-normal mt-[30px] max-lg:mt-[20px] max-sm:mt-[20px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry Lorem Ipsum has been the industry
-                  standard dummy Lorem Ipsum is simply dummy text of the
-                  printing and typesetting industry Lorem Ipsum has been the
-                  industry standard dummy
+                <h6 className="text-[16px] font-bold text-[#555] leading-[34px] max-lg:text-[16px] max-lg:text-leading-[20px] max-sm:mt-[20px]">
+                Strategize for Success
+                </h6>
+                <p className="text-base text-[#666] leading-[22px] font-normal mt-[16px] max-lg:mt-[10px] max-sm:mt-[10px]">
+                We optimize your IT strategy, streamline operations, and boost productivity. Through a thorough assessment and tailored solutions, we enhance your IT infrastructure. Efficient IT operations reduce costs, improve productivity, and provide a foundation for future growth.
+                <br></br>
+                Empower Your Business:
                 </p>
+                <br></br>
+                <ul style={{listStyle: 'disc'}} className="pl-5">
+                  <li><b>Cybersecurity: </b>Protect your data and systems with robust cybersecurity.</li>
+                  <li><b>IT Training: </b>Invest in staff IT training to maximize technology benefits.</li>
+                </ul>
               </div>
             </div>
             <div className="col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">

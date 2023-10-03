@@ -172,20 +172,25 @@ const Footer = () => {
                   help links
                 </h5>
                 <ul className="mt-6">
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    Customers Service
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                    <Link href="/contactUs" >
+                    Customers Service</Link>
                   </li>
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    IT Department
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                    <Link href="/services" >
+                    IT Department</Link>
                   </li>
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    About Our Campain
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                    <Link href="/about" >
+                    About Our Campain</Link>
                   </li>
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    Business Growth
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                    <Link href="/services" >
+                    Business Growth</Link>
                   </li>
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    Make An Appointment
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                    <Link href="https://calendly.com/webglim" target='_blank' >
+                    Make An Appointment</Link>
                   </li>
                 </ul>
               </div> 
