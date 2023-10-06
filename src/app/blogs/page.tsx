@@ -9,8 +9,12 @@ import image4 from "../../../public/images/image4.jpg";
 import like from "../../../public/images/like.png";
 import share from "../../../public/images/share.png";
 import chat from "../../../public/images/chat.png";
+import { useRouter } from "next/navigation";
 
 export default function Blogs() {
+
+  const router = useRouter();
+
   return (
     <div>
       <Header />
@@ -31,8 +35,8 @@ export default function Blogs() {
       <section className="relative py-[100px] max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-6 max-lg:gap-4">
-            <div className="shadow-md rounded-lg">
-              <div>
+            <div className="shadow-md rounded-lg" onClick={()=>router.push('/blogs/blogcontent')}>
+              <div >
                 <Image
                   src={image3}
                   alt="all brand logo image"
@@ -42,13 +46,11 @@ export default function Blogs() {
                 />
               </div>
               <div className="p-5 bg-[#ebfff5]">
-                <h5 className="text-[20px] font-bold text-[#222] leading-[22px]">
-                  Lorem Ipsum is simply
+                <h5 className="text-[20px] font-bold text-[#222] leading-[22px] line-clamp-1">
+                Understanding MERN Stack Development
                 </h5>
-                <p className="text-base text-[#b1b1b1] font-normal blog-text leading-[24px] mt-4">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the suffered alteration in dont look even
-                  slightly believable.
+                <p className="text-base text-[#b1b1b1] font-normal blog-text leading-[24px] mt-4 line-clamp-3">
+                MERN stands for MongoDB, Express.js, React, and Node.js. These four technologies, when combined, form a comprehensive and highly efficient web development stack. Each component plays a crucial role in the development process, making MERN stack an ideal choice for businesses aiming to build robust web applications.
                 </p>
                 <div className="flex items-center justify-between mt-4">
                   <div className="text-base text-[#a1a1a1] leading-[18px] font-normal">

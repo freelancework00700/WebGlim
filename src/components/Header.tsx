@@ -56,7 +56,7 @@ const Header = () => {
                                                 <Image src={expandArrow} alt='expandArrow' className='ml-1 mt-1 invert h-[10px] w-[10px]'></Image>
                                             </Link>
                                             {isHovering &&
-                                                <div className="fixed top-[70px] z-10 max-lg:hidden">
+                                                <div className="absolute top-[70px] z-10 max-lg:hidden z-50">
                                                     <div className="bg-[#000] p-3 px-5">
                                                         <nav>
                                                             <ul className="flex items-center flex-col">                                                                

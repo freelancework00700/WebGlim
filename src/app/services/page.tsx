@@ -2,12 +2,14 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import mobileApp from "../../../public/images/mobileApp.png";
+import webDevelopmentImage from "../../../public/images/Web_Development_2.jpg";
+import appDevelopmentImage from "../../../public/images/App_Development.jpg";
+import cloudServiceImage from "../../../public/images/Cloud_Consulting.jpg";
+import itConsultingImage from "../../../public/images/IT_Consulting_2.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function Services() {
-  const [menuShowResponsive, setMenuShowResponsive] = useState(false);
   return (
     <div>
       <Header />
@@ -30,13 +32,11 @@ export default function Services() {
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-6 items-center max-lg:gap-4 max-sm:gap-3 max-md:flex max-md:flex-col-reverse max-md:mb-7">
             <div className="col-span-5 max-lg:col-span-6 max-sm:col-span-12 w-full">
-              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
+              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
                 <Image
-                  src={mobileApp}
+                  src={webDevelopmentImage}
                   alt="mobileApp"
-                  width={300}
-                  height={100}
-                  className="cursor-pointer mx-auto"
+                  className="cursor-pointer mx-auto  mx-auto w-full h-full rounded-bl-[80px] rounded-tr-[80px] max-h-[330px]"
                 />
               </div>
             </div>
@@ -84,26 +84,22 @@ export default function Services() {
               </div>
             </div>
             <div className=" col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
-              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
+              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
                 <Image
-                  src={mobileApp}
+                  src={appDevelopmentImage}
                   alt="mobileApp"
-                  width={300}
-                  height={100}
-                  className="cursor-pointer mx-auto"
+                  className="cursor-pointer mx-auto w-full h-full rounded-bl-[80px] rounded-tr-[80px] max-h-[330px]"
                 />
               </div>
             </div>
           </div>
           <div className="grid grid-cols-12 gap-6 items-center max-lg:gap-4 max-sm:gap-3 max-md:flex max-md:flex-col-reverse max-md:mb-7">
             <div className=" col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-sm:col-span-12 w-full">
-              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
+              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
                 <Image
-                  src={mobileApp}
+                  src={cloudServiceImage}
                   alt="mobileApp"
-                  width={300}
-                  height={100}
-                  className="cursor-pointer mx-auto"
+                  className="cursor-pointer mx-auto  mx-auto w-full h-full rounded-bl-[80px] rounded-tr-[80px] max-h-[330px]"
                 />
               </div>
             </div>
@@ -150,13 +146,11 @@ export default function Services() {
               </div>
             </div>
             <div className="col-span-5 mt-[80px] max-lg:mt-[70px] max-sm:mt-[30px] max-lg:col-span-6 max-md:col-span-12">
-              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5] p-4 shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
+              <div className="h-full w-full border-[#10e981] border-b-[6px] bg-[#ebfff5]  shadow-[0_8px_18px_1px_rgba(0,0,0,0.2)] mx-auto rounded-bl-[80px] rounded-tr-[80px]">
                 <Image
-                  src={mobileApp}
+                  src={itConsultingImage}
                   alt="mobileApp"
-                  width={300}
-                  height={100}
-                  className="cursor-pointer mx-auto"
+                  className="cursor-pointer mx-auto w-full h-full rounded-bl-[80px] rounded-tr-[80px] max-h-[330px]"
                 />
               </div>
             </div>

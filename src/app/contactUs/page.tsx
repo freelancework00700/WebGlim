@@ -70,7 +70,7 @@ export default function ContactUs() {
           </div>
         </div>
       </section>
-      <section className="pt-[100px] pb-5 relative max-lg:py-[70px] max-sm:py-[50px]">
+      <section className="pt-[100px] pb-[100px] relative max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 bg-[#212025] p-12 rounded-2xl gap-10 items-center max-sm:p-6 max-lg:gap-4 max-sm:gap-3 max-md:mb-7">
             <div className="col-span-6 max-lg:col-span-12 max-sm:col-span-12 w-full max-lg:mb-10">

@@ -214,7 +214,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-sm font-normal text-[#a9afa9] pb-[30px] text-center">
-            © 2023 . All Right Reserved
+            © 2023 WebGlim. All Right Reserved
           </div>
         </div>
       </footer>

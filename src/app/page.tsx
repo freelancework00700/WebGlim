@@ -3,18 +3,27 @@
 import Image from "next/image";
 import Link from 'next/link'
 import { useEffect, useRef, useState } from "react";
-import BrandImage1 from "../../public/images/brandname.png";
-import BrandImage2 from "../../public/images/creative.png";
-import BrandImage3 from "../../public/images/creative1.png";
-import BrandImage4 from "../../public/images/express.png";
-import BrandImage5 from "../../public/images/nameLogo.png";
-import BrandImage6 from "../../public/images/innovate.png";
+import BrandImage1 from "../../public/images/auto.svg";
+import BrandImage2 from "../../public/images/cheshire.svg";
+import BrandImage3 from "../../public/images/crofts.svg";
+import BrandImage4 from "../../public/images/fast-banana.svg";
+import BrandImage5 from "../../public/images/greens.svg";
+import BrandImage6 from "../../public/images/petes.svg";
 import Chat from "../../public/images/chat.png";
 import ArrowIllustration from "../../public/images/down-chevron.png";
 import highlight2 from "../../public/images/highlight2.png";
 import highlight3 from "../../public/images/highlight3.png";
-import image2 from "../../public/images/image2.png";
+import aboutCompanyImage from "../../public/images/About_Our_Company.png";
+import webDevelopmentImage from "../../public/images/Web_Development_2.jpg";
+import appDevelopmentImage from "../../public/images/App_Development.jpg";
+import cloudServiceImage from "../../public/images/Cloud_Consulting.jpg";
+import itConsultingImage from "../../public/images/IT_Consulting_2.jpg";
 import image3 from "../../public/images/image3.png";
+import testimonialsImage1 from "../../public/images/What_people_say.jpg";
+import heroImage1 from "../../public/images/Hero1.png";
+import heroImage2 from "../../public/images/Hero2.png";
+import heroImage3 from "../../public/images/Hero3.png";
+import heroImage4 from "../../public/images/Hero4.png";
 import line from "../../public/images/line.png";
 import like from "../../public/images/like.png";
 import next from "../../public/images/next.png";
@@ -28,7 +37,6 @@ import ResponsiveCarousal from "../components/carousal";
 import { initGA, logPageView } from '../../utils/analytics';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Slider from "react-slick";
 
 
 export default function Home() {
@@ -51,7 +59,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div className="bg-[#212025] hero-slider overflow-hidden relative">
+      <section className="bg-[#212025] hero-slider overflow-hidden relative">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-4 pt-[50px] pb-[100px] max-lg:pb-[70px]">
             <div className="col-span-6 max-xl:col-span-6 max-lg:col-span-12">
@@ -121,7 +129,7 @@ export default function Home() {
               <ResponsiveCarousal arrow={true} dots={false} slidetoshow={1} autoplay={true}>
                 <div>
                   <Image
-                    src={image3}
+                    src={heroImage1}
                     alt="menu-icon"
                     width={300}
                     height={200}
@@ -130,7 +138,7 @@ export default function Home() {
                 </div>
                 <div>
                   <Image
-                    src={image3}
+                    src={heroImage2}
                     alt="menu-icon"
                     width={300}
                     height={200}
@@ -139,7 +147,7 @@ export default function Home() {
                 </div>
                 <div>
                   <Image
-                    src={image3}
+                    src={heroImage3}
                     alt="menu-icon"
                     width={300}
                     height={200}
@@ -148,7 +156,7 @@ export default function Home() {
                 </div>
                 <div>
                   <Image
-                    src={image3}
+                    src={heroImage4}
                     alt="menu-icon"
                     width={300}
                     height={200}
@@ -171,7 +179,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section className="py-[100px] relative overflow-hidden max-lg:py-[70px] max-sm:py-[50px]" ref={brandSectionRef}>
         <div className="container mx-auto">
@@ -207,28 +215,25 @@ export default function Home() {
               <div className="grid grid-cols-3">
                 <div className="p-4 border-[#efefef] border-2 border-l-transparent border-b-transparent h-[125px] flex items-center">
                   <Image
-                    src={BrandImage2}
+                    src={BrandImage1}
                     alt="all brand logo image"
                     width={100}
-                    height={100}
                     className="cursor-pointer mx-auto object-cover"
                   />
                 </div>
                 <div className="p-4 border-[#efefef] border-t-2 h-[125px] flex items-center">
                   <Image
-                    src={BrandImage1}
+                    src={BrandImage2}
                     alt="all brand logo image"
                     width={100}
-                    height={100}
                     className="cursor-pointer mx-auto object-cover"
                   />
                 </div>
                 <div className="p-4 border-[#efefef] border-2 border-r-transparent border-b-transparent h-[125px] flex items-center">
                   <Image
-                    src={BrandImage6}
+                    src={BrandImage3}
                     alt="all brand logo image"
                     width={100}
-                    height={100}
                     className="cursor-pointer mx-auto object-cover"
                   />
                 </div>
@@ -237,16 +242,6 @@ export default function Home() {
                     src={BrandImage4}
                     alt="all brand logo image"
                     width={100}
-                    height={100}
-                    className="cursor-pointer mx-auto object-cover"
-                  />
-                </div>
-                <div className="p-4 border-[#efefef] border-2 border-r-transparent h-[125px] flex items-center">
-                  <Image
-                    src={BrandImage3}
-                    alt="all brand logo image"
-                    width={100}
-                    height={100}
                     className="cursor-pointer mx-auto object-cover"
                   />
                 </div>
@@ -255,7 +250,14 @@ export default function Home() {
                     src={BrandImage5}
                     alt="all brand logo image"
                     width={100}
-                    height={100}
+                    className="cursor-pointer mx-auto object-cover"
+                  />
+                </div>
+                <div className="p-4 border-[#efefef] border-2 border-r-transparent h-[125px] flex items-center">
+                  <Image
+                    src={BrandImage6}
+                    alt="all brand logo image"
+                    width={100}
                     className="cursor-pointer mx-auto object-cover"
                   />
                 </div>
@@ -303,7 +305,7 @@ export default function Home() {
             <div className="col-span-4 max-xl:col-span-5 max-md:col-span-12">
               <div>
                 <Image
-                  src={image2}
+                  src={aboutCompanyImage}
                   alt="about image"
                   width={400}
                   height={200}
@@ -395,7 +397,7 @@ export default function Home() {
       <section className="py-[100px] bg-[#212025] overflow-hidden max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-7 max-xl:col-span-7 max-lg:col-span-12">
+            <div className="col-span-6 max-xl:col-span-7 max-lg:col-span-12">
               <div>
                 <p className="uppercase text-base font-normal text-[#858585]">
                   What we do
@@ -446,15 +448,15 @@ export default function Home() {
 
               </div>
             </div>
-            <div className="col-span-5 success-slider max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
+            <div className="col-span-6 success-slider max-xl:col-span-5 max-lg:col-span-12 max-lg:mt-10">
               <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1} autoplay={true} sliderIndex={sliderIndex} setSliderIndex={setSliderIndex}>
                 <div className="relative ">
                   <Image
-                    src={image3}
+                    src={webDevelopmentImage}
                     alt="menu-icon"
                     width={300}
                     height={200}
-                    className=" h-[600px] w-full grayscale object-cover max-lg:h-[395px]"
+                    className=" h-[600px] w-full  object-cover max-lg:h-[395px]"
                   />
                   <div className=" absolute bottom-0 p-6 service-slider">
                     <p className="text-base leading-[22px] text-[#8d8d8d] font-normal mb-4 line-clamp-4">
@@ -473,11 +475,11 @@ export default function Home() {
                 </div>
                 <div className="relative">
                   <Image
-                    src={image3}
+                    src={appDevelopmentImage}
                     alt="menu-icon"
                     width={300}
                     height={200}
-                    className=" h-[600px] w-full grayscale object-cover max-lg:h-[395px]"
+                    className=" h-[600px] w-full  object-cover max-lg:h-[395px]"
                   />
                   <div className=" absolute bottom-0 p-6 service-slider">
                     <p className="text-base leading-[22px] text-[#a1a1a1] font-normal mb-4 line-clamp-4">
@@ -496,11 +498,11 @@ export default function Home() {
                 </div>
                 <div className="relative">
                   <Image
-                    src={image3}
+                    src={cloudServiceImage}
                     alt="menu-icon"
                     width={300}
                     height={200}
-                    className=" h-[600px] w-full grayscale object-cover max-lg:h-[395px]"
+                    className=" h-[600px] w-full object-cover max-lg:h-[395px]"
                   />
                   <div className=" absolute bottom-0 p-6 service-slider">
                     <p className="text-base leading-[22px] text-[#a1a1a1] font-normal mb-4 line-clamp-4">
@@ -519,11 +521,11 @@ export default function Home() {
                 </div>
                 <div className="relative">
                   <Image
-                    src={image3}
+                    src={itConsultingImage}
                     alt="menu-icon"
                     width={300}
                     height={200}
-                    className=" h-[600px] w-full grayscale object-cover max-lg:h-[395px]"
+                    className=" h-[600px] w-full object-cover max-lg:h-[395px]"
                   />
                   <div className=" absolute bottom-0 p-6 service-slider">
                     <p className="text-base leading-[22px] text-[#a1a1a1] font-normal mb-4 line-clamp-4">
@@ -729,14 +731,10 @@ export default function Home() {
                         </div>
                       </div>
                       <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
-                        Understanding MERN Stack Development
+                        MERN Stack: Driving Business Growth through Innovation
                       </h4>
                       <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
-                        <b>MERN stands</b> for <b>MongoDB, Express.js, React, and Node.js.</b> These four technologies, when combined, form a comprehensive and highly efficient web development stack. Each component plays a crucial role in the development process, making MERN stack an ideal choice for businesses aiming to build robust web applications.
-                        <br></br><b>MongoDB:</b> A NoSQL database, MongoDB, offers the flexibility to manage unstructured data efficiently. It&apos;s perfect for businesses dealing with large datasets or those seeking rapid scalability.
-                        <br></br><b>Express.js:</b> As a backend framework for Node.js, Express.js simplifies the development of server-side applications. Its lightweight and minimalistic approach make it ideal for building RESTful APIs.
-                        <br></br><b>React:</b> Developed and maintained by Facebook, React is a JavaScript library for building user interfaces. It provides a dynamic and interactive front-end experience, making it a favourite among developers and users alike.
-                        <br></br><b>Node.js:</b> Node.js is a runtime environment that allows developers to use JavaScript for server-side scripting. It&apos;s known for its speed and scalability, making it a popular choice for real-time applications.
+                        In today&apos;s digitally driven business landscape, staying competitive and relevant requires more than just a mere online presence. It demands an agile, feature-rich, and scalable web application that can adapt to the ever-evolving market demands. This is where MERN Stack Development comes into play, offering businesses in Australia and beyond a powerful tool to unlock their full potential.
                       </p>
                       <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                       Read more
@@ -816,203 +814,10 @@ export default function Home() {
                         </div>
                       </div>
                       <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
-                        The Advantages of MERN Stack Development
+                        MERN Stack: Driving Business Growth through Innovation
                       </h4>
                       <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
-                        <b>1. Speedy Development</b>
-                        MERN Stack&apos;s uniform language, JavaScript, across both front-end and back-end, streamlines the development process. Developers can work seamlessly, saving time and effort. This results in faster project delivery, allowing businesses to seize market opportunities promptly.
-                        <br></br><b>2. Scalability</b>
-                        With MongoDB&apos;s ability to handle large volumes of data and Node.js&apos;s non-blocking architecture, MERN stack applications can scale effortlessly. This is crucial for businesses in Australia, where markets can expand rapidly.
-                        <br></br><b>3. Exceptional User Experience</b>
-                        React&apos;s component-based architecture allows for the creation of dynamic and responsive user interfaces. This leads to better user engagement, reduced bounce rates, and increased conversions – all vital for business growth.
-                        <br></br><b>4. Cost-Effective Development</b>
-                        The open-source nature of MERN stack components reduces licensing costs. Additionally, the extensive community support ensures quick issue resolution, saving on development expenses.
-                        <br></br><b>5. SEO-Friendly</b>
-                        While JavaScript frameworks have faced challenges with SEO in the past, React&apos;s server-side rendering capabilities have largely addressed these concerns. This means that MERN stack applications can achieve good search engine rankings, essential for online visibility.
-                        <br></br><b>6. Cross-Platform Compatibility</b>
-                        MERN stack applications are inherently cross-platform, ensuring a consistent user experience across various devices and browsers. This broadens the reach and accessibility of your web application.
-                      </p>
-                      <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
-                      Read more
-                      <Image
-                        src={next}
-                        alt="menu-icon"
-                        width={20}
-                        height={20}
-                        className="carousel-inner-img"
-                      />
-                    </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="lg:pb-0 pb-5">
-                <div className="grid grid-cols-12 gap-5 pt-10">
-                  <div className="col-span-5 max-lg:col-span-12">
-                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
-                      <Image
-                        src={image3}
-                        alt="menu-icon"
-                        width={300}
-                        height={200}
-                        className="object-cover h-[600px] w-full max-lg:h-[400px]"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
-                    <div className="pl-10 max-sm:pl-0 max-lg:pl-5">
-                      <div className="flex items-center justify-between py-[4rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <Image
-                              src={user}
-                              alt="user image"
-                              width={50}
-                              height={50}
-                              className="object-cover rounded-full"
-                            />
-                          </div>
-                          <div className="pl-4">
-                            <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic mb-1">
-                              By Zahid Panhwar
-                            </h5>
-                            <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic">
-                              September 2023
-                            </h5>
-                          </div>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center justify-between">
-                            <Image
-                              src={like}
-                              alt="user image"
-                              width={18}
-                              height={18}
-                              className="object-cover"
-                            />{" "}
-                            <span className="text-sm text-[#0f0f0f] font-normal leading-[16px] ml-2">
-                              19
-                            </span>{" "}
-                          </div>
-                          <div className="flex items-center justify-between ml-6">
-                            {" "}
-                            <Image
-                              src={Chat}
-                              alt="user image"
-                              width={18}
-                              height={18}
-                              className="object-cover"
-                            />
-                            <span className="text-sm text-[#0f0f0f] font-normal leading-[16px] ml-2">
-                              24
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
-                        Real-World Applications of MERN Stack
-                      </h4>
-                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
-                        The versatility of MERN stack development makes it suitable for various business domains. Here are a few examples of how MERN stack can be applied:
-                        <br></br><b>1. E-commerce</b>
-                        MERN stack allows e-commerce businesses to create feature-rich online stores with lightning-fast loading speeds and intuitive user interfaces. This leads to increased sales and customer satisfaction.
-                        <br></br><b>2. Social Media Platforms</b>
-                        Building social media platforms with MERN stack ensures real-time interactions, dynamic content updates, and a seamless user experience – key factors for user retention.
-                        <br></br><b>3. Healthcare</b>
-                        In the healthcare industry, where data security and real-time updates are critical, MERN stack applications can efficiently manage patient records, appointments, and telehealth services.
-                        <br></br><b>4. Education</b>
-                        For educational institutions in Australia, MERN stack offers the ability to create interactive e-learning platforms, facilitating online learning and collaboration.
-                      </p>
-                      <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
-                      Read more
-                      <Image
-                        src={next}
-                        alt="menu-icon"
-                        width={20}
-                        height={20}
-                        className="carousel-inner-img"
-                      />
-                    </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="lg:pb-0 pb-5">
-                <div className="grid grid-cols-12 gap-5 pt-10">
-                  <div className="col-span-5 max-lg:col-span-12">
-                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
-                      <Image
-                        src={image3}
-                        alt="menu-icon"
-                        width={300}
-                        height={200}
-                        className="object-cover h-[600px] w-full max-lg:h-[400px]"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
-                    <div className="pl-10 max-sm:pl-0 max-lg:pl-5">
-                      <div className="flex items-center justify-between py-[4rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <Image
-                              src={user}
-                              alt="user image"
-                              width={50}
-                              height={50}
-                              className="object-cover rounded-full"
-                            />
-                          </div>
-                          <div className="pl-4">
-                            <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic mb-1">
-                              By Zahid Panhwar
-                            </h5>
-                            <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic">
-                              September 2023
-                            </h5>
-                          </div>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center justify-between">
-                            <Image
-                              src={like}
-                              alt="user image"
-                              width={18}
-                              height={18}
-                              className="object-cover"
-                            />{" "}
-                            <span className="text-sm text-[#0f0f0f] font-normal leading-[16px] ml-2">
-                              19
-                            </span>{" "}
-                          </div>
-                          <div className="flex items-center justify-between ml-6">
-                            {" "}
-                            <Image
-                              src={Chat}
-                              alt="user image"
-                              width={18}
-                              height={18}
-                              className="object-cover"
-                            />
-                            <span className="text-sm text-[#0f0f0f] font-normal leading-[16px] ml-2">
-                              24
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
-                        How to Get Started with MERN Stack Development
-                      </h4>
-                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
-                        Getting started with MERN stack development in Australia is relatively straightforward. Here&apos;s a step-by-step guide:
-                        <ul>
-                          <li><b>Hire Skilled Developers:</b> Begin by assembling a team of experienced MERN stack developers who understand the nuances of each component.</li>
-                          <li><b>Project Planning:</b> Define your project requirements, objectives, and timelines. Create a detailed project plan.</li>
-                          <li><b>Design and Development:</b> Start with the design phase, followed by front-end and back-end development. Ensure regular testing and quality assurance.</li>
-                          <li><b>Scalability:</b> Implement strategies for scalability, considering potential future growth.</li>
-                          <li><b>Deployment:</b> Deploy your MERN stack application on a reliable hosting platform.</li>
-                          <li><b>Maintenance and Updates:</b> Continuously monitor your application for performance and security. Regularly update components to stay current.</li>
-                        </ul>                       
+                        In today&apos;s digitally driven business landscape, staying competitive and relevant requires more than just a mere online presence. It demands an agile, feature-rich, and scalable web application that can adapt to the ever-evolving market demands. This is where MERN Stack Development comes into play, offering businesses in Australia and beyond a powerful tool to unlock their full potential.
                       </p>
                       <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                       Read more
@@ -1050,6 +855,7 @@ export default function Home() {
           />
         </div>
       </section>
+
       <section className="overflow-hidden">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-6 border-b-2 border-[#f9f9f9] pb-[30px] border-b-2 border-[#f9f9f9]">
@@ -1094,7 +900,7 @@ export default function Home() {
                   <div className="col-span-6 max-[640px]:col-span-12">
                     <div className="relative blog-shadow">
                       <Image
-                        src={image3}
+                        src={testimonialsImage1}
                         alt="menu-icon"
                         width={400}
                         height={100}
@@ -1133,7 +939,7 @@ export default function Home() {
                   <div className="col-span-6 max-[640px]:col-span-12">
                     <div className="relative blog-shadow">
                       <Image
-                        src={image3}
+                        src={testimonialsImage1}
                         alt="menu-icon"
                         width={400}
                         height={100}
@@ -1172,7 +978,7 @@ export default function Home() {
                   <div className="col-span-6 max-[640px]:col-span-12">
                     <div className="relative blog-shadow">
                       <Image
-                        src={image3}
+                        src={testimonialsImage1}
                         alt="menu-icon"
                         width={400}
                         height={100}
@@ -1219,6 +1025,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
       <section className="py-[100px] explore-slider overflow-hidden relative max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className=" pb-[30px] text-center xl:w-1/2 mx-auto relative">
