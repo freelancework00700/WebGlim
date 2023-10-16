@@ -20,6 +20,7 @@ import cloudServiceImage from "../../public/images/Cloud_Consulting.jpg";
 import itConsultingImage from "../../public/images/IT_Consulting_2.jpg";
 import image3 from "../../public/images/image3.png";
 import testimonialsImage1 from "../../public/images/What_people_say.jpg";
+import testimonialsImage2 from "../../public/images/testinomial-2.jpg";
 import heroImage1 from "../../public/images/Hero1.png";
 import heroImage2 from "../../public/images/Hero2.png";
 import heroImage3 from "../../public/images/Hero3.png";
@@ -28,7 +29,11 @@ import line from "../../public/images/line.png";
 import like from "../../public/images/like.png";
 import next from "../../public/images/next.png";
 import quote from "../../public/images/quote.png";
-import user from "../../public/images/user.png";
+import Blog_1_image from "../../public/images/Blog_1_image.jpg";
+import Blog_2_image from "../../public/images/Blog_2_image.jpg";
+import Blog_3_image from "../../public/images/Blog_3_image.jpg";
+import Blog_4_image from "../../public/images/Blog_4_image.jpg";
+import blogger1 from "../../public/images/blogger.jpg";
 import upArrow from "../../public/images/up-arrow.png";
 import downArrow from "../../public/images/downArrow.png";
 import highlight from "../../public/images/highlight.png";
@@ -462,7 +467,7 @@ export default function Home() {
                     <p className="text-base leading-[22px] text-[#8d8d8d] font-normal mb-4 line-clamp-4">
                       <b>Web Development:</b> Explore our portfolio of custom web applications, meticulously tailored to meet diverse business needs. Our expert team leverages cutting-edge technologies, to deliver innovative and highly scalable solutions. As your trusted CMS development partner, we prioritize customization, boasting certifications in leading platforms such as WordPress and Drupal. Our unwavering commitment to ongoing support guarantees a seamless digital presence with regular updates, robust security enhancements, and vigilant proactive monitoring
                     </p>
-                    <Link href="/services"className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                    <Link href="/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                       Read more
                       <Image
                         src={next}
@@ -589,21 +594,21 @@ export default function Home() {
                   <div className="col-span-5 max-lg:col-span-12">
                     <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
                       <Image
-                        src={image3}
+                        src={Blog_1_image}
                         alt="menu-icon"
                         width={300}
                         height={200}
-                        className="object-cover h-[600px] w-full max-lg:h-[400px]"
+                        className="object-cover h-[320px] w-full max-lg:h-[320px]"
                       />
                     </div>
                   </div>
                   <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
                     <div className="pl-10 max-sm:pl-0 max-lg:pl-5">
-                      <div className="flex items-center justify-between py-[4rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
+                      <div className="flex items-center justify-between py-[2rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
                         <div className="flex items-center justify-between">
                           <div>
                             <Image
-                              src={user}
+                              src={blogger1}
                               alt="user image"
                               width={50}
                               height={50}
@@ -619,7 +624,7 @@ export default function Home() {
                             </h5>
                           </div>
                         </div>
-                        <div className="flex items-center justify-between">
+                        {/* <div className="flex items-center justify-between">
                           <div className="flex items-center justify-between">
                             <Image
                               src={like}
@@ -645,24 +650,24 @@ export default function Home() {
                               24
                             </span>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
-                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
+                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[45px] border-b-2 border-[#f3f3f3] line-clamp-1">
                         MERN Stack: Driving Business Growth through Innovation
                       </h4>
-                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
+                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-4">
                         In today&apos;s digitally driven business landscape, staying competitive and relevant requires more than just a mere online presence. It demands an agile, feature-rich, and scalable web application that can adapt to the ever-evolving market demands. This is where MERN Stack Development comes into play, offering businesses in Australia and beyond a powerful tool to unlock their full potential.
                       </p>
                       <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
-                      Read more
-                      <Image
-                        src={next}
-                        alt="menu-icon"
-                        width={20}
-                        height={20}
-                        className="carousel-inner-img"
-                      />
-                    </Link>
+                        Read more
+                        <Image
+                          src={next}
+                          alt="menu-icon"
+                          width={20}
+                          height={20}
+                          className="carousel-inner-img"
+                        />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -672,21 +677,21 @@ export default function Home() {
                   <div className="col-span-5 max-lg:col-span-12">
                     <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
                       <Image
-                        src={image3}
+                        src={Blog_2_image}
                         alt="menu-icon"
                         width={300}
                         height={200}
-                        className="object-cover h-[600px] w-full max-lg:h-[400px]"
+                        className="object-cover h-[320px] w-full max-lg:h-[320px]"
                       />
                     </div>
                   </div>
                   <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
                     <div className="pl-10 max-sm:pl-0 max-lg:pl-5">
-                      <div className="flex items-center justify-between py-[4rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
+                      <div className="flex items-center justify-between py-[2rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
                         <div className="flex items-center justify-between">
                           <div>
                             <Image
-                              src={user}
+                              src={blogger1}
                               alt="user image"
                               width={50}
                               height={50}
@@ -702,7 +707,7 @@ export default function Home() {
                             </h5>
                           </div>
                         </div>
-                        <div className="flex items-center justify-between">
+                        {/* <div className="flex items-center justify-between">
                           <div className="flex items-center justify-between">
                             <Image
                               src={like}
@@ -728,24 +733,24 @@ export default function Home() {
                               24
                             </span>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
-                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
-                        MERN Stack: Driving Business Growth through Innovation
+                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[45px] border-b-2 border-[#f3f3f3] line-clamp-1">
+                        Progressive Web Apps (PWAs): A Game Changer for Australian Businesses
                       </h4>
-                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
-                        In today&apos;s digitally driven business landscape, staying competitive and relevant requires more than just a mere online presence. It demands an agile, feature-rich, and scalable web application that can adapt to the ever-evolving market demands. This is where MERN Stack Development comes into play, offering businesses in Australia and beyond a powerful tool to unlock their full potential.
+                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-4">
+                        In today&apos;s digital age, the way we access and interact with the web is constantly evolving. With the surge in mobile device usage and the need for faster, more efficient web experiences, businesses are seeking innovative solutions that bridge the gap between traditional websites and mobile apps. This is where Progressive Web Apps (PWAs) come into play, heralding a new era of web technology, and offering a game-changing approach for Australian businesses.
                       </p>
                       <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
-                      Read more
-                      <Image
-                        src={next}
-                        alt="menu-icon"
-                        width={20}
-                        height={20}
-                        className="carousel-inner-img"
-                      />
-                    </Link>
+                        Read more
+                        <Image
+                          src={next}
+                          alt="menu-icon"
+                          width={20}
+                          height={20}
+                          className="carousel-inner-img"
+                        />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -755,21 +760,21 @@ export default function Home() {
                   <div className="col-span-5 max-lg:col-span-12">
                     <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
                       <Image
-                        src={image3}
+                        src={Blog_3_image}
                         alt="menu-icon"
                         width={300}
                         height={200}
-                        className="object-cover h-[600px] w-full max-lg:h-[400px]"
+                        className="object-cover h-[320px] w-full max-lg:h-[320px]"
                       />
                     </div>
                   </div>
                   <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
                     <div className="pl-10 max-sm:pl-0 max-lg:pl-5">
-                      <div className="flex items-center justify-between py-[4rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
+                      <div className="flex items-center justify-between py-[2rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
                         <div className="flex items-center justify-between">
                           <div>
                             <Image
-                              src={user}
+                              src={blogger1}
                               alt="user image"
                               width={50}
                               height={50}
@@ -785,7 +790,7 @@ export default function Home() {
                             </h5>
                           </div>
                         </div>
-                        <div className="flex items-center justify-between">
+                        {/* <div className="flex items-center justify-between">
                           <div className="flex items-center justify-between">
                             <Image
                               src={like}
@@ -811,24 +816,108 @@ export default function Home() {
                               24
                             </span>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
-                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[24px] border-b-2 border-[#f3f3f3] pb-5">
-                        MERN Stack: Driving Business Growth through Innovation
+                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[45px] border-b-2 border-[#f3f3f3] line-clamp-1">
+                        The Impact of Cross-Platform Development with React Native on Mobile Apps
                       </h4>
-                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-6">
-                        In today&apos;s digitally driven business landscape, staying competitive and relevant requires more than just a mere online presence. It demands an agile, feature-rich, and scalable web application that can adapt to the ever-evolving market demands. This is where MERN Stack Development comes into play, offering businesses in Australia and beyond a powerful tool to unlock their full potential.
+                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-4">
+                        In the fast-paced world of mobile app development, businesses are constantly seeking more efficient ways to reach a broader audience without breaking the bank. With the rise of smartphones and the ever-expanding array of devices, cross-platform development has become a game-changer for many businesses, allowing them to streamline their mobile app development efforts. One of the leading technologies in this space is React Native, a framework developed by Facebook. In this blog, we&apos;ll explore the impact of cross-platform development with React Native on mobile apps and how it can benefit businesses looking to maximize their mobile presence.
                       </p>
                       <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
-                      Read more
+                        Read more
+                        <Image
+                          src={next}
+                          alt="menu-icon"
+                          width={20}
+                          height={20}
+                          className="carousel-inner-img"
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="lg:pb-0 pb-5">
+                <div className="grid grid-cols-12 gap-5 pt-10">
+                  <div className="col-span-5 max-lg:col-span-12">
+                    <div className="xl:mx-4 max-xl:mx-4 blog-shadow relative max-lg:mx-0">
                       <Image
-                        src={next}
+                        src={Blog_4_image}
                         alt="menu-icon"
-                        width={20}
-                        height={20}
-                        className="carousel-inner-img"
+                        width={300}
+                        height={200}
+                        className="object-cover h-[320px] w-full max-lg:h-[320px]"
                       />
-                    </Link>
+                    </div>
+                  </div>
+                  <div className="col-span-7 max-lg:col-span-12 border-l-2 border-[#f3f3f3] max-sm:border-transparent max-sm:border-l-2">
+                    <div className="pl-10 max-sm:pl-0 max-lg:pl-5">
+                      <div className="flex items-center justify-between py-[2rem] max-[640px]:pt-[1rem] max-[640px]:pb-[1.5rem]">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <Image
+                              src={blogger1}
+                              alt="user image"
+                              width={50}
+                              height={50}
+                              className="object-cover rounded-full"
+                            />
+                          </div>
+                          <div className="pl-4">
+                            <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic mb-1">
+                              By Zahid Panhwar
+                            </h5>
+                            <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic">
+                              September 2023
+                            </h5>
+                          </div>
+                        </div>
+                        {/* <div className="flex items-center justify-between">
+                          <div className="flex items-center justify-between">
+                            <Image
+                              src={like}
+                              alt="user image"
+                              width={18}
+                              height={18}
+                              className="object-cover"
+                            />{" "}
+                            <span className="text-sm text-[#0f0f0f] font-normal leading-[16px] ml-2">
+                              19
+                            </span>{" "}
+                          </div>
+                          <div className="flex items-center justify-between ml-6">
+                            {" "}
+                            <Image
+                              src={Chat}
+                              alt="user image"
+                              width={18}
+                              height={18}
+                              className="object-cover"
+                            />
+                            <span className="text-sm text-[#0f0f0f] font-normal leading-[16px] ml-2">
+                              24
+                            </span>
+                          </div>
+                        </div> */}
+                      </div>
+                      <h4 className="text-xl font-bold text-[#0f0f0f] leading-[45px] border-b-2 border-[#f3f3f3] line-clamp-1">
+                        Unveiling the World of High-End Web Solutions
+                      </h4>
+                      <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-4">
+                        <strong>Introduction: The Digital Frontier</strong><br></br>
+                        In today&apos;s digital landscape, where every pixel counts, your online presence is the gateway to success. To make a lasting impression, you need more than just a website; you need a high-end web solution. Buckle up as we venture into a realm where innovation, customization, and excellence collide.
+                      </p>
+                      <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                        Read more
+                        <Image
+                          src={next}
+                          alt="menu-icon"
+                          width={20}
+                          height={20}
+                          className="carousel-inner-img"
+                        />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -864,12 +953,12 @@ export default function Home() {
                 testimonials
               </p>
               <h3 className="text-[#1d1c20] text-[42px] font-bold capitalize leading-[60px] relative max-xl:text-[30px] max-xl:leading-[42px]">
-              What People Say About Webglim...
+                What People Say About Webglim...
               </h3>
             </div>
             <div className="col-span-5 max-[640px]:col-span-12">
               <p className="text-[#3d3c40] font-normal leading-[30px] text-base">
-              Hear firsthand accounts from our delighted customers as they share their experiences with Webglim&apos;s top-tier solutions, <br></br><span className="opacity-75">join us and elevate your business today!</span>
+                Hear firsthand accounts from our delighted customers as they share their experiences with Webglim&apos;s top-tier solutions, <br></br><span className="opacity-75">join us and elevate your business today!</span>
               </p>
             </div>
           </div>
@@ -920,14 +1009,14 @@ export default function Home() {
                         />
                       </div>
                       <p className="text-base leading-[26px] text-[#a9afa9] font-normal mb-4 testimonial-content">
-                      WebGlim&apos;s top-tier IT solutions have proven to be a game-changer for our business. Their unwavering commitment to excellence and innovative approach have set them apart in the industry. With WebGlim, success isn&apos;t just a destination; it&apos;s an ongoing journey of growth and transformation. Their dedication to delivering results and adapting to the ever-evolving digital landscape has been a key driver of our success. Join them today and experience the remarkable impact of WebGlim&apos;s expertise on your business.
+                        WebGlim&apos;s top-tier IT solutions have proven to be a game-changer for our business. Their unwavering commitment to excellence and innovative approach have set them apart in the industry. With WebGlim, success isn&apos;t just a destination; it&apos;s an ongoing journey of growth and transformation. Their dedication to delivering results and adapting to the ever-evolving digital landscape has been a key driver of our success. Join them today and experience the remarkable impact of WebGlim&apos;s expertise on your business.
                       </p>
                       <div className="pl-8 py-[3rem] max-lg:py-[1.5rem]">
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
-                        Atta
+                          Atta
                         </h5>
                         <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
-                        Adelaide
+                          Adelaide
                         </p>
                       </div>
                     </div>
@@ -939,7 +1028,7 @@ export default function Home() {
                   <div className="col-span-6 max-[640px]:col-span-12">
                     <div className="relative blog-shadow">
                       <Image
-                        src={testimonialsImage1}
+                        src={testimonialsImage2}
                         alt="menu-icon"
                         width={400}
                         height={100}
@@ -959,53 +1048,14 @@ export default function Home() {
                         />
                       </div>
                       <p className="text-base leading-[26px] text-[#a9afa9] font-normal mb-4 testimonial-content">
-                      WebGlim&apos;s top-tier IT solutions have proven to be a game-changer for our business. Their unwavering commitment to excellence and innovative approach have set them apart in the industry. With WebGlim, success isn&apos;tjust a destination; it&apos;s an ongoing journey of growth and transformation. Their dedication to delivering results and adapting to the ever-evolving digital landscape has been a key driver of our success. Join them today and experience the remarkable impact of WebGlim&apos;s expertise on your business.
+                        WebGlim&apos;s top-tier IT solutions have proven to be a game-changer for our business. Their unwavering commitment to excellence and innovative approach have set them apart in the industry. With WebGlim, success isn&apos;tjust a destination; it&apos;s an ongoing journey of growth and transformation. Their dedication to delivering results and adapting to the ever-evolving digital landscape has been a key driver of our success. Join them today and experience the remarkable impact of WebGlim&apos;s expertise on your business.
                       </p>
                       <div className="pl-8 py-[3rem] max-lg:py-[1.5rem]">
                         <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
-                        Atta
+                          Atta
                         </h5>
                         <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
-                        Adelaide
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="grid grid-cols-12 pt-10">
-                  <div className="col-span-6 max-[640px]:col-span-12">
-                    <div className="relative blog-shadow">
-                      <Image
-                        src={testimonialsImage1}
-                        alt="menu-icon"
-                        width={400}
-                        height={100}
-                        className="object-cover w-full h-[618px] object-center max-sm:h-[400px]"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-span-6 bg-[#212025] max-[640px]:col-span-12">
-                    <div className="px-10">
-                      <div className="py-[3rem] max-sm:py-[2rem]">
-                        <Image
-                          src={quote}
-                          alt="user image"
-                          width={50}
-                          height={50}
-                          className="object-cover !m-0"
-                        />
-                      </div>
-                      <p className="text-base leading-[26px] text-[#a9afa9] font-normal mb-4 testimonial-content">
-                      WebGlim&apos;s top-tier IT solutions have proven to be a game-changer for our business. Their unwavering commitment to excellence and innovative approach have set them apart in the industry. With WebGlim, success isn&apos;tjust a destination; it&apos;s an ongoing journey of growth and transformation. Their dedication to delivering results and adapting to the ever-evolving digital landscape has been a key driver of our success. Join them today and experience the remarkable impact of WebGlim&apos;s expertise on your business.
-                      </p>
-                      <div className="pl-8 py-[3rem] max-lg:py-[1.5rem]">
-                        <h5 className="text-base text-[#fff] font-semibold leading-[16px]  mb-2">
-                        Atta
-                        </h5>
-                        <p className="text-[12px] text-[#a9afa9] font-semibold leading-[16px] ">
-                        Adelaide
+                          Adelaide
                         </p>
                       </div>
                     </div>
@@ -1025,15 +1075,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       <section className="py-[100px] explore-slider overflow-hidden relative max-lg:py-[70px] max-sm:py-[50px]">
         <div className="container mx-auto">
           <div className=" pb-[30px] text-center xl:w-1/2 mx-auto relative">
             <h3 className="text-[#1d1c20] text-[42px] font-bold capitalize leading-[50px] mb-[20px] relative max-xl:text-[30px] max-xl:leading-[42px]">
-            Discover Our Expertly Crafted Services for Your Success
+              Discover Our Expertly Crafted Services for Your Success
             </h3>
             <p className="text-[#3d3c40] font-normal leading-[26px] text-base">
-            Explore our carefully curated selection of high-quality services designed to propel your business to the forefront of success.
+              Explore our carefully curated selection of high-quality services designed to propel your business to the forefront of success.
             </p>
             <div className="absolute top-[30px] left-0 xl:left-[-20%] max-sm:top-[40px]">
               <Image
@@ -1076,13 +1126,13 @@ export default function Home() {
                     <div className="col-span-6 relative max-[640px]:col-span-12">
                       <div className="px-10 pt-[4rem] max-sm:pb-[5rem] max-sm:pt-[2rem] max-sm:px-4">
                         <h4 className="text-[32px] font-medium text-[#1d1c20] leading-[40px] max-xl:text-[26px] max-xl:leading-[36px]">
-                        MERN Stack Development
+                          MERN Stack Development
                         </h4>
                         <p className="text-base leading-[26px] text-[#a9afa9] font-normal pt-[20px] explore-content">
-                        &quot;Leverage the exceptional capabilities of MERN stack development to create highly dynamic and feature-rich web applications. Our dedicated team of experts harnesses the power of MongoDB, Express.js, React, and Node.js to craft solutions that not only meet but exceed your expectations. With MERN stack, innovation is at the forefront, enabling your business to stay ahead in the digital landscape. Scalability is never an issue, as we design applications capable of adapting seamlessly to your growing needs. Embrace the future of web development with WebGlim&apos;s MERN stack expertise.&quot;
-                        <br></br>
-                        <br></br>
-                        <b>Global IT Solutions</b>
+                          &quot;Leverage the exceptional capabilities of MERN stack development to create highly dynamic and feature-rich web applications. Our dedicated team of experts harnesses the power of MongoDB, Express.js, React, and Node.js to craft solutions that not only meet but exceed your expectations. With MERN stack, innovation is at the forefront, enabling your business to stay ahead in the digital landscape. Scalability is never an issue, as we design applications capable of adapting seamlessly to your growing needs. Embrace the future of web development with WebGlim&apos;s MERN stack expertise.&quot;
+                          <br></br>
+                          <br></br>
+                          <b>Global IT Solutions</b>
                         </p>
                         <div className="absolute bottom-[30px]">
                           <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
@@ -1116,13 +1166,13 @@ export default function Home() {
                     <div className="col-span-6 relative max-[640px]:col-span-12">
                       <div className="px-10 pt-[4rem] max-sm:pb-[5rem] max-sm:pt-[2rem] max-sm:px-4">
                         <h4 className="text-[32px] font-medium text-[#1d1c20] leading-[40px] max-xl:text-[26px] max-xl:leading-[36px]">
-                        MERN Stack Development
+                          MERN Stack Development
                         </h4>
                         <p className="text-base leading-[26px] text-[#a9afa9] font-normal pt-[20px] explore-content">
-                        &quot;At WebGlim, we pride ourselves on offering global IT solutions that transcend boundaries. Our collaborative approach, bringing together international talent with local insights, ensures your business receives tailored strategies to expand its reach and impact. With a finger on the pulse of global markets, we guide you through every step of your international journey. Our solutions are designed to not only meet regulatory requirements but also to thrive in diverse cultural landscapes. Unlock your business&apos;s potential on the world stage with WebGlim&apos;s global IT solutions.&quot;
-                        <br></br>
-                        <br></br>
-                        <b>Centric IT Consultancy</b>
+                          &quot;At WebGlim, we pride ourselves on offering global IT solutions that transcend boundaries. Our collaborative approach, bringing together international talent with local insights, ensures your business receives tailored strategies to expand its reach and impact. With a finger on the pulse of global markets, we guide you through every step of your international journey. Our solutions are designed to not only meet regulatory requirements but also to thrive in diverse cultural landscapes. Unlock your business&apos;s potential on the world stage with WebGlim&apos;s global IT solutions.&quot;
+                          <br></br>
+                          <br></br>
+                          <b>Centric IT Consultancy</b>
                         </p>
                         <div className="absolute bottom-[30px]">
                           <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
@@ -1156,13 +1206,13 @@ export default function Home() {
                     <div className="col-span-6 relative max-[640px]:col-span-12">
                       <div className="px-10 pt-[4rem] max-sm:pb-[5rem] max-sm:pt-[2rem] max-sm:px-4">
                         <h4 className="text-[32px] font-medium text-[#1d1c20] leading-[40px] max-xl:text-[26px] max-xl:leading-[36px]">
-                        MERN Stack Development
+                          MERN Stack Development
                         </h4>
                         <p className="text-base leading-[26px] text-[#a9afa9] font-normal pt-[20px] explore-content">
-                        &quot;Our client-centric IT consultancy is a partnership built on your unique needs and objectives. We understand that no two businesses are alike, and that&apos;s why we take the time to comprehensively assess your challenges and opportunities. Our experts work closely with you to navigate the ever-changing digital landscape, crafting strategies that are specifically tailored to your success. We don&apos;tjust provide recommendations; we provide actionable plans that empower you to achieve your goals. With WebGlim&apos;s client-centric IT consultancy, your success is our mission.&quot;
-                        <br></br>
-                        <br></br>
-                        <b>Edge Software Solutions</b>
+                          &quot;Our client-centric IT consultancy is a partnership built on your unique needs and objectives. We understand that no two businesses are alike, and that&apos;s why we take the time to comprehensively assess your challenges and opportunities. Our experts work closely with you to navigate the ever-changing digital landscape, crafting strategies that are specifically tailored to your success. We don&apos;tjust provide recommendations; we provide actionable plans that empower you to achieve your goals. With WebGlim&apos;s client-centric IT consultancy, your success is our mission.&quot;
+                          <br></br>
+                          <br></br>
+                          <b>Edge Software Solutions</b>
                         </p>
                         <div className="absolute bottom-[30px]">
                           <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
@@ -1196,13 +1246,13 @@ export default function Home() {
                     <div className="col-span-6 relative max-[640px]:col-span-12">
                       <div className="px-10 pt-[4rem] max-sm:pb-[5rem] max-sm:pt-[2rem] max-sm:px-4">
                         <h4 className="text-[32px] font-medium text-[#1d1c20] leading-[40px] max-xl:text-[26px] max-xl:leading-[36px]">
-                        MERN Stack Development
+                          MERN Stack Development
                         </h4>
                         <p className="text-base leading-[26px] text-[#a9afa9] font-normal pt-[20px] explore-content">
-                        &quot;Experience the transformative impact of cutting-edge software solutions, meticulously crafted to streamline your business operations. Our team of seasoned developers and engineers stays at the forefront of technological advancements to deliver software that&apos;s not just up-to-date, but ahead of the curve. We understand that efficiency and productivity are the lifeblood of your business, and our innovative software services are designed to enhance both. From optimizing workflows to enhancing user experiences, our solutions are driven by your success. Embrace the future with WebGlim&apos;s cutting-edge software solutions.&quot;
-                        <br></br>
-                        <br></br>
-                        <b>Edge Software Solutions</b>
+                          &quot;Experience the transformative impact of cutting-edge software solutions, meticulously crafted to streamline your business operations. Our team of seasoned developers and engineers stays at the forefront of technological advancements to deliver software that&apos;s not just up-to-date, but ahead of the curve. We understand that efficiency and productivity are the lifeblood of your business, and our innovative software services are designed to enhance both. From optimizing workflows to enhancing user experiences, our solutions are driven by your success. Embrace the future with WebGlim&apos;s cutting-edge software solutions.&quot;
+                          <br></br>
+                          <br></br>
+                          <b>Edge Software Solutions</b>
                         </p>
                         <div className="absolute bottom-[30px]">
                           <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">

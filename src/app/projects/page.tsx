@@ -18,7 +18,7 @@ export default function Projects() {
         <div className="container mx-auto">
           <div>
             <h3 className="text-center text-[42px] font-bold text-[#222] leading-[50px] max-xl:text-[30px] max-xl:leading-[42px]">
-              Projects
+              WebGlim Portfolio
             </h3>
             <p className="w-1/2 mx-auto text-base leading-[26px] text-[#666] text-center mt-4 max-lg:w-full">
               Lorem Ipsum is simply dummy text of the printing and typesetting

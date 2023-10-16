@@ -86,11 +86,11 @@ const Header = () => {
                                                 </div>
                                             }
                                         </li>
-                                        {/* <li className="px-4 py-[23px] cursor-pointer">
+                                        <li className="px-4 py-[23px] cursor-pointer">
                                             <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
-                                                Projects
+                                                Portfolio
                                             </Link>
-                                        </li> */}
+                                        </li>
                                         <li className="px-4 py-[23px] cursor-pointer">
                                             <Link href="/blogs" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
                                                 Our Blogs
