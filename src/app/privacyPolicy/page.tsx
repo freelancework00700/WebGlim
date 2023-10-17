@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 export default function PrivacyPolicy() {
   const [menuShowResponsive, setMenuShowResponsive] = useState(false);
   return (
-    <div>
+    <div className="max-[1024px]:mt-[77px]">
       <Header />
       <section className="project-bg py-[100px] max-lg:py-[70px] max-sm:py-[50px] overflow-hidden">
         <div className="container mx-auto">

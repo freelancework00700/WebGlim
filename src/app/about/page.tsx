@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 
 export default function About() {
   return (
-    <div>
+    <div className="max-[1024px]:mt-[77px]">
       <Header />
       <div className="project-bg py-[100px] max-lg:py-[70px] max-sm:py-[50px] overflow-hidden">
         <div className="container mx-auto">
@@ -57,9 +57,7 @@ export default function About() {
                     <Image
                       src={About_us_our_mission}
                       alt="about image"
-                      width={400}
-                      height={200}
-                      className="cursor-pointer cursor-pointer w-full h-[200px] object-cover max-sm:h-[170px]"
+                      className="cursor-pointer cursor-pointer w-full h-[360px] rounded-[12px] object-cover max-sm:h-[170px]"
                     />
                   </div>
                 </div>
@@ -74,9 +72,7 @@ export default function About() {
                     <Image
                       src={About_us_our_vision}
                       alt="about image"
-                      width={400}
-                      height={200}
-                      className="cursor-pointer cursor-pointer w-full h-[200px] object-cover max-sm:h-[170px]"
+                      className="cursor-pointer cursor-pointer w-full h-[360px] rounded-[12px] object-cover max-sm:h-[170px]"
                     />
                   </div>
                 </div>

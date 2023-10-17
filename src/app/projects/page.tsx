@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="max-[1024px]:mt-[77px]">
       <Header />
       <div className=" project-bg py-[100px] max-lg:py-[70px] max-sm:py-[50px] overflow-hidden">
         <div className="container mx-auto">

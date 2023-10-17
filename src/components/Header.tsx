@@ -18,9 +18,9 @@ const Header = () => {
     const onMouseLeave = () => setIsHovered(false);
     return (
         <>
-            <div className="bg-[#212025] hero-slider overflow-hidden " >
+            <div className="bg-[#212025] max-[1024px]:fixed max-[1024px]:top-0 max-[1024px]:z-10 max-[1024px]:w-full overflow-hidden " >
                 <div className="container mx-auto">
-                    <div className="flex items-center justify-between  border-b-2 border-[#2c2c2c] max-lg:py-4">
+                    <div className="flex items-center justify-between  border-b-2 border-[#2c2c2c] max-lg:py-2">
                         <div className="flex items-center">
                             <div className="main-logo me-[2rem]">
                                 <Link href="/" className="cursor-pointer">
@@ -140,8 +140,8 @@ const Header = () => {
                             </div>
                         </div>
                         {menuShowResponsive &&
-                            <div className="absolute w-full left-0 top-[70px] z-10 lg:hidden">
-                                <div className="bg-[#fff] p-3 px-5">
+                            <div className="fixed w-full left-0 top-[70px] z-10 lg:hidden z-20">
+                                <div className="bg-[#fff] p-3 px-5 shadow-md">
                                     <nav>
                                         <ul className="flex items-start flex-col">
                                             <li className="py-2">
@@ -159,11 +159,11 @@ const Header = () => {
                                                     Services
                                                 </Link>
                                             </li>
-                                            {/* <li className="py-2">
+                                            <li className="py-2">
                                                 <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
-                                                    Projects
+                                                    Portfolio
                                                 </Link>
-                                            </li> */}
+                                            </li>
                                             <li className="py-2">
                                                 <Link href="/blogs" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Our Blogs

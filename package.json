@@ -25,6 +25,7 @@
     "formik": "^2.4.3",
     "fs": "^0.0.1-security",
     "lucide-react": "^0.265.0",
+    "nanoid": "^5.0.2",
     "next": "^13.4.12",
     "next-sitemap": "^4.1.8",
     "nodemailer": "^6.9.4",

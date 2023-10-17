@@ -62,7 +62,7 @@ export default function Home() {
   const [sliderIndex, setSliderIndex] = useState(0);
 
   return (
-    <main>
+    <main className="max-[1024px]:mt-[77px]">
       <Header />
       <section className="bg-[#212025] hero-slider overflow-hidden relative">
         <div className="container mx-auto">
