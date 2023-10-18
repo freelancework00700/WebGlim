@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { blogs } from '@/data/blogs';
 
-const page = () => {
+const Page = () => {
     const params = useParams();
     console.log('blogId: ', params?.blogId);
 
@@ -74,4 +74,4 @@ const page = () => {
     return null;
 }
 
-export default page
+export default Page
