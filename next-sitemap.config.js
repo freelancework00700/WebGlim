@@ -1,4 +1,4 @@
-const siteUrl = "http://webglim.com/";
+const siteUrl = "https://webglim.com.au/";
 
 module.exports = {
     siteUrl,
