@@ -52,7 +52,7 @@ export default function Blogs() {
                       </p>
                       <div className="flex items-center justify-between mt-4">
                         <div className="text-base text-[#a1a1a1] leading-[18px] font-normal">
-                          26 July
+                        {blog.createdDate}
                         </div>
                       </div>
                     </div>

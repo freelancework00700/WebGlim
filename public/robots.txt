@@ -6,6 +6,6 @@ Disallow: /secret
 User-agent: *
 Allow: /
 
-Host: http://webglim.com/
+Host: https://webglim.com.au/
 
-Sitemap: http://localhost:3000/sitemap.xml
+Sitemap: https://webglim.com.au/sitemap.xml

@@ -42,6 +42,7 @@ import ResponsiveCarousal from "../components/carousal";
 import { initGA, logPageView } from '../../utils/analytics';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { blogHeaders } from "@/data/blogHeaders";
 
 
 export default function Home() {
@@ -60,6 +61,7 @@ export default function Home() {
   const [showContent1, setShowContent1] = useState(false)
   const [showContent2, setShowContent2] = useState(false)
   const [sliderIndex, setSliderIndex] = useState(0);
+  const [blogIndex, setBlogIndex] = useState(0);
 
   return (
     <main className="max-[1024px]:mt-[77px]">
@@ -562,14 +564,16 @@ export default function Home() {
                   Blog
                 </p>
                 <h3 className="text-[#1d1c20] text-[30px] font-bold capitalize leading-[60px] relative xl:pe-[5rem] max-xl:text-[30px] max-xl:leading-[42px]">
-                  Unlocking Business Potential: The Power of MERN Stack Development
+                  {/* Unlocking Business Potential: The Power of MERN Stack Development */}
+                  {blogHeaders[blogIndex].heading}
                 </h3>
               </div>
             </div>
             <div className="col-span-7 max-[640px]:col-span-12">
               <div className="flex justify-between items-center flex-wrap">
                 <p className="text-[#3d3c40] font-normal leading-[30px] text-base w-1/2 max-[640px]:w-full">
-                  Discover MERN Stack&apos;s dynamic potential for business growth, speed, scalability, and exceptional user experiences. Transform your future.
+                  {/* Discover MERN Stack&apos;s dynamic potential for business growth, speed, scalability, and exceptional user experiences. Transform your future. */}
+                  {blogHeaders[blogIndex].shortDescription}
                 </p>
                 <Link href="/blogs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 max-[640px]:mt-4">
                   All Post +
@@ -588,7 +592,7 @@ export default function Home() {
           </div>
 
           <div className="trending-slider overflow-hidden">
-            <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1} autoplay={false}>
+            <ResponsiveCarousal arrow={false} dots={true} slidetoshow={1} autoplay={true} sliderIndex={blogIndex} setSliderIndex={setBlogIndex}>
               <div className="lg:pb-0 pb-5">
                 <div className="grid grid-cols-12 gap-5 pt-10">
                   <div className="col-span-5 max-lg:col-span-12">
@@ -620,7 +624,8 @@ export default function Home() {
                               By Zahid Panhwar
                             </h5>
                             <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic">
-                              September 2023
+                              {/* September 2023 */}
+                              {blogHeaders[blogIndex].date}
                             </h5>
                           </div>
                         </div>
@@ -703,7 +708,8 @@ export default function Home() {
                               By Zahid Panhwar
                             </h5>
                             <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic">
-                              September 2023
+                              {/* September 2023 */}
+                              {blogHeaders[blogIndex].date}
                             </h5>
                           </div>
                         </div>
@@ -786,7 +792,8 @@ export default function Home() {
                               By Zahid Panhwar
                             </h5>
                             <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic">
-                              September 2023
+                              {/* September 2023 */}
+                              {blogHeaders[blogIndex].date}
                             </h5>
                           </div>
                         </div>
@@ -869,7 +876,8 @@ export default function Home() {
                               By Zahid Panhwar
                             </h5>
                             <h5 className="text-base text-[#0f0f0f] font-semibold leading-[16px] italic">
-                              September 2023
+                              {/* September 2023 */}
+                              {blogHeaders[blogIndex].date}
                             </h5>
                           </div>
                         </div>

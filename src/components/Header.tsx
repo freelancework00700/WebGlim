@@ -87,7 +87,7 @@ const Header = () => {
                                             }
                                         </li>
                                         <li className="px-4 py-[23px] cursor-pointer">
-                                            <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
+                                            <Link href="/portfolio" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
                                                 Portfolio
                                             </Link>
                                         </li>
@@ -160,7 +160,7 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="/projects" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                <Link href="/portfolio" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Portfolio
                                                 </Link>
                                             </li>

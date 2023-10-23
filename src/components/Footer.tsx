@@ -78,13 +78,13 @@ const Footer = () => {
               <div>
                 <div>
                   <Link href="#" className="cursor-pointer text-2xl text-[#fff] leading-[26px] font-semibold">
-                    Web<span className="text-[#10e981]">Glim</span>
+                    Web <span className="text-[#10e981]">Glim</span>
                   </Link>
                 </div>
-                <div className="pt-[3rem] max-sm:pt-2">
+                <div className="pt-[2rem] max-sm:pt-2">
                   <p className="text-sm leading-[20px] text-[#a9afa9] font-normal pt-[20px]">
-                    Your Trusted Partner in It Excellence. 
-                    WebGlim delivers cutting-edge solutions in web development, mobile apps and 
+                    Your Trusted Partner in It Excellence.
+                    WebGlim delivers cutting-edge solutions in web development, mobile apps and
                     cloud services, driving digital transformation with innovation and expertise.
                   </p>
                 </div>
@@ -100,9 +100,19 @@ const Footer = () => {
                         Terms of service
                       </Link>
                     </li>
-                    <li className="uppercase text-sm text-[#a9afa9] font-normal">
+                    <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
                       <Link href="privacyPolicy" className="cursor-pointer hover:text-[#10e981]">
                         Privacy Policy
+                      </Link>
+                    </li>
+                    <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
+                      <Link href="sitemap" className="cursor-pointer hover:text-[#10e981]">
+                        Sitemap
+                      </Link>
+                    </li>
+                    <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
+                      <Link href="javascript: void(0)" className="cursor-pointer hover:text-[#10e981]">
+                        ABN 17 924 199 107
                       </Link>
                     </li>
                   </ul>
@@ -172,28 +182,28 @@ const Footer = () => {
                   help links
                 </h5>
                 <ul className="mt-6">
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
                     <Link href="/contactUs" >
-                    Customers Service</Link>
+                      Customers Service</Link>
                   </li>
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
                     <Link href="/services" >
-                    IT Department</Link>
+                      IT Department</Link>
                   </li>
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
                     <Link href="/about" >
-                    About Our Campain</Link>
+                      About Our Campain</Link>
                   </li>
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
                     <Link href="/services" >
-                    Business Growth</Link>
+                      Business Growth</Link>
                   </li>
-                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">                    
+                  <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
                     <Link href="https://calendly.com/webglim" target='_blank' >
-                    Make An Appointment</Link>
+                      Make An Appointment</Link>
                   </li>
                 </ul>
-              </div> 
+              </div>
               <div className='flex gap-2'>
                 <Link href='https://www.facebook.com/WebGlim' target='_blank' className='h-[30px] w-[30px] rounded-full bg-[#fff] flex justify-center items-center'>
                   <Image src={facebookIcon} alt='facebook' className='h-[20px] w-[20px]'></Image>

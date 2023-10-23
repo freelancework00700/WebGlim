@@ -10,7 +10,7 @@ import project5 from "../../../public/images/project5.png";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export default function Projects() {
+export default function Portfolio() {
   return (
     <div className="max-[1024px]:mt-[77px]">
       <Header />
