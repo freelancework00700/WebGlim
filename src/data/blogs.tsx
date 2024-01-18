@@ -118,10 +118,10 @@ export const blogs = [
             <br></br>
             <br></br>
             <br></br>
-            <Link href="/services" className="text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
+            <Link href="https://webglim.com.au/services" className="text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
                 Services
             </Link>
-            <Link href="/contactUs" className="ml-7 text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
+            <Link href="https://webglim.com.au/contactUs" className="ml-7 text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
                 Contact Us
             </Link>
         </p>
@@ -181,10 +181,10 @@ export const blogs = [
                 <br></br>
                 <br></br>
                 <br></br>
-                <Link href="/services" className="text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
+                <Link href="https://webglim.com.au/services" className="text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
                     Services
                 </Link>
-                <Link href="/contactUs" className="ml-7 text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
+                <Link href="https://webglim.com.au/contactUs" className="ml-7 text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
                     Contact Us
                 </Link>
             </p>
@@ -239,10 +239,10 @@ export const blogs = [
                 <br></br>
                 <br></br>
                 <br></br>
-                <Link href="/services" className="text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
+                <Link href="https://webglim.com.au/services" className="text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
                     Services
                 </Link>
-                <Link href="/contactUs" className="ml-7 text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
+                <Link href="https://webglim.com.au/contactUs" className="ml-7 text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
                     Contact Us
                 </Link>
             </div>
@@ -287,10 +287,10 @@ export const blogs = [
                 <p>As you embark on your digital odyssey, remember that a high-end web solution is not just a website; it&apos;s a transformative experience. Whether you&apos;re a business looking to boost your online presence, an eCommerce store striving to create a seamless shopping journey, or a luxury brand aiming to captivate the discerning, high-end web solutions are your gateway to success. It&apos;s time to elevate your digital presence and make your mark in the digital frontier. Your journey begins now.</p>
                 <br></br>
                 <br></br>
-                <Link href="/services" className="text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
+                <Link href="https://webglim.com.au/services" className="text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
                     Services
                 </Link>
-                <Link href="/contactUs" className="ml-7 text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
+                <Link href="https://webglim.com.au/contactUs" className="ml-7 text-base font-semibold text-[#222] hover:text-[#10e981] cursor-pointer">
                     Contact Us
                 </Link>
             </p>

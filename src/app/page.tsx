@@ -93,7 +93,7 @@ export default function Home() {
                   It encompasses software development, customization, and integration to improve efficiency and achieve business objectives.
                 </p>
                 <div className="flex gap-3">
-                  <Link href="contactUs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
+                  <Link href="https://webglim.com.au/contactUs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                     Book a Free Consultation
                     <Image
                       src={upArrow}
@@ -103,7 +103,7 @@ export default function Home() {
                       className="cursor-pointer rotate-45 ml-1"
                     />
                   </Link>
-                  <Link href="/services" className=" rounded-full uppercase text-sm font-medium text-[#a1a5a1] py-2 px-4 border-[#a1a5a1] border">
+                  <Link href="https://webglim.com.au/services" className=" rounded-full uppercase text-sm font-medium text-[#a1a5a1] py-2 px-4 border-[#a1a5a1] border">
                     Explore Our Services +
                   </Link>
                 </div>
@@ -448,7 +448,7 @@ export default function Home() {
                 </div>
 
 
-                <Link href="/services" className="ml-3 bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 w-fit">
+                <Link href="https://webglim.com.au/services" className="ml-3 bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 w-fit">
                   More Service +
                 </Link>
 
@@ -469,7 +469,7 @@ export default function Home() {
                     <p className="text-base leading-[22px] text-[#8d8d8d] font-normal mb-4 line-clamp-4">
                       <b>Web Development:</b> Explore our portfolio of custom web applications, meticulously tailored to meet diverse business needs. Our expert team leverages cutting-edge technologies, to deliver innovative and highly scalable solutions. As your trusted CMS development partner, we prioritize customization, boasting certifications in leading platforms such as WordPress and Drupal. Our unwavering commitment to ongoing support guarantees a seamless digital presence with regular updates, robust security enhancements, and vigilant proactive monitoring
                     </p>
-                    <Link href="/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                    <Link href="https://webglim.com.au/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                       Read more
                       <Image
                         src={next}
@@ -492,7 +492,7 @@ export default function Home() {
                     <p className="text-base leading-[22px] text-[#a1a1a1] font-normal mb-4 line-clamp-4">
                       <b>Mobile App Development:</b> Elevate your digital presence with our top-tier native apps for iOS and Android. Dive into our extensive portfolio available on the App Store and Google Play for a firsthand look at our exceptional user experiences. Discover the immense advantages of cross-platform development using React Native, a strategic choice that not only saves you valuable time but also conserves resources. Furthermore, explore the remarkable benefits of Progressive Web Apps (PWAs) designed for the Australian market, ensuring lightning-fast performance and offline accessibility.
                     </p>
-                    <Link href="/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                    <Link href="https://webglim.com.au/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                       Read more
                       <Image
                         src={next}
@@ -515,7 +515,7 @@ export default function Home() {
                     <p className="text-base leading-[22px] text-[#a1a1a1] font-normal mb-4 line-clamp-4">
                       <b>Cloud Services:</b> Rely on our seasoned expertise to ensure a seamless migration of your systems and data to cloud platforms. Our efficient cloud management team optimizes your cloud environment, emphasizing cost-effectiveness and high-performance delivery. Count on us as your trusted advisors to architect the perfect cloud strategies and infrastructures for Australian businesses. Our vast knowledge ensures enhanced scalability, reduced operational costs, superior performance, and the successful execution of cloud initiatives, liberating your resources to focus on your core business activities.
                     </p>
-                    <Link href="/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                    <Link href="https://webglim.com.au/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                       Read more
                       <Image
                         src={next}
@@ -538,7 +538,7 @@ export default function Home() {
                     <p className="text-base leading-[22px] text-[#a1a1a1] font-normal mb-4 line-clamp-4">
                       <b>IT Consulting Services:</b> Our dedicated team provides strategic IT guidance to Australian businesse aligning your technology adoption and infrastructure with your unique objectives. With a profound understanding of the Australian IT landscape, we craft personalized strategies aimed at empowering your organization with cutting edge solutions, fueling growth, and achieving operational excellence
                     </p>
-                    <Link href="/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                    <Link href="https://webglim.com.au/services" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                       Read more
                       <Image
                         src={next}
@@ -575,7 +575,7 @@ export default function Home() {
                   {/* Discover MERN Stack&apos;s dynamic potential for business growth, speed, scalability, and exceptional user experiences. Transform your future. */}
                   {blogHeaders[blogIndex].shortDescription}
                 </p>
-                <Link href="/blogs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 max-[640px]:mt-4">
+                <Link href="https://webglim.com.au/blogs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 max-[640px]:mt-4">
                   All Post +
                 </Link>
               </div>
@@ -663,7 +663,7 @@ export default function Home() {
                       <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-4">
                         In today&apos;s digitally driven business landscape, staying competitive and relevant requires more than just a mere online presence. It demands an agile, feature-rich, and scalable web application that can adapt to the ever-evolving market demands. This is where MERN Stack Development comes into play, offering businesses in Australia and beyond a powerful tool to unlock their full potential.
                       </p>
-                      <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                      <Link href="https://webglim.com.au/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                         Read more
                         <Image
                           src={next}
@@ -747,7 +747,7 @@ export default function Home() {
                       <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-4">
                         In today&apos;s digital age, the way we access and interact with the web is constantly evolving. With the surge in mobile device usage and the need for faster, more efficient web experiences, businesses are seeking innovative solutions that bridge the gap between traditional websites and mobile apps. This is where Progressive Web Apps (PWAs) come into play, heralding a new era of web technology, and offering a game-changing approach for Australian businesses.
                       </p>
-                      <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                      <Link href="https://webglim.com.au/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                         Read more
                         <Image
                           src={next}
@@ -831,7 +831,7 @@ export default function Home() {
                       <p className="text-base leading-[26px] text-[#0f0f0f] font-normal mb-4 pt-5 article-content line-clamp-4">
                         In the fast-paced world of mobile app development, businesses are constantly seeking more efficient ways to reach a broader audience without breaking the bank. With the rise of smartphones and the ever-expanding array of devices, cross-platform development has become a game-changer for many businesses, allowing them to streamline their mobile app development efforts. One of the leading technologies in this space is React Native, a framework developed by Facebook. In this blog, we&apos;ll explore the impact of cross-platform development with React Native on mobile apps and how it can benefit businesses looking to maximize their mobile presence.
                       </p>
-                      <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                      <Link href="https://webglim.com.au/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                         Read more
                         <Image
                           src={next}
@@ -916,7 +916,7 @@ export default function Home() {
                         <strong>Introduction: The Digital Frontier</strong><br></br>
                         In today&apos;s digital landscape, where every pixel counts, your online presence is the gateway to success. To make a lasting impression, you need more than just a website; you need a high-end web solution. Buckle up as we venture into a realm where innovation, customization, and excellence collide.
                       </p>
-                      <Link href="/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
+                      <Link href="https://webglim.com.au/blogs" className="text-base font-semibold text-[#10e981] flex items-center cursor-pointer">
                         Read more
                         <Image
                           src={next}
@@ -1143,7 +1143,7 @@ export default function Home() {
                           <b>Global IT Solutions</b>
                         </p>
                         <div className="absolute bottom-[30px]">
-                          <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
+                          <Link href="https://webglim.com.au/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                             View Services
                             <Image
                               src={upArrow}
@@ -1183,7 +1183,7 @@ export default function Home() {
                           <b>Centric IT Consultancy</b>
                         </p>
                         <div className="absolute bottom-[30px]">
-                          <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
+                          <Link href="https://webglim.com.au/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                             View Services
                             <Image
                               src={upArrow}
@@ -1223,7 +1223,7 @@ export default function Home() {
                           <b>Edge Software Solutions</b>
                         </p>
                         <div className="absolute bottom-[30px]">
-                          <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
+                          <Link href="https://webglim.com.au/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                             View Services
                             <Image
                               src={upArrow}
@@ -1263,7 +1263,7 @@ export default function Home() {
                           <b>Edge Software Solutions</b>
                         </p>
                         <div className="absolute bottom-[30px]">
-                          <Link href="/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
+                          <Link href="https://webglim.com.au/services" className="bg-[#10e981] uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4">
                             View Services
                             <Image
                               src={upArrow}

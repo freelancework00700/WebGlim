@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from 'next/link'
 import { useState } from "react";
 import close from "../../public/images/close.png";
-import search from "../../public/images/search.png";
 import menu from "../../public/images/menu.png";
 import expandArrow from "../../public/images/expandArrow.png";
 import mainLogo from "../../public/images/main-logo_horizontal.png";
@@ -23,7 +22,7 @@ const Header = () => {
                     <div className="flex items-center justify-between  border-b-2 border-[#2c2c2c] max-lg:py-2">
                         <div className="flex items-center">
                             <div className="main-logo me-[2rem]">
-                                <Link href="/" className="cursor-pointer">
+                                <Link href="https://webglim.com.au/" className="cursor-pointer">
                                 <Image
                                         src={mainLogo}
                                         alt="menu-icon"
@@ -36,12 +35,12 @@ const Header = () => {
                                 <nav>
                                     <ul className="flex items-center">
                                         <li className="px-4 py-[23px] cursor-pointer">
-                                            <Link href="/" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] ">
+                                            <Link href="https://webglim.com.au/" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] ">
                                                 Home
                                             </Link>
                                         </li>
                                         <li className="px-4 py-[23px] cursor-pointer">
-                                            <Link href="/about" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] ">
+                                            <Link href="https://webglim.com.au/about" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] ">
                                                 About
                                             </Link>
                                         </li>
@@ -51,32 +50,32 @@ const Header = () => {
                                         >
                                             <Link
                                                 onMouseEnter={onMouseEnter}
-                                                href="/services" className="flex h-full items-center text-sm font-medium leading-[24px] text-[#fff] hover:text-[#10e981] ">
+                                                href="https://webglim.com.au/services" className="flex h-full items-center text-sm font-medium leading-[24px] text-[#fff] hover:text-[#10e981] ">
                                                 Services
                                                 <Image src={expandArrow} alt='expandArrow' className='ml-1 mt-1 invert h-[10px] w-[10px]'></Image>
                                             </Link>
                                             {isHovering &&
-                                                <div className="absolute top-[70px] z-10 max-lg:hidden z-50">
+                                                <div className="absolute top-[70px]  max-lg:hidden z-50">
                                                     <div className="bg-[#000] p-3 px-5">
                                                         <nav>
                                                             <ul className="flex items-center flex-col">                                                                
                                                                 <li className="py-2 w-full">
-                                                                    <Link href="/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
+                                                                    <Link href="https://webglim.com.au/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
                                                                     Web Development
                                                                     </Link>
                                                                 </li>
                                                                 <li className="py-2 w-full">
-                                                                    <Link href="/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
+                                                                    <Link href="https://webglim.com.au/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
                                                                     Mobile App Development
                                                                     </Link>
                                                                 </li>
                                                                 <li className="py-2 w-full">
-                                                                    <Link href="/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
+                                                                    <Link href="https://webglim.com.au/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
                                                                     Cloud Service
                                                                     </Link>
                                                                 </li>
                                                                 <li className="py-2 w-full">
-                                                                    <Link href="/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
+                                                                    <Link href="https://webglim.com.au/services" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981] cursor-pointer ">
                                                                     IT Consulting
                                                                     </Link>
                                                                 </li>
@@ -87,12 +86,12 @@ const Header = () => {
                                             }
                                         </li>
                                         <li className="px-4 py-[23px] cursor-pointer">
-                                            <Link href="/portfolio" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
+                                            <Link href="https://webglim.com.au/portfolio" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
                                                 Portfolio
                                             </Link>
                                         </li>
                                         <li className="px-4 py-[23px] cursor-pointer">
-                                            <Link href="/blogs" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
+                                            <Link href="https://webglim.com.au/blogs" className="text-sm font-medium leading-[16px] text-[#fff] hover:text-[#10e981]">
                                                 Our Blogs
                                             </Link>
                                         </li>
@@ -108,14 +107,7 @@ const Header = () => {
                                 </Link>
                             </div>
                             <div className="ps-4 pe-8 lg:pe-0">
-                                {/* <Image
-                                    src={search}
-                                    alt="search image"
-                                    width={16}
-                                    height={16}
-                                    className="cursor-pointer"
-                                /> */}
-                                <Link href="/contactUs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 max-[1023px]:hidden">
+                                <Link href="https://webglim.com.au/contactUs" className="bg-[#10e981] rounded-full uppercase text-sm flex items-center  font-medium text-[#212527] py-2 px-4 max-[1023px]:hidden">
                                     Contact Us
                                 </Link>
                             </div>
@@ -140,37 +132,37 @@ const Header = () => {
                             </div>
                         </div>
                         {menuShowResponsive &&
-                            <div className="fixed w-full left-0 top-[70px] z-10 lg:hidden z-20">
+                            <div className="fixed w-full left-0 top-[70px] lg:hidden z-20">
                                 <div className="bg-[#fff] p-3 px-5 shadow-md">
                                     <nav>
                                         <ul className="flex items-start flex-col">
                                             <li className="py-2">
-                                                <Link href="/" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                <Link href="https://webglim.com.au/" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Home
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="/about" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                <Link href="https://webglim.com.au/about " className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     About
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="/services" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                <Link href="https://webglim.com.au/services" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Services
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="/portfolio" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                <Link href="https://webglim.com.au/portfolio " className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Portfolio
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="/blogs" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                <Link href="https://webglim.com.au/blogs" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Our Blogs
                                                 </Link>
                                             </li>
                                             <li className="py-2">
-                                                <Link href="/contactUs" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
+                                                <Link href="https://webglim.com.au/contactUs" className="text-sm font-medium leading-[16px] text-[#1d1c21] hover:text-[#10e981] cursor-pointer ">
                                                     Contact Us
                                                 </Link>
                                             </li>

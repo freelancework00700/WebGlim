@@ -21,9 +21,7 @@ export default function Portfolio() {
               WebGlim Portfolio
             </h3>
             <p className="w-1/2 mx-auto text-base leading-[26px] text-[#666] text-center mt-4 max-lg:w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry Lorem Ipsum has been the industry standard dummy text
-              ever when an unknown printer took.
+            Discover WebGlim&apos;s tech brilliance! From custom web development to cutting-edge IT solutions, we craft success for your business online. Elevate your digital journey with us
             </p>
           </div>
         </div>

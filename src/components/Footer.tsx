@@ -15,6 +15,7 @@ import { ToastAction } from "@/components/ui/toast"
 import { useFormik } from "formik";
 import axios from "axios";
 import * as yup from "yup";
+import mainLogo from "../../public/images/main-logo_horizontal.png";
 
 const Footer = () => {
   const { toast } = useToast()
@@ -71,37 +72,38 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <footer className="bg-[#212025] pt-[100px] max-lg:pt-[70px] max-sm:pt-[50px]">
+      <footer className="bg-[#212025] pt-[80px] max-lg:pt-[70px] max-sm:pt-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-4 pb-[100px] max-lg:pb-[70px] max-sm:pb-[50px]">
             <div className="col-span-3 max-lg:col-span-5 max-[640px]:col-span-12">
               <div>
-                <div>
-                  <Link href="#" className="cursor-pointer text-2xl text-[#fff] leading-[26px] font-semibold">
-                    Web <span className="text-[#10e981]">Glim</span>
-                  </Link>
-                </div>
-                <div className="pt-[2rem] max-sm:pt-2">
-                  <p className="text-sm leading-[20px] text-[#a9afa9] font-normal pt-[20px]">
-                    Your Trusted Partner in It Excellence.
-                    WebGlim delivers cutting-edge solutions in web development, mobile apps and
-                    cloud services, driving digital transformation with innovation and expertise.
-                  </p>
-                </div>
-                <div className="pt-[3rem] max-sm:pt-[1rem]">
+                <Link href="https://webglim.com.au/" className="cursor-pointer">
+                  <Image
+                    src={mainLogo}
+                    alt="menu-icon"
+                    height={60}
+                    className="cursor-pointer"
+                  />
+                </Link>
+                <p className="text-sm leading-[20px] text-[#a9afa9] font-normal mt-2">
+                  Your Trusted Partner in It Excellence.
+                  WebGlim delivers cutting-edge solutions in web development, mobile apps and
+                  cloud services, driving digital transformation with innovation and expertise.
+                </p>
+                <div className="pt-[2rem] max-sm:pt-[1rem]">
                   <ul>
                     <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
-                      <Link href="contactUs" className="cursor-pointer hover:text-[#10e981]">
+                      <Link href="https://webglim.com.au/contactUs" className="cursor-pointer hover:text-[#10e981]">
                         Contact Us
                       </Link>
                     </li>
                     <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
-                      <Link href="termsOfServices" className="cursor-pointer hover:text-[#10e981]">
+                      <Link href="https://webglim.com.au/termsOfServices" className="cursor-pointer hover:text-[#10e981]">
                         Terms of service
                       </Link>
                     </li>
                     <li className="uppercase text-sm text-[#a9afa9] font-normal mb-2">
-                      <Link href="privacyPolicy" className="cursor-pointer hover:text-[#10e981]">
+                      <Link href="phttps://webglim.com.au/privacyPolicy" className="cursor-pointer hover:text-[#10e981]">
                         Privacy Policy
                       </Link>
                     </li>
@@ -122,11 +124,11 @@ const Footer = () => {
             <div className="col-span-1"></div>
             <div className="col-span-4 max-lg:col-span-5 max-[640px]:col-span-12">
               <div>
-                <h5 className="text-xl text-[#fff] leading-[26px] font-semibold uppercase">
+                <h5 className="text-xl text-[#fff] leading-[60px] font-semibold uppercase">
                   OUR newsletter
                 </h5>
                 <form onSubmit={formik.handleSubmit}>
-                  <div className="mt-6">
+                  <div className="mt-2">
                     <label className="capitalize text-sm text-[#a9afa9] font-normal">
                       First Name
                     </label>
@@ -178,24 +180,24 @@ const Footer = () => {
             <div className="col-span-1"></div>
             <div className="col-span-3 max-lg:col-span-5 max-[640px]:col-span-12">
               <div>
-                <h5 className="text-xl text-[#fff] leading-[26px] font-semibold uppercase">
+                <h5 className="text-xl text-[#fff] leading-[60px] font-semibold uppercase">
                   help links
                 </h5>
-                <ul className="mt-6">
+                <ul className="mt-2">
                   <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    <Link href="/contactUs" >
+                    <Link href="https://webglim.com.au/contactUs" >
                       Customers Service</Link>
                   </li>
                   <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    <Link href="/services" >
+                    <Link href="https://webglim.com.au/services" >
                       IT Department</Link>
                   </li>
                   <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    <Link href="/about" >
+                    <Link href="https://webglim.com.au/about" >
                       About Our Campain</Link>
                   </li>
                   <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">
-                    <Link href="/services" >
+                    <Link href="https://webglim.com.au/services" >
                       Business Growth</Link>
                   </li>
                   <li className="capitalize text-sm text-[#a9afa9] font-normal mb-3">

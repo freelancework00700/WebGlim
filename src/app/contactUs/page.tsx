@@ -17,13 +17,13 @@ import * as yup from "yup";
 import { useState } from "react";
 
 const FormSchema = yup.object().shape({
-  name: yup.string().required("Name Should be Required"),
+  name: yup.string().required("Required"),
   email: yup
     .string()
-    .required("Email address Required")
-    .email("Valid email required"),
-  business_type: yup.string().required("Business Type Should be Required"),
-  message: yup.string().required("Message Should be Required"),
+    .required("Required")
+    .email("required"),
+  business_type: yup.string().required("Required"),
+  message: yup.string().required("Required"),
 });
 
 export default function ContactUs() {
